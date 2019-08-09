@@ -4,15 +4,17 @@
 
 ### Brute Force
 
-연산자 끼워 넣기 https://www.acmicpc.net/problem/14888
-1, 2, 3 더하기 https://www.acmicpc.net/problem/9095
-암호 만들기 https://www.acmicpc.net/problem/1759
+<hr>연산자 끼워 넣기 https://www.acmicpc.net/problem/14888</hr>
+<hr>1, 2, 3 더하기 https://www.acmicpc.net/problem/9095</hr>
+<hr>암호 만들기 https://www.acmicpc.net/problem/1759</hr>
+<hr>부분수열의 합 https://www.acmicpc.net/problem/1182</hr>
 
 ### Brute Force N & M
 
 N과 M (1) https://www.acmicpc.net/problem/15649
 N과 M (2) https://www.acmicpc.net/problem/15650
 N과 M (3) https://www.acmicpc.net/problem/15651
+N과 M (4) https://www.acmicpc.net/problem/15652
 
 ### DFS BFS
 
