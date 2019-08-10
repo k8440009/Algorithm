@@ -17,6 +17,7 @@ void dfs(int index, int past)
             cout << a[i] << ' ';
         }
         cout << '\n';
+        return;
     }
     // 2. m의 크기가 만족하지 않는 경우
     for (int i = 1; i <= N; i++)
