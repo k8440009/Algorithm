@@ -10,6 +10,7 @@
 암호 만들기 https://www.acmicpc.net/problem/1759</br>
 부분집합의 합 https://www.acmicpc.net/problem/1182</br>
 퇴사 https://www.acmicpc.net/problem/14501 </br>
+연산자 끼워 넣기 2 https://www.acmicpc.net/problem/15658 </br>
 
 <hr/>
 
@@ -20,6 +21,7 @@ N과 M (2) https://www.acmicpc.net/problem/15650 <br/>
 N과 M (3) https://www.acmicpc.net/problem/15651 <br/>
 N과 M (4) https://www.acmicpc.net/problem/15652 <br/>
 N과 M (5) https://www.acmicpc.net/problem/15654 <br/>
+N과 M (6) https://www.acmicpc.net/problem/15655 <br/>
 
 <hr/>
 ### DFS BFS
@@ -29,6 +31,7 @@ ABCDE https://www.acmicpc.net/problem/13023 <br/>
 숨바꼭질 https://www.acmicpc.net/problem/1697 <br/>
 숨바꼭질 3 https://www.acmicpc.net/problem/13549 <br/>
 알고 스팟 https://www.acmicpc.net/problem/1261 <br/>
+벽 부수고 이동하기 https://www.acmicpc.net/problem/2206 </br>
 
 <hr/>
 ### DP
