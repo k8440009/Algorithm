@@ -1,7 +1,6 @@
 // 제곱수의 합
 // https://www.acmicpc.net/problem/1699
-
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 const int MAX = 100000;
 int dp[MAX + 1];
