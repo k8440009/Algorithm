@@ -49,6 +49,8 @@ ABCDE https://www.acmicpc.net/problem/13023 <br/>
 가장 긴 감소하는 부분 수열 https://www.acmicpc.net/problem/11722 <br/>
 가장 긴 바이토닉 부분 수열 https://www.acmicpc.net/problem/11054<br/>
 연속합 https://www.acmicpc.net/problem/1912 <br/>
+연속합 2 https://www.acmicpc.net/problem/13398 <br/>
+제곱수의 합 https://www.acmicpc.net/problem/1699 <br>
 
 <hr/>
 ### Greedy
@@ -56,11 +58,12 @@ ABCDE https://www.acmicpc.net/problem/13023 <br/>
 ### 삼성 기출
 <hr/>
 ## Programers
-
+<hr/>
 ### Level 1
-
+제일 작은 수 제거하기 https://programmers.co.kr/learn/courses/30/lessons/12935 <br/>
 <hr/>
 ### Level 2
 <hr/>
 ### Level 3
+정수 삼각형 https://programmers.co.kr/learn/courses/30/lessons/43105 <br/>
 <hr/>
