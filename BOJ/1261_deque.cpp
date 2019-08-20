@@ -1,26 +1,29 @@
-// 알고 스팟
+// 알고스팟
 // https://www.acmicpc.net/problem/1261
 #include <bits/stdc++.h>
 using namespace std;
+const int MAX = 100;
+
+int N, M;
 int dx[4] = {1, -1, 0, 0};
 int dy[4] = {0, 0, 1, -1};
-const int MAX = 100;
+
 int board[MAX][MAX];
 bool visited[MAX][MAX];
 int dist[MAX][MAX];
+
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
 
-    int n, m;
-    cin >> n >> m;
-    for (int i = 0; i < m; i++)
+    cin >> N >> M;
+    for (int i = 0; i < M; i++)
     {
         string str = "";
         cin >> str;
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j < N; j++)
         {
             board[i][j] = str[j] - '0';
         }
@@ -30,36 +33,40 @@ int main()
     q.push_back({0, 0});
     visited[0][0] = true;
     dist[0][0] = 0;
+
     while (!q.empty())
     {
-        auto cur = q.front();
+        int x = q.front().first;
+        int y = q.front().second;
         q.pop_front();
 
         for (int dir = 0; dir < 4; dir++)
         {
-            int nx = cur.first + dx[dir];
-            int ny = cur.second + dy[dir];
+            int nx = x + dx[dir];
+            int ny = y + dy[dir];
 
-            if (nx < 0 || nx >= m || ny < 0 || ny >= n)
+            if (nx < 0 || nx >= M || ny < 0 || ny >= N)
                 continue;
             if (visited[nx][ny])
                 continue;
 
+            // 벽 있으면 뒤에 삽입, 없으면 앞에 삽입
             if (board[nx][ny] == 0)
             {
                 q.push_front({nx, ny});
-                visited[nx][ny] = true;
-                dist[nx][ny] = dist[cur.first][cur.second];
+                dist[nx][ny] = dist[x][y];
             }
+
             else
             {
                 q.push_back({nx, ny});
-                visited[nx][ny] = true;
-                dist[nx][ny] = dist[cur.first][cur.second] + 1;
+                dist[nx][ny] = dist[x][y] + 1;
             }
+
+            visited[nx][ny] = 1;
         }
     }
 
-    cout << dist[m - 1][n - 1];
+    cout << dist[M - 1][N - 1] << '\n';
     return 0;
 }

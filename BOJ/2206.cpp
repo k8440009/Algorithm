@@ -3,11 +3,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAX = 1000;
+const int MAX = 1000 + 1;
 int dx[4] = {1, -1, 0, 0};
 int dy[4] = {0, 0, 1, -1};
 int board[MAX][MAX];
-int dist[MAX][MAX][2];
+bool visited[MAX][MAX];
+int dist[MAX][MAX][2]; // 0 : 벽 안깸, 1 : 벽 깨기 사용
 
 int main()
 {
@@ -29,10 +30,12 @@ int main()
 
     queue<tuple<int, int, int>> q;
     q.push(make_tuple(0, 0, 0));
+    visited[0][0] = true;
     dist[0][0][0] = 1;
 
     while (!q.empty())
     {
+        /* code */
         int x, y, z;
         tie(x, y, z) = q.front();
         q.pop();
@@ -45,16 +48,17 @@ int main()
             if (nx < 0 || nx >= n || ny < 0 || ny >= m)
                 continue;
 
+            // 벽 안 부수는 경우
             if (board[nx][ny] == 0 && dist[nx][ny][z] == 0)
             {
-                dist[nx][ny][z] = dist[x][y][z] + 1;
                 q.push(make_tuple(nx, ny, z));
+                dist[nx][ny][z] = dist[x][y][z] + 1;
             }
-
+            // 벽 부수는 경우
             if (z == 0 && board[nx][ny] == 1 && dist[nx][ny][z + 1] == 0)
             {
-                dist[nx][ny][z + 1] = dist[x][y][z] + 1;
                 q.push(make_tuple(nx, ny, z + 1));
+                dist[nx][ny][z + 1] = dist[x][y][z] + 1;
             }
         }
     }
@@ -68,5 +72,6 @@ int main()
     else
         cout << -1;
     cout << '\n';
+
     return 0;
 }

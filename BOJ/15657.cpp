@@ -1,5 +1,5 @@
-// N과 M (7)
-// https://www.acmicpc.net/problem/15656
+// N과 M (8)
+// https://www.acmicpc.net/problem/15657
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,7 +8,7 @@ int N, M;
 vector<int> a;
 vector<int> b;
 
-void dfs(int index)
+void dfs(int index, int last)
 {
     if (index == M)
     {
@@ -22,8 +22,10 @@ void dfs(int index)
 
     for (int i = 0; i < N; i++)
     {
+        if (last > b[i])
+            continue;
         a.push_back(b[i]);
-        dfs(index + 1);
+        dfs(index + 1, b[i]);
         a.pop_back();
     }
 }
@@ -38,6 +40,6 @@ int main()
     for (int i = 0; i < N; i++)
         cin >> b[i];
     sort(b.begin(), b.end());
-    dfs(0);
+    dfs(0, 0);
     return 0;
 }
