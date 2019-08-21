@@ -11,6 +11,8 @@
 부분집합의 합 https://www.acmicpc.net/problem/1182</br>
 퇴사 https://www.acmicpc.net/problem/14501 </br>
 연산자 끼워 넣기 2 https://www.acmicpc.net/problem/15658 </br>
+단어 수학 https://www.acmicpc.net/problem/1339 <br/>
+부등호 https://www.acmicpc.net/problem/2529
 
 <hr/>
 
@@ -44,6 +46,7 @@ ABCDE https://www.acmicpc.net/problem/13023 <br/>
 알고 스팟 https://www.acmicpc.net/problem/1261 <br/>
 벽 부수고 이동하기 https://www.acmicpc.net/problem/2206 </br>
 탈출 https://www.acmicpc.net/problem/3055 <br/>
+DSLR https://www.acmicpc.net/problem/9019 <br/>
 
 <hr/>
 
@@ -65,6 +68,7 @@ ABCDE https://www.acmicpc.net/problem/13023 <br/>
 연속합 2 https://www.acmicpc.net/problem/13398 <br/>
 제곱수의 합 https://www.acmicpc.net/problem/1699 <br/>
 합분해 https://www.acmicpc.net/problem/2225 <br/>
+점프 https://www.acmicpc.net/problem/1890 <br/>
 
 <hr/>
 
@@ -76,8 +80,11 @@ ABCDE https://www.acmicpc.net/problem/13023 <br/>
 
 ### BOJ 복원
 
-시험 감독 https://www.acmicpc.net/problem/13458
-테트로미노 https://www.acmicpc.net/problem/14500
+시험 감독 https://www.acmicpc.net/problem/13458 <br/>
+연구소 https://www.acmicpc.net/problem/14502 <br/>
+테트로미노 https://www.acmicpc.net/problem/14500 <br/>
+퇴사 https://www.acmicpc.net/problem/14501 <br/>
+아기 상어 https://www.acmicpc.net/problem/16236 <br/>
 
 ### SWEA 모의
 
@@ -90,12 +97,13 @@ ABCDE https://www.acmicpc.net/problem/13023 <br/>
 ### Level 1
 
 제일 작은 수 제거하기 https://programmers.co.kr/learn/courses/30/lessons/12935 <br/>
+평균 구하기 https://programmers.co.kr/learn/courses/30/lessons/12944 <br/>
 
 <hr/>
 
 ### Level 2
 
-<hr/>
+가장 큰 정사각형 찾기 https://programmers.co.kr/learn/courses/30/lessons/12905<hr/>
 
 ### Level 3
 
