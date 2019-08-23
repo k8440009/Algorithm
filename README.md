@@ -12,7 +12,8 @@
 퇴사 https://www.acmicpc.net/problem/14501 </br>
 연산자 끼워 넣기 2 https://www.acmicpc.net/problem/15658 </br>
 단어 수학 https://www.acmicpc.net/problem/1339 <br/>
-부등호 https://www.acmicpc.net/problem/2529
+부등호 https://www.acmicpc.net/problem/2529 <br/>
+스타트와 링크 https://www.acmicpc.net/problem/14889
 
 <hr/>
 
@@ -47,6 +48,8 @@ ABCDE https://www.acmicpc.net/problem/13023 <br/>
 벽 부수고 이동하기 https://www.acmicpc.net/problem/2206 </br>
 탈출 https://www.acmicpc.net/problem/3055 <br/>
 DSLR https://www.acmicpc.net/problem/9019 <br/>
+숨바꼭질 4 https://www.acmicpc.net/problem/13913 <br/>
+퍼즐 https://www.acmicpc.net/problem/1525 <br/>
 
 <hr/>
 
@@ -69,6 +72,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 제곱수의 합 https://www.acmicpc.net/problem/1699 <br/>
 합분해 https://www.acmicpc.net/problem/2225 <br/>
 점프 https://www.acmicpc.net/problem/1890 <br/>
+팰린드롬? https://www.acmicpc.net/problem/10942
 
 <hr/>
 
