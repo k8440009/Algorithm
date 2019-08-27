@@ -3,6 +3,7 @@
 ## BOJ
 
 <hr/>
+
 ### Brute Force
 
 연산자 끼워 넣기 https://www.acmicpc.net/problem/14888</br>
@@ -13,7 +14,8 @@
 연산자 끼워 넣기 2 https://www.acmicpc.net/problem/15658 </br>
 단어 수학 https://www.acmicpc.net/problem/1339 <br/>
 부등호 https://www.acmicpc.net/problem/2529 <br/>
-스타트와 링크 https://www.acmicpc.net/problem/14889
+스타트와 링크 https://www.acmicpc.net/problem/14889 <br/>
+맞춰봐 https://www.acmicpc.net/problem/1248 <br/>
 
 <hr/>
 
@@ -50,6 +52,7 @@ ABCDE https://www.acmicpc.net/problem/13023 <br/>
 DSLR https://www.acmicpc.net/problem/9019 <br/>
 숨바꼭질 4 https://www.acmicpc.net/problem/13913 <br/>
 퍼즐 https://www.acmicpc.net/problem/1525 <br/>
+물통 https://www.acmicpc.net/problem/2251 <br/>
 
 <hr/>
 
@@ -90,7 +93,13 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 퇴사 https://www.acmicpc.net/problem/14501 <br/>
 아기 상어 https://www.acmicpc.net/problem/16236 <br/>
 
-### SWEA 모의
+### SWEA
+
+#### D3
+
+준환이의 운동관리 <br/>
+[S/W 문제해결 기본] 3일차 - 회문1 <br/>
+[S/W 문제해결 기본] 5일차 - Magnetic <br/>
 
 <hr/>
 
