@@ -16,6 +16,7 @@
 부등호 https://www.acmicpc.net/problem/2529 <br/>
 스타트와 링크 https://www.acmicpc.net/problem/14889 <br/>
 맞춰봐 https://www.acmicpc.net/problem/1248 <br/>
+N-Queen https://www.acmicpc.net/problem/9663 <br/>
 
 <hr/>
 
@@ -53,6 +54,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 숨바꼭질 4 https://www.acmicpc.net/problem/13913 <br/>
 퍼즐 https://www.acmicpc.net/problem/1525 <br/>
 물통 https://www.acmicpc.net/problem/2251 <br/>
+탈옥 https://www.acmicpc.net/problem/9376 <br/>
 
 <hr/>
 
@@ -60,6 +62,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 
 1, 2, 3 더하기 https://www.acmicpc.net/problem/9095 <br/>
 1, 2, 3 더하기 3 https://www.acmicpc.net/problem/15988 <br/>
+1, 2, 3 더하기 4 https://www.acmicpc.net/problem/15989 <br/>
 1, 2, 3 더하기 5 https://www.acmicpc.net/problem/15990 <br/>
 
 카드 구매하기 https://www.acmicpc.net/problem/11052 <br/>
@@ -75,11 +78,15 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 제곱수의 합 https://www.acmicpc.net/problem/1699 <br/>
 합분해 https://www.acmicpc.net/problem/2225 <br/>
 점프 https://www.acmicpc.net/problem/1890 <br/>
-팰린드롬? https://www.acmicpc.net/problem/10942
+팰린드롬? https://www.acmicpc.net/problem/10942 <br/>
 
 <hr/>
 
 ### Greedy
+
+### 기타
+
+무한 문자열 https://www.acmicpc.net/problem/12871 <br/>
 
 <hr/>
 
@@ -92,6 +99,10 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 테트로미노 https://www.acmicpc.net/problem/14500 <br/>
 퇴사 https://www.acmicpc.net/problem/14501 <br/>
 아기 상어 https://www.acmicpc.net/problem/16236 <br/>
+구슬 탈출 2 https://www.acmicpc.net/problem/13460 <br/>
+로봇 청소기 https://www.acmicpc.net/problem/4991 <br/>
+로봇 청소기 https://www.acmicpc.net/problem/14503 <br/>
+안전 영역 https://www.acmicpc.net/problem/2468 <br/>
 
 ### SWEA
 
@@ -102,8 +113,12 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 [S/W 문제해결 기본] 5일차 - Magnetic <br/>
 
 <hr/>
+## hackerrank
 
 ## Programers
+
+Sock Merchant <br/>
+Counting Valleys <br/>
 
 <hr/>
 
