@@ -103,6 +103,9 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 로봇 청소기 https://www.acmicpc.net/problem/4991 <br/>
 로봇 청소기 https://www.acmicpc.net/problem/14503 <br/>
 안전 영역 https://www.acmicpc.net/problem/2468 <br/>
+뱀 https://www.acmicpc.net/problem/3190 <br/>
+인구이동 https://www.acmicpc.net/problem/16234 <br/>
+2048 (easy) https://www.acmicpc.net/problem/12100 <br/>
 
 ### SWEA
 
@@ -113,9 +116,8 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 [S/W 문제해결 기본] 5일차 - Magnetic <br/>
 
 <hr/>
-## hackerrank
 
-## Programers
+## hackerrank
 
 ### Warm-up Challenges
 
@@ -127,6 +129,8 @@ Counting Valleys <br/>
 2D Array <br/>
 
 <hr/>
+
+## Programers
 
 ### Level 1
 
