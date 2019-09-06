@@ -11,23 +11,14 @@ import collections
 
 
 def makeAnagram(a, b):
+    a = collections.Counter(a)
+    b = collections.Counter(b)
 
-    dict1 = collections.Counter(a)
-    dict2 = collections.Counter(b)
+    c = a - b
+    d = b - a
+    e = c + d
 
-    key1 = dict1.keys()
-    key2 = dict2.keys()
-
-    count1 = len(key1)
-    count2 = len(key2)
-
-    set1 = set(key1)
-    commonKeys = len(set1.intersection(key2))
-
-    if (commonKeys == 0):
-        return count1 + count2
-    else:
-        return (max(count1, count2)-commonKeys)
+    return len(list(e.elements()))
 
 
 if __name__ == '__main__':
