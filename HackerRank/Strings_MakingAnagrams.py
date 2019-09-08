@@ -18,7 +18,8 @@ def makeAnagram(a, b):
     d = b - a
     e = c + d
 
-    return len(list(e.elements()))
+    # list(e.elments()), list(e.keys())
+    return len(list(e.elements()))  # list(e.keys())
 
 
 if __name__ == '__main__':
