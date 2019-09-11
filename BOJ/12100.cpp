@@ -12,160 +12,180 @@ int answer;
 
 void up()
 {
-    for (int row = 1; row < N; row++)
+    queue<int> q;
+    for (int r = 0; r < N; r++)
     {
-        for (int col = 0; col < N; col++)
+        for (int c = 0; c < N; c++)
         {
-            if (copyBoard[row][col] == 0)
-                continue;
+            if (copyBoard[c][r])
+                q.push(copyBoard[c][r]);
+            copyBoard[c][r] = 0;
+        }
 
-            int r = row;
-            while (r - 1 >= 0)
+        int index = 0;
+        while (!q.empty())
+        {
+            int data = q.front();
+            q.pop();
+
+            if (copyBoard[index][r] == 0)
             {
-                if (copyBoard[r - 1][col] == 0)
-                {
-                    copyBoard[r - 1][col] = copyBoard[r][col];
-                    copyBoard[r][col] = 0;
-                }
-                else if (copyBoard[r - 1][col] == copyBoard[r][col])
-                {
-                    copyBoard[r - 1][col] *= 2;
-                }
-
-                r -= 1;
+                copyBoard[index][r] = data;
+            }
+            else if (copyBoard[index][r] == data)
+            {
+                copyBoard[index][r] *= 2;
+                index++;
+            }
+            else
+            {
+                index++;
+                copyBoard[index][r] = data;
             }
         }
     }
 }
 void down()
 {
-    for (int row = N - 1; row >= 0; row--)
+    queue<int> q;
+    for (int r = 0; r < N; r++)
     {
-        for (int col = 0; col < N; col++)
+        for (int c = N - 1; c >= 0; c--)
         {
-            if (copyBoard[row][col] == 0)
-                continue;
+            if (copyBoard[c][r])
+                q.push(copyBoard[c][r]);
+            copyBoard[c][r] = 0;
+        }
 
-            int r = row;
-            while (r + 1 < N)
+        int index = N - 1;
+        while (!q.empty())
+        {
+            int data = q.front();
+            q.pop();
+
+            if (copyBoard[index][r] == 0)
             {
-                if (copyBoard[r + 1][col] == 0)
-                {
-                    copyBoard[r + 1][col] = copyBoard[r][col];
-                    copyBoard[r][col] = 0;
-                }
-                else if (copyBoard[r + 1][col] == copyBoard[r][col])
-                {
-                    copyBoard[r + 1][col] *= 2;
-                }
-
-                r += 1;
+                copyBoard[index][r] = data;
+            }
+            else if (copyBoard[index][r] == data)
+            {
+                copyBoard[index][r] *= 2;
+                index--;
+            }
+            else
+            {
+                index--;
+                copyBoard[index][r] = data;
             }
         }
     }
 }
 void left()
 {
-    for (int row = 0; row < N; row++)
+    queue<int> q;
+    for (int r = 0; r < N; r++)
     {
-        for (int col = 1; col < N; col++)
+        for (int c = 0; c < N; c++)
         {
-            if (copyBoard[row][col] == 0)
-                continue;
+            if (copyBoard[r][c] > 0)
+                q.push(copyBoard[r][c]);
+            copyBoard[r][c] = 0;
+        }
 
-            int c = col;
-            while (c - 1 >= 0)
+        int index = 0;
+        while (!q.empty())
+        {
+            int data = q.front();
+            q.pop();
+            // 처음이거나 데이터 값이 9인 경우
+            if (copyBoard[r][index] == 0)
             {
-                if (copyBoard[row][c - 1] == 0)
-                {
-                    copyBoard[row][c - 1] = copyBoard[row][c];
-                    copyBoard[row][c] = 0;
-                }
-                else if (copyBoard[row][c - 1] == copyBoard[row][c])
-                {
-                    copyBoard[row][c - 1] *= 2;
-                }
-
-                c -= 1;
+                copyBoard[r][index] = data;
+            }
+            // 데이터 값이 같아서 합치는 경우
+            else if (copyBoard[r][index] == data)
+            {
+                copyBoard[r][index] *= 2;
+                index++;
+            }
+            // 다른경우는 바로 왼쪽 칸에 넣어줌
+            else
+            {
+                index++;
+                copyBoard[r][index] = data;
             }
         }
     }
 }
 void right()
 {
-    for (int row = 0; row < N; row++)
+    queue<int> q;
+    for (int r = 0; r < N; r++)
     {
-        for (int col = N - 1; col >= 0; col--)
+        for (int c = N - 1; c >= 0; c--)
         {
-            if (copyBoard[row][col] == 0)
-                continue;
+            if (copyBoard[r][c] > 0)
+                q.push(copyBoard[r][c]);
+            copyBoard[r][c] = 0;
+        }
 
-            int c = col;
-            while (c + 1 < N)
+        int index = N - 1;
+        while (!q.empty())
+        {
+            int data = q.front();
+            q.pop();
+            // 처음이거나 데이터 값이 9인 경우
+            if (copyBoard[r][index] == 0)
             {
-                if (copyBoard[row][c + 1] == 0)
-                {
-                    copyBoard[row][c + 1] = copyBoard[row][c];
-                    copyBoard[row][c] = 0;
-                }
-                else if (copyBoard[row][c + 1] == copyBoard[row][c])
-                {
-                    copyBoard[row][c + 1] *= 2;
-                }
-
-                c += 1;
+                copyBoard[r][index] = data;
+            }
+            // 데이터 값이 같아서 합치는 경우
+            else if (copyBoard[r][index] == data)
+            {
+                copyBoard[r][index] *= 2;
+                index--;
+            }
+            // 다른경우는 바로 왼쪽 칸에 넣어줌
+            else
+            {
+                index--;
+                copyBoard[r][index] = data;
             }
         }
     }
 }
-void findMax()
-{
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < N; j++)
-        {
-            //cout << board[i][j] << ' ';
-            answer = max(answer, copyBoard[i][j]);
-        }
-        //cout << '\n';
-    }
-    //cout << '\n';
-}
 void boardCopy()
 {
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < N; j++)
-        {
-            copyBoard[i][j] = board[i][j];
-        }
-    }
+    for (int r = 0; r < N; r++)
+        for (int c = 0; c < N; c++)
+            copyBoard[r][c] = board[r][c];
 }
 void dfs(int index, vector<int> &direction)
 {
-
     // 5번 이동했으면 움직인다.
     if (index == 5)
     {
         boardCopy();
         for (int i = 0; i < direction.size(); i++)
         {
-            // 북
-            if (direction[i] == 0)
+            if (direction[i] == 0) // 북
                 up();
-            // 동
-            else if (direction[i] == 1)
+            else if (direction[i] == 1) // 동
                 right();
-
-            // 남
-            else if (direction[i] == 2)
+            else if (direction[i] == 2) // 남
                 down();
-            // 서
-            else if (direction[i] == 3)
+            else if (direction[i] == 3) // 서
                 left();
         }
 
-        findMax();
+        for (int r = 0; r < N; r++)
+        {
+            for (int c = 0; c < N; c++)
+            {
+                answer = max(answer, copyBoard[r][c]);
+            }
+        }
+
         return;
     }
 
