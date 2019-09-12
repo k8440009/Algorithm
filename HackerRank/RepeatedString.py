@@ -9,6 +9,13 @@ import sys
 
 # Complete the repeatedString function below.
 
+'''
+s = input().strip()
+n = int(input().strip())
+L = len(s)
+print(s.count('a') * (n//L) + s[:n % L].count('a'))
+'''
+
 
 def repeatedString(s, n):
     aCnt = s.count('a')
