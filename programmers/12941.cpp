@@ -3,19 +3,17 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
 int solution(vector<int> A, vector<int> B)
 {
     int answer = 0;
-    for (auto num1 : A)
-    {
-        int result = 1000 * 1000 + 1;
-        for (auto num2 : B)
-        {
-            result = min(result, num1 * num2);
-        }
 
-        answer += result;
+    sort(A.begin(), A.end());
+    sort(B.begin(), B.end());
+
+    int j = A.size() - 1;
+    for (int i = 0; i < A.size(); i++)
+    {
+        answer += (A[i] * B[j - i]);
     }
     return answer;
 }

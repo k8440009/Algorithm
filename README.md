@@ -2,6 +2,18 @@
 
 ## BOJ
 
+### 수학
+
+배수와 약수 https://www.acmicpc.net/problem/5086 <br/>
+약수 https://www.acmicpc.net/problem/1037 <br/>
+소인수 분해 https://www.acmicpc.net/problem/11653 <br/>
+직각삼각형 https://www.acmicpc.net/problem/4153 <br/>
+검문 https://www.acmicpc.net/problem/2981 <br/>
+네 번째 점 https://www.acmicpc.net/problem/3009 <br/>
+나머지 https://www.acmicpc.net/problem/3052 <br/>
+택시 기하학 https://www.acmicpc.net/problem/3053 <br/>
+터렛 https://www.acmicpc.net/problem/1002 <br/>
+
 <hr/>
 
 ### Brute Force
@@ -17,10 +29,11 @@
 스타트와 링크 https://www.acmicpc.net/problem/14889 <br/>
 맞춰봐 https://www.acmicpc.net/problem/1248 <br/>
 N-Queen https://www.acmicpc.net/problem/9663 <br/>
+알파벳 https://www.acmicpc.net/problem/1987 <br/>
 
 <hr/>
 
-### Brute Force N & M
+### 백트래킹
 
 N과 M (1) https://www.acmicpc.net/problem/15649 <br/>
 N과 M (2) https://www.acmicpc.net/problem/15650 <br/>
@@ -51,6 +64,7 @@ ABCDE https://www.acmicpc.net/problem/13023 <br/>
 벽 부수고 이동하기 https://www.acmicpc.net/problem/2206 </br>
 탈출 https://www.acmicpc.net/problem/3055 <br/>
 DSLR https://www.acmicpc.net/problem/9019 <br/>
+숨바꼭질 2 https://www.acmicpc.net/problem/12851 <br/>
 숨바꼭질 4 https://www.acmicpc.net/problem/13913 <br/>
 퍼즐 https://www.acmicpc.net/problem/1525 <br/>
 물통 https://www.acmicpc.net/problem/2251 <br/>
@@ -73,6 +87,8 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 가장 큰 증가 부분 수열 https://www.acmicpc.net/problem/11055 <br/>
 가장 긴 감소하는 부분 수열 https://www.acmicpc.net/problem/11722 <br/>
 가장 긴 바이토닉 부분 수열 https://www.acmicpc.net/problem/11054<br/>
+전깃줄 https://www.acmicpc.net/problem/2565 <br/>
+반도체 설계 https://www.acmicpc.net/problem/2352 <br/>
 연속합 https://www.acmicpc.net/problem/1912 <br/>
 연속합 2 https://www.acmicpc.net/problem/13398 <br/>
 제곱수의 합 https://www.acmicpc.net/problem/1699 <br/>
@@ -84,9 +100,34 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 
 ### Greedy
 
+### Simulation
+
+경사로 https://www.acmicpc.net/problem/14890 <br/>
+
+### 분할 정복
+
+쿼드 트리 https://www.acmicpc.net/problem/1992 <br/>
+
+### 스택
+
+균형잡힌 세상 https://www.acmicpc.net/problem/4949 <br/>
+
+### 트리
+
+트리의 부모 찾기 https://www.acmicpc.net/problem/11725 <br/>
+
+### 이분탐색
+
+공유기 설치 https://www.acmicpc.net/problem/2110 <br/>
+
 ### 기타
 
 무한 문자열 https://www.acmicpc.net/problem/12871 <br/>
+A + B - 4 https://www.acmicpc.net/problem/10951 <br/>
+A + B - 7 https://www.acmicpc.net/problem/11021 <br/>
+A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
+하노이 탑 이동 순서 https://www.acmicpc.net/problem/11729 <br/>
+별 찍기 - 10 https://www.acmicpc.net/problem/2447 <br/>
 
 <hr/>
 
@@ -108,9 +149,19 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 2048 (easy) https://www.acmicpc.net/problem/12100 <br/>
 배열 돌리기 1 https://www.acmicpc.net/problem/16926 <br/>
 배열 돌리기 4 https://www.acmicpc.net/problem/17406 <br/>
-치킨 배달 https://www.acmicpc.net/problem/15686 <br>
+치킨 배달 https://www.acmicpc.net/problem/15686 <br/>
+경사로 https://www.acmicpc.net/problem/14890 <br/>
+게리맨더링 https://www.acmicpc.net/problem/17471 <br/>
+다리 만들기 2 https://www.acmicpc.net/problem/17472 <br/>
 
 ### SWEA
+
+#### D1
+
+자릿수 더하기 <br/>
+연월일 달력 <br/>
+
+#### D2
 
 #### D3
 
@@ -118,16 +169,29 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 [S/W 문제해결 기본] 3일차 - 회문1 <br/>
 [S/W 문제해결 기본] 5일차 - Magnetic <br/>
 
+#### D4
+
 <hr/>
 
 ## hackerrank
 
 Sock Merchant <br/>
 Counting Valleys <br/>
+Repeated String <br/>
+Alternating Characters <br/>
 
 2D Array <br/>
 
 HashTables_RansomNote <br/>
+
+Max Array Sum <br/>
+
+Recursion: Fibonacci Numbers <br/>
+
+Revising the Select Query I <br/>
+Revising the Select Query II <br/>
+
+Matching Specific String <br/>
 
 <hr/>
 
@@ -137,15 +201,39 @@ HashTables_RansomNote <br/>
 
 제일 작은 수 제거하기 https://programmers.co.kr/learn/courses/30/lessons/12935 <br/>
 평균 구하기 https://programmers.co.kr/learn/courses/30/lessons/12944 <br/>
+콜라츠 추측 https://programmers.co.kr/learn/courses/30/lessons/12943 <br/>
+핸드폰 번호 가리기 https://programmers.co.kr/learn/courses/30/lessons/12948 <br/>
+최대 공약수와 최소 공배수 https://programmers.co.kr/learn/courses/30/lessons/12940 <br/>
+하샤드 수 https://programmers.co.kr/learn/courses/30/lessons/12947 <br/>
+행렬의 덧셈 https://programmers.co.kr/learn/courses/30/lessons/12950 <br/>
+
+모든 레코드 조회 하기 https://programmers.co.kr/learn/courses/30/lessons/59034 <br/>
+최댓값 구하기 https://programmers.co.kr/learn/courses/30/lessons/59415 <br/>
+역순 정렬하기 https://programmers.co.kr/learn/courses/30/lessons/59035 <br/>
+아픈 동물 찾기 https://programmers.co.kr/learn/courses/30/lessons/59036 <br/>
+여러 기준으로 정렬하기 https://programmers.co.kr/learn/courses/30/lessons/59404 <br/>
+어린 동물 찾기 https://programmers.co.kr/learn/courses/30/lessons/59037 <br/>
 
 <hr/>
 
 ### Level 2
 
 가장 큰 정사각형 찾기 https://programmers.co.kr/learn/courses/30/lessons/12905<hr/>
+소수 만들기 https://programmers.co.kr/learn/courses/30/lessons/12977 <br/>
+최댓값과 최솟값 https://programmers.co.kr/learn/courses/30/lessons/12939 <br/>
+숫자의 표현 https://programmers.co.kr/learn/courses/30/lessons/12924 <br/>
+올바른 괄호 https://programmers.co.kr/learn/courses/30/lessons/12909 <br/>
 
-### Level 3
+최솟값 구하기 https://programmers.co.kr/learn/courses/30/lessons/59038 <br/>
+중복 제거하기 https://programmers.co.kr/learn/courses/30/lessons/59408 <br/>
+
+### Level 3 ~
 
 정수 삼각형 https://programmers.co.kr/learn/courses/30/lessons/43105 <br/>
+
+오픈 채팅방 https://programmers.co.kr/learn/courses/30/lessons/42888 <br/>
+실패율 https://programmers.co.kr/learn/courses/30/lessons/42889 <br/>
+후보키 https://programmers.co.kr/learn/courses/30/lessons/42890 <br/>
+길 찾기 게임 https://programmers.co.kr/learn/courses/30/lessons/42892 <br/>
 
 <hr/>
