@@ -95,6 +95,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 합분해 https://www.acmicpc.net/problem/2225 <br/>
 점프 https://www.acmicpc.net/problem/1890 <br/>
 팰린드롬? https://www.acmicpc.net/problem/10942 <br/>
+LCS https://www.acmicpc.net/problem/9251 <br/>
 
 <hr/>
 
@@ -107,6 +108,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 ### 분할 정복
 
 쿼드 트리 https://www.acmicpc.net/problem/1992 <br/>
+종이의 갯수 https://www.acmicpc.net/problem/1780 <br/>
 
 ### 스택
 
@@ -119,6 +121,10 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 ### 이분탐색
 
 공유기 설치 https://www.acmicpc.net/problem/2110 <br/>
+
+### 최단 경로
+
+최단 경로 https://www.acmicpc.net/problem/1753 <br/>
 
 ### 기타
 
@@ -150,7 +156,10 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 배열 돌리기 1 https://www.acmicpc.net/problem/16926 <br/>
 배열 돌리기 4 https://www.acmicpc.net/problem/17406 <br/>
 치킨 배달 https://www.acmicpc.net/problem/15686 <br/>
+미세먼지 안녕! https://www.acmicpc.net/problem/17144 <br/>
 경사로 https://www.acmicpc.net/problem/14890 <br/>
+감시 https://www.acmicpc.net/problem/15683 <br/>
+나무 재테크 https://www.acmicpc.net/problem/16235 <br/>
 게리맨더링 https://www.acmicpc.net/problem/17471 <br/>
 다리 만들기 2 https://www.acmicpc.net/problem/17472 <br/>
 
@@ -160,8 +169,11 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 
 자릿수 더하기 <br/>
 연월일 달력 <br/>
+2050 알파벳을 숫자로 변환 <br>
 
 #### D2
+
+1859 백만장자 프로젝트 <br/>
 
 #### D3
 
@@ -223,6 +235,7 @@ Matching Specific String <br/>
 최댓값과 최솟값 https://programmers.co.kr/learn/courses/30/lessons/12939 <br/>
 숫자의 표현 https://programmers.co.kr/learn/courses/30/lessons/12924 <br/>
 올바른 괄호 https://programmers.co.kr/learn/courses/30/lessons/12909 <br/>
+더 맵게 https://programmers.co.kr/learn/courses/30/lessons/42626 <br/>
 
 최솟값 구하기 https://programmers.co.kr/learn/courses/30/lessons/59038 <br/>
 중복 제거하기 https://programmers.co.kr/learn/courses/30/lessons/59408 <br/>
