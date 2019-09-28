@@ -2,39 +2,23 @@
 // https://www.acmicpc.net/problem/16926
 #include <bits/stdc++.h>
 using namespace std;
-int N, M, R, CNT;
 const int MAX = 300;
-// 반시계
-int dy[4] = {0, 1, 0, -1};
-int dx[4] = {1, 0, -1, 0};
-int board[MAX][MAX];
-void rotateBoard()
+int N, M, R;
+int board[2][MAX][MAX];
+void rotateBoard(int now, int y, int x, int cnt)
 {
-    for (int i = 0; i < CNT; i++)
-    {
-        int temp = board[i][i];
+    int next = (now + 1) % 2;
 
-        int dir = 0;
-        int y = i;
-        int x = i;
+    int temp = board[now][y][x];
 
-        while (dir < 4)
-        {
-            int ny = y + dy[dir];
-            int nx = x + dx[dir];
-            // 범위에 벗어 날 때 까지 옮기고 범위 밖에 도달하면 꺽는다.
-            if (ny >= i && nx >= i && ny < N - i && nx < M - i)
-            {
-                board[y][x] = board[ny][nx];
-                y = ny;
-                x = nx;
-            }
-            else
-                dir += 1;
-        }
-
-        board[i + 1][i] = temp;
-    }
+    for (int r = y + 1; r < N - cnt; r++)
+        board[next][r][x] = board[now][r - 1][x];
+    for (int c = x + 1; c < M - cnt; c++)
+        board[next][N - 1 - cnt][c] = board[now][N - 1 - cnt][c - 1];
+    for (int r = N - 1 - cnt; r - 1 >= y; r--)
+        board[next][r - 1][M - 1 - cnt] = board[now][r][M - 1 - cnt];
+    for (int c = M - 1 - cnt; c - 1 >= x; c--)
+        board[next][y][c - 1] = board[now][y][c];
 }
 int main()
 {
@@ -46,21 +30,33 @@ int main()
     for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < M; j++)
-            cin >> board[i][j];
+        {
+            cin >> board[0][i][j];
+        }
     }
-    CNT = min(N, M) / 2;
 
-    for (int i = 0; i < R; i++)
-        rotateBoard();
+    int now = 0;
+    int mod = min(N, M) / 2;
+    int y = 0;
+    int x = 0;
+
+    for (int t = 0; t < R; t++)
+    {
+        for (int i = 0; i < mod; i++)
+        {
+            rotateBoard(now, y + i, x + i, i);
+        }
+        now = (now + 1) % 2;
+    }
 
     for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < M; j++)
         {
-            cout << board[i][j] << ' ';
+            cout << board[now][i][j] << ' ';
         }
         cout << '\n';
     }
-    cout << '\n';
+
     return 0;
 }
