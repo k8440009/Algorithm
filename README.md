@@ -154,6 +154,8 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 인구이동 https://www.acmicpc.net/problem/16234 <br/>
 2048 (easy) https://www.acmicpc.net/problem/12100 <br/>
 배열 돌리기 1 https://www.acmicpc.net/problem/16926 <br/>
+배열 돌리기 2 https://www.acmicpc.net/problem/16927 <br/>
+배열 돌리기 3 https://www.acmicpc.net/problem/16935 <br/>
 배열 돌리기 4 https://www.acmicpc.net/problem/17406 <br/>
 치킨 배달 https://www.acmicpc.net/problem/15686 <br/>
 미세먼지 안녕! https://www.acmicpc.net/problem/17144 <br/>
