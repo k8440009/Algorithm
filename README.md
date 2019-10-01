@@ -134,6 +134,8 @@ A + B - 7 https://www.acmicpc.net/problem/11021 <br/>
 A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 하노이 탑 이동 순서 https://www.acmicpc.net/problem/11729 <br/>
 별 찍기 - 10 https://www.acmicpc.net/problem/2447 <br/>
+좌표 정렬하기 https://www.acmicpc.net/problem/11650 <br/>
+좌표 정렬하기 2 https://www.acmicpc.net/problem/11651 <br/>
 
 <hr/>
 
