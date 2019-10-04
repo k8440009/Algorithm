@@ -109,6 +109,8 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 
 쿼드 트리 https://www.acmicpc.net/problem/1992 <br/>
 종이의 갯수 https://www.acmicpc.net/problem/1780 <br/>
+행렬 곱셈 https://www.acmicpc.net/problem/2740 <br/>
+행렬 제곱 https://www.acmicpc.net/problem/10830 <br/>
 
 ### 스택
 
@@ -164,6 +166,7 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 경사로 https://www.acmicpc.net/problem/14890 <br/>
 감시 https://www.acmicpc.net/problem/15683 <br/>
 나무 재테크 https://www.acmicpc.net/problem/16235 <br/>
+드래곤 커브 https://www.acmicpc.net/problem/15685 <br/>
 게리맨더링 https://www.acmicpc.net/problem/17471 <br/>
 다리 만들기 2 https://www.acmicpc.net/problem/17472 <br/>
 
