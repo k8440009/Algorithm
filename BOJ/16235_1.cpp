@@ -1,5 +1,8 @@
 // 나무 재테크
 // https://www.acmicpc.net/problem/16235
+/*
+    구현은 쉬워 보이나 자료구조 잘못쓰면 골로감
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

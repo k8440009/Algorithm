@@ -1,15 +1,18 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <algorithm>
 using namespace std;
 const int MAX = 10;
 const int INF = 987654321;
 int N, answer;
-vector<vector<int>> graph;
 vector<int> people;
-// 팀 번호, 배열 -> 연결되어 있는지 확인
+vector<vector<int>> graph;
 bool bfs(int teamNum, int team[])
 {
     bool visited[MAX];
     fill_n(visited, MAX, 0);
+
     queue<int> q;
 
     for (int i = 0; i < N; i++)
@@ -29,13 +32,13 @@ bool bfs(int teamNum, int team[])
 
         for (int i = 0; i < N; i++)
         {
+            // 방문했거나 우리 팀이 아닌 경우 pass
             if (visited[i] || teamNum != team[i])
                 continue;
-
+            // 우리팀인 경우 연결된 경로에서 다른 우리팀 노드를 찾는다.
             for (int j = 0; j < graph[cur].size(); j++)
             {
-                // 포함된 경우
-                if (graph[cur][j] == i)
+                if (i == graph[cur][j])
                 {
                     q.push(i);
                     visited[i] = true;
@@ -48,17 +51,17 @@ bool bfs(int teamNum, int team[])
     {
         if (teamNum != team[i])
             continue;
-        else if (!visited[i])
+        if (!visited[i])
             return false;
     }
 
     return true;
 }
+// 재귀로 팀 정하기
 void setTeam(int index, int team[])
 {
     if (index == N)
     {
-
         if (bfs(0, team) && bfs(1, team))
         {
             int zero = 0, one = 0;
@@ -69,14 +72,16 @@ void setTeam(int index, int team[])
                 else
                     one += people[i];
             }
+
             answer = min(answer, abs(zero - one));
         }
+
         return;
     }
 
-    team[index] = 1;
+    team[index] = 1; // 1번 팀
     setTeam(index + 1, team);
-    team[index] = 0;
+    team[index] = 0; // 0번 팀
     setTeam(index + 1, team);
 }
 int main()
@@ -86,6 +91,7 @@ int main()
     cout.tie(0);
 
     cin >> N;
+
     people.resize(N);
     graph.resize(N);
 
@@ -98,19 +104,19 @@ int main()
         cin >> v;
         while (v--)
         {
-            int edge;
-            cin >> edge;
-            graph[i].push_back(edge - 1);
+            int node;
+            cin >> node;
+            graph[i].push_back(node - 1);
         }
     }
 
     answer = INF;
     int team[MAX];
     setTeam(0, team);
-
     if (answer == INF)
         answer = -1;
 
     cout << answer << '\n';
+
     return 0;
 }
