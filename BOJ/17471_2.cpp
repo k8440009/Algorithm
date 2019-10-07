@@ -1,3 +1,5 @@
+// 게리맨더링
+// https://www.acmicpc.net/problem/17471
 #include <bits/stdc++.h>
 using namespace std;
 const int MAX = 10;

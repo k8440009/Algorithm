@@ -1,3 +1,5 @@
+// 드래곤 커브
+// https://www.acmicpc.net/problem/15685
 #include <iostream>
 using namespace std;
 const int MAX = 100 + 1;
