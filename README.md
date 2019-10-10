@@ -150,6 +150,7 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 로봇 청소기 https://www.acmicpc.net/problem/4991 <br/>
 시험 감독 https://www.acmicpc.net/problem/13458 <br/>
 구슬 탈출 2 https://www.acmicpc.net/problem/13460 <br/>
+주사위 굴리기 https://www.acmicpc.net/problem/14499 <br/>
 테트로미노 https://www.acmicpc.net/problem/14500 <br/>
 퇴사 https://www.acmicpc.net/problem/14501 <br/>
 연구소 https://www.acmicpc.net/problem/14502 <br/>
@@ -167,11 +168,16 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 감시 https://www.acmicpc.net/problem/15683 <br/>
 드래곤 커브 https://www.acmicpc.net/problem/15685 <br/>
 나무 재테크 https://www.acmicpc.net/problem/16235 <br/>
+파이프 옮기기 1 https://www.acmicpc.net/problem/17070 <br/>
 캐슬 디펜스 https://www.acmicpc.net/problem/17135 <br/>
 연구소 3 https://www.acmicpc.net/problem/17142 <br/>
 낚시왕 https://www.acmicpc.net/problem/17143 <br/>
 게리맨더링 https://www.acmicpc.net/problem/17471 <br/>
 다리 만들기 2 https://www.acmicpc.net/problem/17472 <br/>
+배열 돌리기 1 https://www.acmicpc.net/problem/16926 <br/>
+배열 돌리기 2 https://www.acmicpc.net/problem/16927 <br/>
+배열 돌리기 3 https://www.acmicpc.net/problem/16935 <br/>
+배열 돌리기 4 https://www.acmicpc.net/problem/17406 <br/>
 
 ### SWEA
 
@@ -258,6 +264,10 @@ Matching Specific String <br/>
 실패율 https://programmers.co.kr/learn/courses/30/lessons/42889 <br/>
 후보키 https://programmers.co.kr/learn/courses/30/lessons/42890 <br/>
 길 찾기 게임 https://programmers.co.kr/learn/courses/30/lessons/42892 <br/>
+
+### 모의 SW 역량 테스트
+
+요리사 <br/>
 
 <hr/>
 <hr/>
