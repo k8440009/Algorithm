@@ -10,38 +10,45 @@ const int MAX = 50;
 const int INF = 987654321;
 const int dy[4] = {1, -1, 0, 0};
 const int dx[4] = {0, 0, 1, -1};
-int N, M, cnt, answer = INF;
+int N, M, answer = INF;
 
 int board[MAX][MAX];
 int practice[MAX][MAX];
-vector<pair<int, int>> pick;
+vector<pair<int, int>> virus;
+bool selected[10];
 void activeVirus()
 {
+    int time = 0, infect = 0, blank = 0;
     int dist[MAX][MAX];
-    int time = 0, infect = 0, blank;
-
-    blank = cnt - pick.size();
     for (int y = 0; y < N; y++)
     {
         for (int x = 0; x < N; x++)
         {
             practice[y][x] = board[y][x];
-            if (practice[y][x] == 2)
+            dist[y][x] = -1;
+            if (board[y][x] == 0)
+                blank += 1;
+            else if (board[y][x] == 2)
             {
                 practice[y][x] = 0;
                 blank += 1;
             }
-
-            dist[y][x] = -1;
         }
     }
 
     queue<pair<int, int>> q;
-    for (int i = 0; i < pick.size(); i++)
+
+    for (int i = 0; i < virus.size(); i++)
     {
-        practice[pick[i].first][pick[i].second] = 2;
-        dist[pick[i].first][pick[i].second] = 0;
-        q.push(make_pair(pick[i].first, pick[i].second));
+        if (selected[i])
+        {
+            int y = virus[i].first;
+            int x = virus[i].second;
+            q.push(make_pair(y, x));
+            practice[y][x] = 2;
+            dist[y][x] = 0;
+            blank -= 1;
+        }
     }
 
     while (!q.empty())
@@ -62,10 +69,11 @@ void activeVirus()
             if (practice[ny][nx] != 1 && dist[ny][nx] == -1)
             {
                 dist[ny][nx] = dist[y][x] + 1;
-                if (board[y][x] == 0)
+
+                if (practice[ny][nx] == 0)
                 {
-                    infect += 1;
                     time = dist[ny][nx];
+                    infect += 1;
                 }
 
                 q.push(make_pair(ny, nx));
@@ -76,7 +84,8 @@ void activeVirus()
     if (infect == blank)
         answer = min(answer, time);
 }
-void dfs(int cnt, int r, int c)
+
+void dfs(int index, int cnt)
 {
     if (cnt == M)
     {
@@ -84,18 +93,11 @@ void dfs(int cnt, int r, int c)
         return;
     }
 
-    for (int y = r; y < N; y++)
+    for (int i = index; i < virus.size(); i++)
     {
-        for (int x = c; x < N; x++)
-        {
-            if (board[y][x] == 2)
-            {
-                pick.push_back(make_pair(y, x));
-                dfs(cnt + 1, y, x);
-                pick.pop_back();
-            }
-        }
-        c = 0;
+        selected[i] = true;
+        dfs(i + 1, cnt + 1);
+        selected[i] = false;
     }
 }
 int main()
@@ -110,14 +112,14 @@ int main()
         for (int x = 0; x < N; x++)
         {
             cin >> board[y][x];
-            if (board[y][x] == 0)
+            if (board[y][x] == 2)
             {
-                cnt += 1;
+                virus.push_back(make_pair(y, x));
             }
         }
     }
     // cnt, y,x
-    dfs(0, 0, 0);
+    dfs(0, 0);
     if (answer == INF)
         answer = -1;
     cout << answer << '\n';

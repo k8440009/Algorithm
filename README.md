@@ -170,6 +170,7 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 나무 재테크 https://www.acmicpc.net/problem/16235 <br/>
 파이프 옮기기 1 https://www.acmicpc.net/problem/17070 <br/>
 캐슬 디펜스 https://www.acmicpc.net/problem/17135 <br/>
+연구소 2 https://www.acmicpc.net/problem/17141 <br/>
 연구소 3 https://www.acmicpc.net/problem/17142 <br/>
 낚시왕 https://www.acmicpc.net/problem/17143 <br/>
 게리맨더링 https://www.acmicpc.net/problem/17471 <br/>
