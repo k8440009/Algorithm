@@ -1,4 +1,4 @@
-// 톱니바퀴
+// 톱니바퀴 deque
 // https://www.acmicpc.net/problem/14891
 #include <iostream>
 #include <deque>
