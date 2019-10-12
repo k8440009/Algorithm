@@ -15,18 +15,52 @@ void active()
 {
     int y = cleaner[0].first;
     int x = cleaner[0].second;
-    // 아래
-    for (int r = 0; r < y; r++)
+    // 윗 공기 청정기
+    // 왼쪽
+    for (int r = y - 1; r - 1 >= 0; r--)
     {
-        board[r + 1][0] = board[r][0];
+        board[r][0] = board[r - 1][0];
+    }
+    //위
+    for (int c = 0; c + 1 < C; c++)
+    {
+        board[0][c] = board[0][c + 1];
     }
     // 오른쪽
-    for (int c = 1; c < C; c++)
+    for (int r = 0; r + 1 <= y; r++)
     {
-        board[y + 1][c] = board[y][c];
+        board[r][C - 1] = board[r + 1][C - 1];
+    }
+    // 아래
+    for (int c = C - 1; c - 1 >= 1; c--)
+    {
+        board[y][c] = board[y][c - 1];
+    }
+    board[y][x + 1] = 0;
+    // 아랫 공기
+    y = cleaner[1].first;
+    x = cleaner[1].second;
+    // 왼쪽
+    for (int r = y + 1; r + 1 < R; r++)
+    {
+        board[r][0] = board[r + 1][0];
+    }
+    // 아래
+    for (int c = 0; c + 1 < C; c++)
+    {
+        board[R - 1][c] = board[R - 1][c + 1];
+    }
+    // 오른쪽
+    for (int r = R - 1; r - 1 >= y; r--)
+    {
+        board[r][C - 1] = board[r - 1][C - 1];
     }
     // 위
-    // 왼쪽
+    for (int c = C - 1; c - 1 >= 1; c--)
+    {
+        board[y][c] = board[y][c - 1];
+    }
+    board[y][x + 1] = 0;
 }
 void spread()
 {
@@ -37,7 +71,7 @@ void spread()
             if (board[r][c] > 0)
             {
                 int spreadDust = board[r][c] / 5;
-                int cnt = 0; // 확산되는 곳
+                int value = 0; // 확산되는 곳
                 for (int dir = 0; dir < 4; dir++)
                 {
                     int nr = r + dr[dir];
@@ -47,16 +81,30 @@ void spread()
                         continue;
 
                     dust[nr][nc] += spreadDust;
-                    cnt += 1;
+                    value += spreadDust;
                 }
-                dust[r][c] = spreadDust - (spreadDust)*cnt;
+                dust[r][c] += (board[r][c] - value);
             }
         }
     }
 
     for (int r = 0; r < R; r++)
+    {
         for (int c = 0; c < C; c++)
-            board[r][c] = dust[r][c];
+        {
+
+            if (board[r][c] == -1)
+            {
+                dust[r][c] = -1;
+                continue;
+            }
+            else
+            {
+                board[r][c] = dust[r][c];
+                dust[r][c] = 0;
+            }
+        }
+    }
 }
 int main()
 {
@@ -87,5 +135,18 @@ int main()
         spread();
         active();
     }
+
+    int answer = 0;
+    for (int r = 0; r < R; r++)
+    {
+        for (int c = 0; c < C; c++)
+        {
+            if (board[r][c] == -1)
+                continue;
+            answer += board[r][c];
+        }
+    }
+    cout << answer << '\n';
+
     return 0;
 }

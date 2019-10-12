@@ -1,8 +1,6 @@
 // 주사위 굴리기
 // https://www.acmicpc.net/problem/14499
 #include <iostream>
-#include <vector>
-#include <algorithm>
 using namespace std;
 const int MAX = 20 + 1;
 int N, M, K;
@@ -10,9 +8,11 @@ int board[MAX][MAX];
 int dy[4] = {0, 0, -1, 1};
 int dx[4] = {1, -1, 0, 0};
 int dice[6];
+
 void moveDice(int dir)
 {
     int ndice[6];
+
     switch (dir)
     {
     case 0:
@@ -50,32 +50,33 @@ void moveDice(int dir)
     default:
         break;
     }
-
     for (int i = 0; i < 6; i++)
         dice[i] = ndice[i];
 }
+
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
+
     int y, x;
     cin >> N >> M >> y >> x >> K;
     for (int r = 0; r < N; r++)
     {
         for (int c = 0; c < M; c++)
-        {
             cin >> board[r][c];
-        }
     }
+
     for (int i = 0; i < K; i++)
     {
         int dir;
         cin >> dir;
         dir -= 1;
-
+        // 돌려짐
         int ny = y + dy[dir];
         int nx = x + dx[dir];
+
         if (ny < 0 || ny >= N || nx < 0 || nx >= M)
             continue;
 
