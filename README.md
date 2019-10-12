@@ -192,14 +192,22 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 #### D2
 
 1859 백만장자 프로젝트 <br/>
+1954 달팽이 숫자 <br/>
+1974 스도쿠 검증 <br/>
 
 #### D3
 
+1209 Sum <br/>
 준환이의 운동관리 <br/>
 [S/W 문제해결 기본] 3일차 - 회문1 <br/>
 [S/W 문제해결 기본] 5일차 - Magnetic <br/>
 
 #### D4
+
+#### 모의 SW 역량 테스트
+
+4012 요리사 <br/>
+특이한 자석 <br/>
 
 <hr/>
 
@@ -267,11 +275,6 @@ Matching Specific String <br/>
 후보키 https://programmers.co.kr/learn/courses/30/lessons/42890 <br/>
 길 찾기 게임 https://programmers.co.kr/learn/courses/30/lessons/42892 <br/>
 
-### 모의 SW 역량 테스트
-
-요리사 <br/>
-
-<hr/>
 <hr/>
 
 # DataStruct
