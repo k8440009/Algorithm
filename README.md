@@ -158,6 +158,7 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 로봇 청소기 https://www.acmicpc.net/problem/14503 <br/>
 인구이동 https://www.acmicpc.net/problem/16234 <br/>
 2048 (easy) https://www.acmicpc.net/problem/12100 <br/>
+톱니 바퀴 https://www.acmicpc.net/problem/14891 <br/>
 배열 돌리기 1 https://www.acmicpc.net/problem/16926 <br/>
 배열 돌리기 2 https://www.acmicpc.net/problem/16927 <br/>
 배열 돌리기 3 https://www.acmicpc.net/problem/16935 <br/>
@@ -209,9 +210,10 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 
 #### 모의 SW 역량 테스트
 
-4012 요리사 <br/>
-특이한 자석 <br/>
-5656 줄기세포배양 <br/>
+4012 [모의 SW 역량테스트] 요리사 <br/>
+4130 [모의 SW 역량테스트] 특이한 자석 <br/>
+5644 [모의 SW 역량테스트] 무선 충전 <br/>
+5656 [모의 SW 역량테스트] 줄기세포배양 <br/>
 
 <hr/>
 
