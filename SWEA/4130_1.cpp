@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+int k;
 int gear[4][8];
 int main()
 {
@@ -14,9 +15,7 @@ int main()
     cin >> tc;
     for (int ts = 1; ts <= tc; ts++)
     {
-        int k;
         cin >> k;
-        int gear[4][8];
         for (int i = 0; i < 4; i++)
             for (int j = 0; j < 8; j++)
                 cin >> gear[i][j];
