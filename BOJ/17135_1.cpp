@@ -1,36 +1,74 @@
 // 캐슬 디펜스
 // https://www.acmicpc.net/problem/17135
 #include <iostream>
-#include <vector>
-#include <algorithm>
 using namespace std;
-const int MAX = 15;
-int N, M, D, answer;
-int enemy;
+int N, M, D;
+const int MAX = 15 + 3;
 int board[MAX][MAX];
-bool selected[MAX];
-void active()
+int practice[MAX][MAX];
+void simulate()
 {
-    // 공격
-    for (int i = 0; i < M; i++)
+    int cnt = 0;
+    int sum = 0;
+    boardCopy();
+    while (true)
     {
+        if (boardCopy)
+            break;
     }
-    // 적 이동
+}
+void move()
+{
+    for (int y = N - 1; y >= 0; y--)
+    {
+        for (int x = 0; x < M; x++)
+        {
+            // 밖으로 이동
+            if (y == N - 1)
+                practice[y][x] = 0;
+            else
+            {
+                practice[y + 1][x] = board[y][x];
+                practice[y][x] = 0;
+            }
+        }
+    }
+}
+bool boardCopy()
+{
+    for (int y = 0; y < N; y++)
+    {
+        for (int x = 0; x < M; x++)
+        {
+            practice[y][x] = board[y][x];
+        }
+    }
+}
+bool boardCheck()
+{
+    for (int y = 0; y < N; y++)
+    {
+        for (int x = 0; x < M; x++)
+        {
+            if (practice[y][x] == 1)
+                return false;
+        }
+    }
+    return true;
 }
 void dfs(int index, int cnt)
 {
     if (cnt == 3)
     {
-        // 2. 궁수 3명 선택 후, 실행
-        active();
+        simulate();
         return;
     }
 
     for (int i = index; i < M; i++)
     {
-        selected[i] = true;
-        dfs(index + 1, cnt + 1);
-        selected[i] = false;
+        board[N][i] = 1;
+        dfs(i + 1, cnt + 1);
+        board[N][i] = 0;
     }
 }
 int main()
@@ -40,19 +78,16 @@ int main()
     cout.tie(0);
 
     cin >> N >> M >> D;
-    for (int i = 0; i < N; i++)
+    for (int y = 0; y < N; y++)
     {
-        for (int j = 0; j < M; j++)
+        for (int x = 0; x < M; x++)
         {
-            cin >> board[i][j];
-            if (board[i][j] == 1)
-                enemy += 1;
+            cin >> board[y][x];
         }
     }
 
-    answer = 0;
-    // 1. 궁수 선택
+    int answer = 0;
     dfs(0, 0);
-
+    cout << answer << '\n';
     return 0;
 }

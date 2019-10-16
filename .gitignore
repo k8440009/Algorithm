@@ -1,6 +1,7 @@
 .DS_Store
 .vscode
 *.exe
+.gitignore
 /AlgorithmTest
 /test
 
