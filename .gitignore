@@ -3,7 +3,7 @@
 *.exe
 .gitignore
 /AlgorithmTest
-/test
+/Test
 
 # Created by https://www.gitignore.io/api/c++,python
 # Edit at https://www.gitignore.io/?templates=c++,python

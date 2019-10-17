@@ -31,21 +31,72 @@ int main()
     while (isUpdate)
     {
         isUpdate = false;
-        int status[MAX][MAX] = {
-            0,
-        };
-        int areaIndex = 0;
-        int count[25001] = {
-            0,
-        };
+
+        bool visited[MAX][MAX];
+        fill_n(visited[0], MAX * MAX, 0);
+
+        vector<pair<int, int>> alias;
+        queue<pair<int, int>> q;
+
         for (int y = 0; y < N; y++)
         {
             for (int x = 0; x < N; x++)
             {
-                if (status[y][x] == 0)
+                if (visited[y][x])
+                    continue;
+
+                int total = 0;
+
+                q.push(make_pair(y, x));
+                alias.push_back(make_pair(y, x));
+                visited[y][x] = true;
+                total += board[y][x];
+
+                while (!q.empty())
                 {
+                    pair<int, int> cur = q.front();
+                    q.pop();
+
+                    for (int dir = 0; dir < 4; dir++)
+                    {
+                        int ny = cur.first + dy[dir];
+                        int nx = cur.second + dx[dir];
+
+                        if (ny < 0 || ny >= N || nx < 0 || nx >= N || visited[ny][nx])
+                            continue;
+
+                        int dist = abs(board[ny][nx] - board[cur.first][cur.second]);
+                        if (dist >= L && dist <= R)
+                        {
+                            alias.push_back(make_pair(ny, nx));
+                            q.push(make_pair(ny, nx));
+                            visited[ny][nx] = true;
+                            total += board[ny][nx];
+                            isUpdate = true;
+                        }
+                    }
+                }
+
+                if (alias.size() == 1)
+                {
+                    alias.clear();
+                    continue;
+                }
+                else
+                {
+                    int people = total / alias.size();
+                    for (int i = 0; i < alias.size(); i++)
+                    {
+                        board[alias[i].first][alias[i].second] = people;
+                    }
+                    alias.clear();
                 }
             }
         }
-        return 0;
+
+        answer += 1;
     }
+
+    cout << answer - 1 << '\n';
+    return 0;
+}
