@@ -39,6 +39,12 @@ void move()
         int size = q.front().z;
         q.pop();
 
+        int goback = 2 * (R - 1);
+        if (dir == 2 || dir == 3)
+        {
+            goback = 2 * (C - 1);
+        }
+        speed %= goback;
         // 속도만큼 움직임
         for (int i = 0; i < speed; i++)
         {
