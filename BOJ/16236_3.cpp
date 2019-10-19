@@ -1,23 +1,23 @@
 // 아기 상어
 // https://www.acmicpc.net/problem/16236
 #include <iostream>
+#include <vector>
 #include <queue>
+#include <algorithm>
 using namespace std;
 const int MAX = 20 + 1;
-const int dy[] = {1, -1, 0, 0};
-const int dx[] = {0, 0, 1, -1};
+const int dy[] = {0, 0, -1, 1};
+const int dx[] = {-1, 1, 0, 0};
 struct FISH
 {
     int y, x, time;
 };
 FISH shark;
-int sharkSize = 2, sharkEat = 0;
-int N;
+int sharkSize, sharkEat;
 int board[MAX][MAX];
-bool visited[MAX][MAX];
+int N;
 int main()
 {
-
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
@@ -31,20 +31,20 @@ int main()
             if (board[y][x] == 9)
             {
                 shark.y = y, shark.x = x, shark.time = 0;
+                sharkSize = 2, sharkEat = 0;
                 board[y][x] = 0;
             }
         }
     }
 
-    visited[shark.y][shark.x] = true;
     bool isUpdate = true;
     while (isUpdate)
     {
         isUpdate = false;
-
         bool visited[MAX][MAX];
         fill_n(visited[0], MAX * MAX, 0);
         queue<FISH> q;
+        visited[shark.y][shark.x] = true;
         q.push(shark);
 
         FISH candi;
@@ -59,8 +59,7 @@ int main()
             {
                 break;
             }
-            // 잡아 먹음
-            if (board[cur.y][cur.x] < sharkSize && sharkSize != 0)
+            if (board[cur.y][cur.x] < sharkSize && board[cur.y][cur.x] != 0)
             {
                 isUpdate = true;
                 if (candi.y > cur.y || (candi.y == cur.y) && candi.x > cur.x)
@@ -88,6 +87,7 @@ int main()
 
         if (isUpdate)
         {
+            shark = candi;
             sharkEat += 1;
             if (sharkEat == sharkSize)
             {

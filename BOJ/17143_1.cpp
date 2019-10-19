@@ -45,6 +45,7 @@ void move()
             goback = 2 * (C - 1);
         }
         speed %= goback;
+
         // 속도만큼 움직임
         for (int i = 0; i < speed; i++)
         {
