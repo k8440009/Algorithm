@@ -33,19 +33,6 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 
 <hr/>
 
-### 백트래킹
-
-N과 M (1) https://www.acmicpc.net/problem/15649 <br/>
-N과 M (2) https://www.acmicpc.net/problem/15650 <br/>
-N과 M (3) https://www.acmicpc.net/problem/15651 <br/>
-N과 M (4) https://www.acmicpc.net/problem/15652 <br/>
-N과 M (5) https://www.acmicpc.net/problem/15654 <br/>
-N과 M (6) https://www.acmicpc.net/problem/15655 <br/>
-N과 M (7) https://www.acmicpc.net/problem/15656 <br/>
-N과 M (8) https://www.acmicpc.net/problem/15657 <br/>
-N과 M (9) https://www.acmicpc.net/problem/15663 <br/>
-N과 M (10) https://www.acmicpc.net/problem/15664 <br>
-
 <hr/>
 
 ### 비트 마스크
@@ -141,6 +128,46 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 
 <hr/>
 
+## 2019 알고리즘 기초 1/2
+
+### 401 - 다이나믹 프로그래밍 1 (연습)
+
+2133 타일 채우기 https://www.acmicpc.net/problem/2133 <br/>
+
+### 402 - 다이나믹 프로그래밍 1 (도전)
+
+1309 동물원 https://www.acmicpc.net/problem/1309 <br/>
+
+## 2019 알고리즘 기초 2/2
+
+### 500 - 브루트 포스
+
+사탕 게임 https://www.acmicpc.net/problem/3085 <br/>
+
+### 510 - 브루트 포스 (N과 M)
+
+N과 M (1) https://www.acmicpc.net/problem/15649 <br/>
+N과 M (2) https://www.acmicpc.net/problem/15650 <br/>
+N과 M (3) https://www.acmicpc.net/problem/15651 <br/>
+N과 M (4) https://www.acmicpc.net/problem/15652 <br/>
+N과 M (5) https://www.acmicpc.net/problem/15654 <br/>
+N과 M (6) https://www.acmicpc.net/problem/15655 <br/>
+N과 M (7) https://www.acmicpc.net/problem/15656 <br/>
+N과 M (8) https://www.acmicpc.net/problem/15657 <br/>
+N과 M (9) https://www.acmicpc.net/problem/15663 <br/>
+N과 M (10) https://www.acmicpc.net/problem/15664 <br/>
+N과 M (11) https://www.acmicpc.net/problem/15665 <br/>
+
+### 600 - 그래프 1
+
+나이트 이동 https://www.acmicpc.net/problem/7562 <br/>
+
+### 601 - 그래프 1 (연습)
+
+Two Dots https://www.acmicpc.net/problem/16929 <br/>
+
+<hr/>
+
 ## 삼성
 
 ### BOJ 복원
@@ -181,6 +208,8 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 배열 돌리기 2 https://www.acmicpc.net/problem/16927 <br/>
 배열 돌리기 3 https://www.acmicpc.net/problem/16935 <br/>
 배열 돌리기 4 https://www.acmicpc.net/problem/17406 <br/>
+괄호 추가하기 https://www.acmicpc.net/problem/16637 <br/>
+캐슬 디펜스 https://www.acmicpc.net/problem/17135 <br/>
 
 ### SWEA
 
