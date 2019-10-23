@@ -4,22 +4,15 @@
 using namespace std;
 const int MAX = 30 + 1;
 int dp[MAX];
-/*
-    참고
-    https://mizzo-dev.tistory.com/entry/baekjoon2133
-*/
+int N;
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
 
-    int N;
     cin >> N;
-
-    dp[0] = 1;
-    dp[1] = 0;
-    dp[2] = 3;
+    dp[0] = 1, dp[1] = 0, dp[2] = 3;
 
     if (N % 2 == 0)
     {
@@ -35,5 +28,6 @@ int main()
     }
 
     cout << dp[N] << '\n';
+
     return 0;
 }
