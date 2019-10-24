@@ -6,6 +6,7 @@
 #include <vector>
 using namespace std;
 const int MAX = 100 + 1;
+const int INF = 987654321;
 int N, M;
 int dist[MAX];
 vector<int> position(MAX);
@@ -16,6 +17,12 @@ int main()
     cout.tie(0);
 
     cin >> N >> M;
+    for (int i = 1; i <= 100; i++)
+    {
+        position[i] = i;
+        dist[i] = -1;
+    }
+
     for (int i = 0; i < N + M; i++)
     {
         int x, y;
@@ -23,66 +30,32 @@ int main()
         position[x] = y;
     }
 
-    fill_n(dist, MAX, -1);
-
     queue<int> q;
     q.push(1);
     dist[1] = 0;
 
+    int answer = INF;
     while (!q.empty())
     {
         int cur = q.front();
         q.pop();
 
-        if (cur == 100)
+        for (int dice = 1; dice <= 6; dice++)
         {
-            cout << dist[cur] << '\n';
-            break;
-        }
+            int next = cur + dice;
 
-        for (int num = 1; num <= 6; num++)
-        {
-            int next = cur + num;
-
-            if (next >= MAX)
+            if (next > 100)
                 continue;
 
+            next = position[next];
             if (dist[next] == -1)
             {
-                if (position[next] != 0)
-                {
-                    dist[position[next]] = dist[cur] + 1;
-                    q.push(position[next]);
-                }
-                else
-                {
-                    dist[next] = dist[cur] + 1;
-                    q.push(next);
-                }
-            }
-            else if (dist[next] > dist[cur] + 1)
-            {
-                if (position[next] != 0)
-                {
-                    if (dist[position[next]] > dist[cur] + 1)
-                    {
-                        dist[position[next]] = dist[cur] + 1;
-                        q.push(position[next]);
-                    }
-                    else
-                    {
-                        dist[next] = dist[cur] + 1;
-                        q.push(next);
-                    }
-                }
-                else
-                {
-                    dist[next] = dist[cur] + 1;
-                    q.push(next);
-                }
+                dist[next] = dist[cur] + 1;
+                q.push(next);
             }
         }
     }
 
+    cout << dist[100] << '\n';
     return 0;
 }

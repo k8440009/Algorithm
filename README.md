@@ -128,7 +128,7 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 
 <hr/>
 
-## 2019 알고리즘 기초 1/2
+## 2019 알고리즘 기초
 
 ### 401 - 다이나믹 프로그래밍 1 (연습)
 
@@ -137,8 +137,6 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 ### 402 - 다이나믹 프로그래밍 1 (도전)
 
 1309 동물원 https://www.acmicpc.net/problem/1309 <br/>
-
-## 2019 알고리즘 기초 2/2
 
 ### 500 - 브루트 포스
 
@@ -157,6 +155,15 @@ N과 M (8) https://www.acmicpc.net/problem/15657 <br/>
 N과 M (9) https://www.acmicpc.net/problem/15663 <br/>
 N과 M (10) https://www.acmicpc.net/problem/15664 <br/>
 N과 M (11) https://www.acmicpc.net/problem/15665 <br/>
+N과 M (12) https://www.acmicpc.net/problem/15666 <br/>
+
+### 530 - 브루트 포스 - 재귀
+
+링크와 스타트 https://www.acmicpc.net/problem/15661 <br/>
+
+### 540 - 브루트 포스 - 비트마스크
+
+집합 https://www.acmicpc.net/problem/11723 <br/>
 
 ### 600 - 그래프 1
 
@@ -165,6 +172,21 @@ N과 M (11) https://www.acmicpc.net/problem/15665 <br/>
 ### 601 - 그래프 1 (연습)
 
 Two Dots https://www.acmicpc.net/problem/16929 <br/>
+서울 지하철 2호선 https://www.acmicpc.net/problem/16947 <br/>
+
+### 602 - 그래프 1 (도전)
+
+BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
+
+## 2019 알고리즘 중급
+
+### 531 - 브루트 포스 - 재귀 (연습)
+
+부분수열의 합 https://www.acmicpc.net/problem/14225 <br/>
+
+### 611 - BFS 연습
+
+뱀과 사다리 게임 https://www.acmicpc.net/problem/16928 <br/>
 
 <hr/>
 
@@ -210,6 +232,7 @@ Two Dots https://www.acmicpc.net/problem/16929 <br/>
 배열 돌리기 4 https://www.acmicpc.net/problem/17406 <br/>
 괄호 추가하기 https://www.acmicpc.net/problem/16637 <br/>
 캐슬 디펜스 https://www.acmicpc.net/problem/17135 <br/>
+원판 돌리기 https://www.acmicpc.net/problem/17822 <br/>
 
 ### SWEA
 
@@ -327,5 +350,11 @@ Matching Specific String <br/>
 ## Queue
 
 ## Sort
+
+<hr/>
+
+# 참고
+
+https://github.com/tony9402/baekjoon/tree/master
 
 <hr/>
