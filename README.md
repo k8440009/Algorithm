@@ -125,18 +125,30 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 별 찍기 - 10 https://www.acmicpc.net/problem/2447 <br/>
 좌표 정렬하기 https://www.acmicpc.net/problem/11650 <br/>
 좌표 정렬하기 2 https://www.acmicpc.net/problem/11651 <br/>
+!밑비 급일 https://www.acmicpc.net/problem/11365 <br/>
 
 <hr/>
 
+## 2019 SW 역량 테스트 준비 - 연습
+
+평범한 배낭 https://www.acmicpc.net/problem/12865 <br/>
+
+## 2019 SW 역량 테스트 준비 - 문제
+
 ## 2019 알고리즘 기초
+
+### 400 - 다이나믹 프로그래밍 1
+
+1로 만들기 https://www.acmicpc.net/problem/1463 <br/>
 
 ### 401 - 다이나믹 프로그래밍 1 (연습)
 
-2133 타일 채우기 https://www.acmicpc.net/problem/2133 <br/>
+타일 채우기 https://www.acmicpc.net/problem/2133 <br/>
 
 ### 402 - 다이나믹 프로그래밍 1 (도전)
 
-1309 동물원 https://www.acmicpc.net/problem/1309 <br/>
+동물원 https://www.acmicpc.net/problem/1309 <br/>
+RGB거리 2 https://www.acmicpc.net/problem/17404 <br/>
 
 ### 500 - 브루트 포스
 
@@ -167,6 +179,7 @@ N과 M (12) https://www.acmicpc.net/problem/15666 <br/>
 
 ### 600 - 그래프 1
 
+토마토 https://www.acmicpc.net/problem/7576 <br/>
 나이트 이동 https://www.acmicpc.net/problem/7562 <br/>
 
 ### 601 - 그래프 1 (연습)
