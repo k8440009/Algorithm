@@ -83,10 +83,13 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 점프 https://www.acmicpc.net/problem/1890 <br/>
 팰린드롬? https://www.acmicpc.net/problem/10942 <br/>
 LCS https://www.acmicpc.net/problem/9251 <br/>
+효율적인 해킹 https://www.acmicpc.net/problem/1325 <br/>
 
 <hr/>
 
 ### Greedy
+
+개미 https://www.acmicpc.net/problem/4307 <br/>
 
 ### Simulation
 
@@ -115,6 +118,13 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 
 최단 경로 https://www.acmicpc.net/problem/1753 <br/>
 
+### 구현
+
+10부제 https://www.acmicpc.net/problem/10797 <br/>
+거스름돈 https://www.acmicpc.net/problem/5585 <br/>
+인공지능 시계 https://www.acmicpc.net/problem/2530 <br/>
+알람 시계 https://www.acmicpc.net/problem/2884 <br/>
+
 ### 기타
 
 무한 문자열 https://www.acmicpc.net/problem/12871 <br/>
@@ -126,6 +136,7 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 좌표 정렬하기 https://www.acmicpc.net/problem/11650 <br/>
 좌표 정렬하기 2 https://www.acmicpc.net/problem/11651 <br/>
 !밑비 급일 https://www.acmicpc.net/problem/11365 <br/>
+카드2 https://www.acmicpc.net/problem/2164 <br/>
 
 <hr/>
 
@@ -343,11 +354,11 @@ Matching Specific String <br/>
 ### Level 3 ~
 
 정수 삼각형 https://programmers.co.kr/learn/courses/30/lessons/43105 <br/>
-
 오픈 채팅방 https://programmers.co.kr/learn/courses/30/lessons/42888 <br/>
 실패율 https://programmers.co.kr/learn/courses/30/lessons/42889 <br/>
 후보키 https://programmers.co.kr/learn/courses/30/lessons/42890 <br/>
 길 찾기 게임 https://programmers.co.kr/learn/courses/30/lessons/42892 <br/>
+등굣길 https://programmers.co.kr/learn/courses/30/lessons/42898 <br/>
 
 <hr/>
 
