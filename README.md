@@ -122,6 +122,8 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 
 10부제 https://www.acmicpc.net/problem/10797 <br/>
 거스름돈 https://www.acmicpc.net/problem/5585 <br/>
+상근 날드 https://www.acmicpc.net/problem/5543 <br/>
+영수증 https://www.acmicpc.net/problem/5565 <br/>
 인공지능 시계 https://www.acmicpc.net/problem/2530 <br/>
 알람 시계 https://www.acmicpc.net/problem/2884 <br/>
 
