@@ -214,7 +214,17 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 
 뱀과 사다리 게임 https://www.acmicpc.net/problem/16928 <br/>
 
+### 710 - 그리디 알고리즘
+
+동전 0 https://www.acmicpc.net/problem/11047 <br/>
+
 <hr/>
+
+## 정올
+
+### 1996
+
+숫자고르기 https://www.acmicpc.net/problem/2668
 
 ## 삼성
 
@@ -364,6 +374,13 @@ Matching Specific String <br/>
 
 <hr/>
 
+## 카카오
+
+### 2020
+
+괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058 <br/>
+
+<hr/>
 # DataStruct
 
 ## List
