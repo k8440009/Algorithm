@@ -222,9 +222,17 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 
 ## 정올
 
-### 1996
+### 1996 초등부
 
-숫자고르기 https://www.acmicpc.net/problem/2668
+단지번호붙이기 https://www.acmicpc.net/problem/2667 <br/>
+숫자고르기 https://www.acmicpc.net/problem/2668 <br/>
+직사각형 네개의 합집합의 면적 구하기 https://www.acmicpc.net/problem/2669 <br/>
+
+### 1997 초등부
+
+직각이등변삼각형 찾기 https://www.acmicpc.net/problem/2658 <br/>
+십자카드 문제 https://www.acmicpc.net/problem/2659 <br/>
+회장뽑기 https: //www.acmicpc.net/problem/2660 <br/>
 
 ## 삼성
 
