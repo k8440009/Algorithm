@@ -33,8 +33,6 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 
 <hr/>
 
-<hr/>
-
 ### 비트 마스크
 
 집합 https://www.acmicpc.net/problem/11723 <br/>
@@ -124,6 +122,9 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 거스름돈 https://www.acmicpc.net/problem/5585 <br/>
 상근 날드 https://www.acmicpc.net/problem/5543 <br/>
 영수증 https://www.acmicpc.net/problem/5565 <br/>
+0 = not cute / 1 = cute https://www.acmicpc.net/problem/10886 <br/>
+에라토스테네스의 체 https://www.acmicpc.net/problem/2960 <br/>
+세로 읽기 https://www.acmicpc.net/problem/10798 <br/>
 인공지능 시계 https://www.acmicpc.net/problem/2530 <br/>
 알람 시계 https://www.acmicpc.net/problem/2884 <br/>
 
@@ -233,6 +234,10 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 직각이등변삼각형 찾기 https://www.acmicpc.net/problem/2658 <br/>
 십자카드 문제 https://www.acmicpc.net/problem/2659 <br/>
 회장뽑기 https: //www.acmicpc.net/problem/2660 <br/>
+
+### 1998 초등부
+
+교차점개수 https://www.acmicpc.net/problem/2650 <br/>
 
 ## 삼성
 
