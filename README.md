@@ -83,6 +83,8 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 LCS https://www.acmicpc.net/problem/9251 <br/>
 효율적인 해킹 https://www.acmicpc.net/problem/1325 <br/>
 
+격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
+
 <hr/>
 
 ### Greedy
@@ -243,6 +245,10 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 ### 1998 초등부
 
 교차점개수 https://www.acmicpc.net/problem/2650 <br/>
+
+### 2014 초등부
+
+격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
 
 ## 삼성
 
