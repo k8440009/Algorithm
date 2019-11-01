@@ -103,6 +103,7 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 ### 스택
 
 균형잡힌 세상 https://www.acmicpc.net/problem/4949 <br/>
+히스토그램에서 가장 큰 직사각형 https://www.acmicpc.net/problem/6549 <br/>
 
 ### 트리
 
@@ -218,6 +219,10 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 ### 710 - 그리디 알고리즘
 
 동전 0 https://www.acmicpc.net/problem/11047 <br/>
+
+### 세그먼트 트리
+
+히스토그램에서 가장 큰 직사각형 https://www.acmicpc.net/problem/6549 <br/>
 
 <hr/>
 
