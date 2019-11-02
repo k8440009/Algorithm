@@ -15,15 +15,6 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-const int MAX = 100000;
-int board[MAX];
-int N;
-/*
-    a : 배열 a
-    tree : 세그먼트 트리
-    node : 세그먼트 트리 노드 번호
-    node가 담당하는 합의 범위  start ~ end
-*/
 void init(vector<int> &a, vector<int> &tree, int node, int start, int end)
 {
     if (start == end)
@@ -32,18 +23,73 @@ void init(vector<int> &a, vector<int> &tree, int node, int start, int end)
     }
     else
     {
-        //
         init(a, tree, node * 2, start, (start + end) / 2);
-        //
         init(a, tree, node * 2 + 1, (start + end) / 2 + 1, end);
-        // 왼쪽이 오른쪽 보다 작은 경우
         if (a[tree[node * 2]] <= a[tree[node * 2 + 1]])
+        {
             tree[node] = tree[node * 2];
+        }
         else
-            tree[node] = tree[node * 2] + 1;
+        {
+            tree[node] = tree[node * 2 + 1];
+        }
     }
 }
-
+int query(vector<int> &a, vector<int> &tree, int node, int start, int end, int i, int j)
+{
+    if (i > end || j < start)
+    {
+        return -1;
+    }
+    if (i <= start && end <= j)
+    {
+        return tree[node];
+    }
+    int m1 = query(a, tree, 2 * node, start, (start + end) / 2, i, j);
+    int m2 = query(a, tree, 2 * node + 1, (start + end) / 2 + 1, end, i, j);
+    if (m1 == -1)
+    {
+        return m2;
+    }
+    else if (m2 == -1)
+    {
+        return m1;
+    }
+    else
+    {
+        if (a[m1] <= a[m2])
+        {
+            return m1;
+        }
+        else
+        {
+            return m2;
+        }
+    }
+}
+long long largest(vector<int> &a, vector<int> &tree, int start, int end)
+{
+    int n = a.size();
+    int m = query(a, tree, 1, 0, n - 1, start, end);
+    long long area = (long long)(end - start + 1) * (long long)a[m];
+    if (start <= m - 1)
+    {
+        long long temp = largest(a, tree, start, m - 1);
+        if (area < temp)
+        {
+            area = temp;
+        }
+    }
+    if (m + 1 <= end)
+    {
+        long long temp = largest(a, tree, m + 1, end);
+        if (area < temp)
+        {
+            area = temp;
+        }
+    }
+    return area;
+}
 int main()
 {
     ios::sync_with_stdio(0);
@@ -52,26 +98,20 @@ int main()
 
     while (true)
     {
-        cin >> N;
-        if (N == 0)
+        int n;
+        cin >> n;
+        if (n == 0)
             break;
-
-        vector<int> a(N);
-        for (int i = 0; i < N; i++)
+        vector<int> a(n);
+        for (int i = 0; i < n; i++)
+        {
             cin >> a[i];
-
-        /*
-            ceil : 올림함수
-            1e-9 : 1e9 = 1*10^9 = 1000000000,
-
-         */
-        // 높이
-        int h = (int)(ceil(log2(N)) + 1e-9);
-        // 2^h
-        int treeSize = (1 << (h + 1));
-        vector<int> tree(treeSize);
-        init(a, tree, 1, 0, N - 1);
+        }
+        int h = (int)(ceil(log2(n)) + 1e-9);
+        int tree_size = (1 << (h + 1));
+        vector<int> tree(tree_size);
+        init(a, tree, 1, 0, n - 1);
+        cout << largest(a, tree, 0, n - 1) << '\n';
     }
-
     return 0;
 }
