@@ -127,6 +127,9 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 영수증 https://www.acmicpc.net/problem/5565 <br/>
 0 = not cute / 1 = cute https://www.acmicpc.net/problem/10886 <br/>
 에라토스테네스의 체 https://www.acmicpc.net/problem/2960 <br/>
+과제 안 내신 분..? https://www.acmicpc.net/problem/5597 <br/>
+수들의 합 https://www.acmicpc.net/problem/1789 <br/>
+TGN https://www.acmicpc.net/problem/5063 <br/>
 세로 읽기 https://www.acmicpc.net/problem/10798 <br/>
 인공지능 시계 https://www.acmicpc.net/problem/2530 <br/>
 알람 시계 https://www.acmicpc.net/problem/2884 <br/>
