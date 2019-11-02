@@ -14,8 +14,6 @@
 택시 기하학 https://www.acmicpc.net/problem/3053 <br/>
 터렛 https://www.acmicpc.net/problem/1002 <br/>
 
-<hr/>
-
 ### Brute Force
 
 연산자 끼워 넣기 https://www.acmicpc.net/problem/14888</br>
@@ -31,13 +29,9 @@
 N-Queen https://www.acmicpc.net/problem/9663 <br/>
 알파벳 https://www.acmicpc.net/problem/1987 <br/>
 
-<hr/>
-
 ### 비트 마스크
 
 집합 https://www.acmicpc.net/problem/11723 <br/>
-
-<hr/>
 
 ### DFS BFS
 
@@ -54,8 +48,6 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 퍼즐 https://www.acmicpc.net/problem/1525 <br/>
 물통 https://www.acmicpc.net/problem/2251 <br/>
 탈옥 https://www.acmicpc.net/problem/9376 <br/>
-
-<hr/>
 
 ### DP
 
@@ -85,7 +77,9 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 
 격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
 
-<hr/>
+### 우선순위 큐
+
+프린터 큐 https://www.acmicpc.net/problem/1966 <br/>
 
 ### Greedy
 
