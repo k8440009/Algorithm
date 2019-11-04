@@ -14,6 +14,21 @@
 택시 기하학 https://www.acmicpc.net/problem/3053 <br/>
 터렛 https://www.acmicpc.net/problem/1002 <br/>
 
+### 구현
+
+10부제 https://www.acmicpc.net/problem/10797 <br/>
+거스름돈 https://www.acmicpc.net/problem/5585 <br/>
+상근 날드 https://www.acmicpc.net/problem/5543 <br/>
+영수증 https://www.acmicpc.net/problem/5565 <br/>
+0 = not cute / 1 = cute https://www.acmicpc.net/problem/10886 <br/>
+에라토스테네스의 체 https://www.acmicpc.net/problem/2960 <br/>
+과제 안 내신 분..? https://www.acmicpc.net/problem/5597 <br/>
+수들의 합 https://www.acmicpc.net/problem/1789 <br/>
+TGN https://www.acmicpc.net/problem/5063 <br/>
+세로 읽기 https://www.acmicpc.net/problem/10798 <br/>
+인공지능 시계 https://www.acmicpc.net/problem/2530 <br/>
+알람 시계 https://www.acmicpc.net/problem/2884 <br/>
+
 ### Brute Force
 
 연산자 끼워 넣기 https://www.acmicpc.net/problem/14888</br>
@@ -113,20 +128,9 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 
 최단 경로 https://www.acmicpc.net/problem/1753 <br/>
 
-### 구현
+### 유니온 파인드
 
-10부제 https://www.acmicpc.net/problem/10797 <br/>
-거스름돈 https://www.acmicpc.net/problem/5585 <br/>
-상근 날드 https://www.acmicpc.net/problem/5543 <br/>
-영수증 https://www.acmicpc.net/problem/5565 <br/>
-0 = not cute / 1 = cute https://www.acmicpc.net/problem/10886 <br/>
-에라토스테네스의 체 https://www.acmicpc.net/problem/2960 <br/>
-과제 안 내신 분..? https://www.acmicpc.net/problem/5597 <br/>
-수들의 합 https://www.acmicpc.net/problem/1789 <br/>
-TGN https://www.acmicpc.net/problem/5063 <br/>
-세로 읽기 https://www.acmicpc.net/problem/10798 <br/>
-인공지능 시계 https://www.acmicpc.net/problem/2530 <br/>
-알람 시계 https://www.acmicpc.net/problem/2884 <br/>
+집합의 표현 https://www.acmicpc.net/problem/1717 <br/>
 
 ### 기타
 
