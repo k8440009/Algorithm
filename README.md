@@ -28,6 +28,9 @@ TGN https://www.acmicpc.net/problem/5063 <br/>
 세로 읽기 https://www.acmicpc.net/problem/10798 <br/>
 인공지능 시계 https://www.acmicpc.net/problem/2530 <br/>
 알람 시계 https://www.acmicpc.net/problem/2884 <br/>
+점수 계산 https://www.acmicpc.net/problem/2822 <br/>
+방학 숙제 https://www.acmicpc.net/problem/5532 <br/>
+농구 경기 https://www.acmicpc.net/problem/1159 <br/>
 
 ### Brute Force
 
