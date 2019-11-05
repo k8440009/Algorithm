@@ -260,6 +260,10 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 
 색종이 https://www.acmicpc.net/problem/2563 <br/>
 
+### 2014
+
+색종이 https://www.acmicpc.net/problem/10163
+
 ### 2015 초등부
 
 쇠막대기 https://www.acmicpc.net/problem/10799 <br/>
@@ -442,3 +446,9 @@ Matching Specific String <br/>
 https://github.com/tony9402/baekjoon/tree/master
 
 <hr/>
+
+## CodeForce
+
+### Div 3
+
+Round #598 https://codeforces.com/contest/1256 <br/>
