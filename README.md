@@ -130,6 +130,8 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 
 ### 이분탐색
 
+숫자 카드 https://www.acmicpc.net/problem/10815 <br/>
+숫자 카드 2 https://www.acmicpc.net/problem/10816 <br/>
 공유기 설치 https://www.acmicpc.net/problem/2110 <br/>
 
 ### 최단 경로
