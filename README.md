@@ -255,6 +255,7 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 
 ### 2014 초등부
 
+색종이 https://www.acmicpc.net/problem/10163 <br/>
 격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
 
 ## 정올 지역본선
@@ -262,10 +263,6 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 ### 2007 초등부
 
 색종이 https://www.acmicpc.net/problem/2563 <br/>
-
-### 2014
-
-색종이 https://www.acmicpc.net/problem/10163
 
 ### 2015 초등부
 
