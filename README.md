@@ -34,6 +34,8 @@ TGN https://www.acmicpc.net/problem/5063 <br/>
 수도요금 https://www.acmicpc.net/problem/10707 <br/>
 소음 https://www.acmicpc.net/problem/2935 <br/>
 심부름 가는 길 https://www.acmicpc.net/problem/5554 <br/>
+Mini Fantasy War https://www.acmicpc.net/problem/12790 <br/>
+시험 점수 https://www.acmicpc.net/problem/5596 <br/>
 
 ### Brute Force
 
