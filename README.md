@@ -36,6 +36,9 @@ TGN https://www.acmicpc.net/problem/5063 <br/>
 심부름 가는 길 https://www.acmicpc.net/problem/5554 <br/>
 Mini Fantasy War https://www.acmicpc.net/problem/12790 <br/>
 시험 점수 https://www.acmicpc.net/problem/5596 <br/>
+슈퍼 마리오 https://www.acmicpc.net/problem/2851 <br/>
+앵그리 창영 https://www.acmicpc.net/problem/3034 <br/>
+결혼식 https://www.acmicpc.net/problem/5567 <br/>
 
 ### Brute Force
 
