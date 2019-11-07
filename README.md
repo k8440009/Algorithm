@@ -267,6 +267,10 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
 버스 노선 https://www.acmicpc.net/problem/10165 <br/>
 
+### 2014 중등부
+
+관중석 https://www.acmicpc.net/problem/10166 <br/>
+
 ## 정올 지역본선
 
 ### 2007 초등부

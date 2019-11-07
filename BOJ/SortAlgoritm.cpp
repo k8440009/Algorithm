@@ -70,6 +70,7 @@ int main()
 
     - 선택 정렬 - 
     https://gmlwjd9405.github.io/2018/05/06/algorithm-selection-sort.html
+    https://www.geeksforgeeks.org/selection-sort/
     선택정렬이 불안정 정렬인 이유 https://mygumi.tistory.com/94
 
     - 삽입 정렬 - 
@@ -77,4 +78,7 @@ int main()
     
     - STL에서 채택한 정렬방식 -
     https://debugjung.tistory.com/entry/stl%EC%97%90%EC%84%9C-%EA%B5%AC%ED%98%84%ED%95%9C-intro-sort-%EC%B0%B8%EC%A1%B0
+
+    - 난수 생성하기 -
+    https://arer.tistory.com/10
 */
