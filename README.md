@@ -42,6 +42,9 @@ Mini Fantasy War https://www.acmicpc.net/problem/12790 <br/>
 탄산 음료 https://www.acmicpc.net/problem/5032 <br/>
 콘테스트 https://www.acmicpc.net/problem/5576 <br/>
 공약수 https://www.acmicpc.net/problem/5618 <br/>
+수빈이와 수열 https://www.acmicpc.net/problem/10539 <br/>
+크로스워드 만들기 https://www.acmicpc.net/problem/2804 <br/>
+유니크 https://www.acmicpc.net/problem/5533 <br/>
 
 ### Brute Force
 
