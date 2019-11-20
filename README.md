@@ -48,6 +48,7 @@ Mini Fantasy War https://www.acmicpc.net/problem/12790 <br/>
 타임 카드 https://www.acmicpc.net/problem/5575 <br/>
 서버 https://www.acmicpc.net/problem/10409 <br/>
 Starman https://www.acmicpc.net/problem/12791 <br/>
+캔디 구매 https://www.acmicpc.net/problem/2909 <br/>
 
 ### Brute Force
 
