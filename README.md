@@ -156,6 +156,7 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 ### 유니온 파인드
 
 집합의 표현 https://www.acmicpc.net/problem/1717 <br/>
+여행 가자 https://www.acmicpc.net/problem/1976 <br/>
 
 ### 기타
 
