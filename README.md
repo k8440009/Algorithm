@@ -50,6 +50,7 @@ Mini Fantasy War https://www.acmicpc.net/problem/12790 <br/>
 Starman https://www.acmicpc.net/problem/12791 <br/>
 캔디 구매 https://www.acmicpc.net/problem/2909 <br/>
 반올림 https://www.acmicpc.net/problem/2033 <br/>
+마술사 이민혁 https://www.acmicpc.net/problem/3023 <br/>
 
 ### Brute Force
 
