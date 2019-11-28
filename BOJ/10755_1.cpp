@@ -53,3 +53,12 @@ int main()
 
     return 0;
 }
+
+/*
+    참고
+    https://mygumi.tistory.com/245
+    https://jaimemin.tistory.com/772
+    
+    https://mygumi.tistory.com/246
+    https://kks227.blog.me/220791837179?Redirect=Log&from=postView
+*/
