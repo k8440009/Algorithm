@@ -10,7 +10,7 @@ int find(int u)
 {
     if (u == parent[u])
         return u;
-    return u = find(parent[u]);
+    return parent[u] = find(parent[u]);
 }
 void merge(int u, int v)
 {
