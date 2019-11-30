@@ -33,7 +33,7 @@ vector<int> dijkstra(int start)
     {
         // 우선 순위 큐에 저장
         if (i != start)
-            pq.push(make_pair(i, INF));
+            pq.push(make_pair(i, -INF));
     }
 
     while (!pq.empty())
