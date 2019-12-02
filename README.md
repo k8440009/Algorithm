@@ -57,6 +57,8 @@ Starman https://www.acmicpc.net/problem/12791 <br/>
 올림픽 https://www.acmicpc.net/problem/8979 <br/>
 피터팬 프레임 https://www.acmicpc.net/problem/3054 <br/>
 기상캐스터 https://www.acmicpc.net/problem/10709 <br/>
+파스칼 https://www.acmicpc.net/problem/2986 <br/>
+크리스마스 파티 https://www.acmicpc.net/problem/10708 <br/>
 
 ### Brute Force
 
@@ -158,6 +160,7 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 ### 최단 경로
 
 최단 경로 https://www.acmicpc.net/problem/1753 <br/>
+특정한 최단 경로 https://www.acmicpc.net/problem/1504 <br/>
 
 ### 유니온 파인드
 
