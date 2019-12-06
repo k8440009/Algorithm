@@ -7,9 +7,6 @@ const int INF = 987654321;
 const int MAX = 100 + 1;
 int graph[MAX][MAX];
 int N, M;
-void floyd()
-{
-}
 int main()
 {
     ios::sync_with_stdio(0);
@@ -18,6 +15,7 @@ int main()
 
     cin >> N >> M;
 
+    // 플로이드
     for (int i = 1; i <= N; i++)
         for (int j = 1; j <= N; j++)
             // 초기화 : 자기자신의 가중치는 0, 간선이 없는 경우 아주 큰 값
