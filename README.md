@@ -179,7 +179,7 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 친구 네트워크 https://www.acmicpc.net/problem/4195 <br/>
 공항 https://www.acmicpc.net/problem/10775 <br/>
 
-### 최소 스패닝 트리
+### 최소 스패닝 트리 (크루스칼, 프림)
 
 최소 스패닝 트리 https://www.acmicpc.net/problem/1197 <br/>
 

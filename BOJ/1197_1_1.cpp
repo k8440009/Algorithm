@@ -1,4 +1,4 @@
-// 최소 스패닝 트리
+// 최소 스패닝 트리 (크루스칼)
 // https://www.acmicpc.net/problem/1197
 #include <iostream>
 #include <vector>
