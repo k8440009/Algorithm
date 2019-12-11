@@ -8,11 +8,11 @@ int recursive(int num, int cnt)
     // 10의 자리 이상
     if (num >= 10)
     {
-        int a = num / 10;
+        int a = num % 10;
         if (a == 3 || a == 6 || a == 9)
-            return recursive(num % 10, cnt + 1);
+            return recursive(num / 10, cnt + 1);
         else
-            return recursive(num % 10, cnt);
+            return recursive(num / 10, cnt);
     }
     else
     {
