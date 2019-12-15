@@ -59,6 +59,7 @@ Starman https://www.acmicpc.net/problem/12791 <br/>
 기상캐스터 https://www.acmicpc.net/problem/10709 <br/>
 파스칼 https://www.acmicpc.net/problem/2986 <br/>
 크리스마스 파티 https://www.acmicpc.net/problem/10708 <br/>
+투표 https://www.acmicpc.net/problem/10040 <br/>
 
 ### Brute Force
 
