@@ -76,6 +76,7 @@ Starman https://www.acmicpc.net/problem/12791 <br/>
 N-Queen https://www.acmicpc.net/problem/9663 <br/>
 알파벳 https://www.acmicpc.net/problem/1987 <br/>
 일곱 난쟁이 https://www.acmicpc.net/problem/2309 <br/>
+분해합 https://www.acmicpc.net/problem/2231 <br/>
 
 ### 비트 마스크
 
