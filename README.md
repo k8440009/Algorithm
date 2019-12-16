@@ -75,6 +75,7 @@ Starman https://www.acmicpc.net/problem/12791 <br/>
 맞춰봐 https://www.acmicpc.net/problem/1248 <br/>
 N-Queen https://www.acmicpc.net/problem/9663 <br/>
 알파벳 https://www.acmicpc.net/problem/1987 <br/>
+일곱 난쟁이 https://www.acmicpc.net/problem/2309 <br/>
 
 ### 비트 마스크
 
@@ -303,12 +304,16 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 
 교차점개수 https://www.acmicpc.net/problem/2650 <br/>
 
-### 2014 초등부
+### 2014 예선 초등부
 
 전자레인지 https://www.acmicpc.net/problem/10162 <br/>
 색종이 https://www.acmicpc.net/problem/10163 <br/>
 격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
 버스 노선 https://www.acmicpc.net/problem/10165 <br/>
+
+### 2014 본선 초등부
+
+일곱 난쟁이 https://www.acmicpc.net/problem/2309 <br/>
 
 ### 2014 중등부
 
