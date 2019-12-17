@@ -77,6 +77,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 알파벳 https://www.acmicpc.net/problem/1987 <br/>
 일곱 난쟁이 https://www.acmicpc.net/problem/2309 <br/>
 분해합 https://www.acmicpc.net/problem/2231 <br/>
+사탕 게임 https://www.acmicpc.net/problem/3085 <br/>
 
 ### 비트 마스크
 
@@ -225,10 +226,6 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 
 동물원 https://www.acmicpc.net/problem/1309 <br/>
 RGB거리 2 https://www.acmicpc.net/problem/17404 <br/>
-
-### 500 - 브루트 포스
-
-사탕 게임 https://www.acmicpc.net/problem/3085 <br/>
 
 ### 510 - 브루트 포스 (N과 M)
 
