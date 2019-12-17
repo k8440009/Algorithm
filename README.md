@@ -78,6 +78,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 일곱 난쟁이 https://www.acmicpc.net/problem/2309 <br/>
 분해합 https://www.acmicpc.net/problem/2231 <br/>
 사탕 게임 https://www.acmicpc.net/problem/3085 <br/>
+유레카 이론 https://www.acmicpc.net/problem/10448 <br/>
 
 ### 비트 마스크
 
