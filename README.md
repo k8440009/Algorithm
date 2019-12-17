@@ -80,6 +80,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 사탕 게임 https://www.acmicpc.net/problem/3085 <br/>
 유레카 이론 https://www.acmicpc.net/problem/10448 <br/>
 숫자 야구 https://www.acmicpc.net/problem/2503 <br/>
+체스판 다시 칠하기 https://www.acmicpc.net/problem/1018 <br/>
 
 ### 비트 마스크
 
