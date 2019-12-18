@@ -81,6 +81,8 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 유레카 이론 https://www.acmicpc.net/problem/10448 <br/>
 숫자 야구 https://www.acmicpc.net/problem/2503 <br/>
 체스판 다시 칠하기 https://www.acmicpc.net/problem/1018 <br/>
+부분수열의 합 https://www.acmicpc.net/problem/1182 <br/>
+부분수열의 합 https://www.acmicpc.net/problem/14225 <br/>
 
 ### 비트 마스크
 
@@ -268,10 +270,6 @@ Two Dots https://www.acmicpc.net/problem/16929 <br/>
 BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 
 ## 2019 알고리즘 중급
-
-### 531 - 브루트 포스 - 재귀 (연습)
-
-부분수열의 합 https://www.acmicpc.net/problem/14225 <br/>
 
 ### 611 - BFS 연습
 
