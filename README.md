@@ -87,6 +87,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 ### 분할 정복
 
 곱셈 https://www.acmicpc.net/problem/1629 <br/>
+히스토그램 https://www.acmicpc.net/problem/1725 <br/>
 쿼드 트리 https://www.acmicpc.net/problem/1992 <br/>
 종이의 갯수 https://www.acmicpc.net/problem/1780 <br/>
 행렬 곱셈 https://www.acmicpc.net/problem/2740 <br/>
