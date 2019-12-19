@@ -93,6 +93,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 부분배열 고르기 https://www.acmicpc.net/problem/2104 <br/>
 종이의 갯수 https://www.acmicpc.net/problem/1780 <br/>
 쿼드 트리 https://www.acmicpc.net/problem/1992 <br/>
+Z https://www.acmicpc.net/problem/1074 <br/>
 
 ### 비트 마스크
 
