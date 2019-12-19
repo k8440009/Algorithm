@@ -86,13 +86,13 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 
 ### 분할 정복
 
+행렬 곱셈 https://www.acmicpc.net/problem/2740 <br/>
+행렬 제곱 https://www.acmicpc.net/problem/10830 <br/>
 곱셈 https://www.acmicpc.net/problem/1629 <br/>
 히스토그램 https://www.acmicpc.net/problem/1725 <br/>
 부분배열 고르기 https://www.acmicpc.net/problem/2104 <br/>
-쿼드 트리 https://www.acmicpc.net/problem/1992 <br/>
 종이의 갯수 https://www.acmicpc.net/problem/1780 <br/>
-행렬 곱셈 https://www.acmicpc.net/problem/2740 <br/>
-행렬 제곱 https://www.acmicpc.net/problem/10830 <br/>
+쿼드 트리 https://www.acmicpc.net/problem/1992 <br/>
 
 ### 비트 마스크
 
@@ -120,10 +120,8 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 1, 2, 3 더하기 3 https://www.acmicpc.net/problem/15988 <br/>
 1, 2, 3 더하기 4 https://www.acmicpc.net/problem/15989 <br/>
 1, 2, 3 더하기 5 https://www.acmicpc.net/problem/15990 <br/>
-
 카드 구매하기 https://www.acmicpc.net/problem/11052 <br/>
 카드 구매하기 2 https://www.acmicpc.net/problem/16194 <br/>
-
 가장 긴 증가하는 부분 수열 https://www.acmicpc.net/problem/11053 <br/>
 가장 긴 증가하는 부분 수열 4 https://www.acmicpc.net/problem/14002 <br/>
 가장 큰 증가 부분 수열 https://www.acmicpc.net/problem/11055 <br/>
