@@ -96,28 +96,9 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 Z https://www.acmicpc.net/problem/1074 <br/>
 별 찍기 - 10 https://www.acmicpc.net/problem/2447 <br/>
 
-### 비트 마스크
-
-집합 https://www.acmicpc.net/problem/11723 <br/>
-
-### DFS BFS
-
-ABCDE https://www.acmicpc.net/problem/13023 <br/>
-이모티콘 https://www.acmicpc.net/problem/14226 <br/>
-숨바꼭질 https://www.acmicpc.net/problem/1697 <br/>
-숨바꼭질 3 https://www.acmicpc.net/problem/13549 <br/>
-알고 스팟 https://www.acmicpc.net/problem/1261 <br/>
-벽 부수고 이동하기 https://www.acmicpc.net/problem/2206 </br>
-탈출 https://www.acmicpc.net/problem/3055 <br/>
-DSLR https://www.acmicpc.net/problem/9019 <br/>
-숨바꼭질 2 https://www.acmicpc.net/problem/12851 <br/>
-숨바꼭질 4 https://www.acmicpc.net/problem/13913 <br/>
-퍼즐 https://www.acmicpc.net/problem/1525 <br/>
-물통 https://www.acmicpc.net/problem/2251 <br/>
-탈옥 https://www.acmicpc.net/problem/9376 <br/>
-
 ### DP
 
+1로 만들기 https://www.acmicpc.net/problem/1463 <br/>
 1, 2, 3 더하기 https://www.acmicpc.net/problem/9095 <br/>
 1, 2, 3 더하기 3 https://www.acmicpc.net/problem/15988 <br/>
 1, 2, 3 더하기 4 https://www.acmicpc.net/problem/15989 <br/>
@@ -139,6 +120,26 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 팰린드롬? https://www.acmicpc.net/problem/10942 <br/>
 LCS https://www.acmicpc.net/problem/9251 <br/>
 효율적인 해킹 https://www.acmicpc.net/problem/1325 <br/>
+
+### 비트 마스크
+
+집합 https://www.acmicpc.net/problem/11723 <br/>
+
+### DFS BFS
+
+ABCDE https://www.acmicpc.net/problem/13023 <br/>
+이모티콘 https://www.acmicpc.net/problem/14226 <br/>
+숨바꼭질 https://www.acmicpc.net/problem/1697 <br/>
+숨바꼭질 3 https://www.acmicpc.net/problem/13549 <br/>
+알고 스팟 https://www.acmicpc.net/problem/1261 <br/>
+벽 부수고 이동하기 https://www.acmicpc.net/problem/2206 </br>
+탈출 https://www.acmicpc.net/problem/3055 <br/>
+DSLR https://www.acmicpc.net/problem/9019 <br/>
+숨바꼭질 2 https://www.acmicpc.net/problem/12851 <br/>
+숨바꼭질 4 https://www.acmicpc.net/problem/13913 <br/>
+퍼즐 https://www.acmicpc.net/problem/1525 <br/>
+물통 https://www.acmicpc.net/problem/2251 <br/>
+탈옥 https://www.acmicpc.net/problem/9376 <br/>
 
 격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
 
@@ -220,10 +221,6 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 ## 2019 SW 역량 테스트 준비 - 문제
 
 ## 2019 알고리즘 기초
-
-### 400 - 다이나믹 프로그래밍 1
-
-1로 만들기 https://www.acmicpc.net/problem/1463 <br/>
 
 ### 401 - 다이나믹 프로그래밍 1 (연습)
 
