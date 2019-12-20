@@ -99,6 +99,11 @@ Z https://www.acmicpc.net/problem/1074 <br/>
 ### DP
 
 1로 만들기 https://www.acmicpc.net/problem/1463 <br/>
+점프 https://www.acmicpc.net/problem/1890 <br/>
+ls https://www.acmicpc.net/problem/5015 <br/>
+정수 삼각형 https://www.acmicpc.net/problem/1932 <br/>
+행렬 제곱 https://www.acmicpc.net/problem/10830 <br/>
+
 1, 2, 3 더하기 https://www.acmicpc.net/problem/9095 <br/>
 1, 2, 3 더하기 3 https://www.acmicpc.net/problem/15988 <br/>
 1, 2, 3 더하기 4 https://www.acmicpc.net/problem/15989 <br/>
@@ -116,7 +121,6 @@ Z https://www.acmicpc.net/problem/1074 <br/>
 연속합 2 https://www.acmicpc.net/problem/13398 <br/>
 제곱수의 합 https://www.acmicpc.net/problem/1699 <br/>
 합분해 https://www.acmicpc.net/problem/2225 <br/>
-점프 https://www.acmicpc.net/problem/1890 <br/>
 팰린드롬? https://www.acmicpc.net/problem/10942 <br/>
 LCS https://www.acmicpc.net/problem/9251 <br/>
 효율적인 해킹 https://www.acmicpc.net/problem/1325 <br/>
