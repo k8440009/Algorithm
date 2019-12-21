@@ -95,6 +95,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 쿼드 트리 https://www.acmicpc.net/problem/1992 <br/>
 Z https://www.acmicpc.net/problem/1074 <br/>
 별 찍기 - 10 https://www.acmicpc.net/problem/2447 <br/>
+행렬 제곱 https://www.acmicpc.net/problem/10830 <br/>
 
 ### DP
 
@@ -102,7 +103,6 @@ Z https://www.acmicpc.net/problem/1074 <br/>
 점프 https://www.acmicpc.net/problem/1890 <br/>
 ls https://www.acmicpc.net/problem/5015 <br/>
 정수 삼각형 https://www.acmicpc.net/problem/1932 <br/>
-행렬 제곱 https://www.acmicpc.net/problem/10830 <br/>
 
 1, 2, 3 더하기 https://www.acmicpc.net/problem/9095 <br/>
 1, 2, 3 더하기 3 https://www.acmicpc.net/problem/15988 <br/>
