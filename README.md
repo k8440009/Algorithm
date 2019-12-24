@@ -97,6 +97,10 @@ Z https://www.acmicpc.net/problem/1074 <br/>
 별 찍기 - 10 https://www.acmicpc.net/problem/2447 <br/>
 행렬 제곱 https://www.acmicpc.net/problem/10830 <br/>
 
+### 이분 탐색
+
+가장 긴 증가하는 부분 수열 2 https://www.acmicpc.net/problem/11053 <br/>
+
 ### DP
 
 1로 만들기 https://www.acmicpc.net/problem/1463 <br/>
