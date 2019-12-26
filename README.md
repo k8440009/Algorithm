@@ -84,6 +84,10 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 부분수열의 합 https://www.acmicpc.net/problem/1182 <br/>
 부분수열의 합 https://www.acmicpc.net/problem/14225 <br/>
 
+## 퇴각 검색
+
+외판원 순회 2 https://www.acmicpc.net/problem/10971 <br/>
+
 ### 분할 정복
 
 행렬 곱셈 https://www.acmicpc.net/problem/2740 <br/>
