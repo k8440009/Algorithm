@@ -140,6 +140,7 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 ### 비트 마스크
 
 집합 https://www.acmicpc.net/problem/11723 <br/>
+외판원 순회 https://www.acmicpc.net/problem/2098 <br/>
 
 ### DFS BFS
 
