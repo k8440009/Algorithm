@@ -141,6 +141,7 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 
 집합 https://www.acmicpc.net/problem/11723 <br/>
 외판원 순회 https://www.acmicpc.net/problem/2098 <br/>
+발전소 https://www.acmicpc.net/problem/1102 <br/>
 
 ### DFS BFS
 
