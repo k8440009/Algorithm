@@ -335,6 +335,7 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 ### 2014 본선 초등부
 
 일곱 난쟁이 https://www.acmicpc.net/problem/2309 <br/>
+줄 세우기 https://www.acmicpc.net/problem/2605 <br/>
 
 ### 2014 중등부
 
