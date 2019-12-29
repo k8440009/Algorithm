@@ -101,11 +101,7 @@ Z https://www.acmicpc.net/problem/1074 <br/>
 별 찍기 - 10 https://www.acmicpc.net/problem/2447 <br/>
 행렬 제곱 https://www.acmicpc.net/problem/10830 <br/>
 
-### 이분 탐색
-
-가장 긴 증가하는 부분 수열 2 https://www.acmicpc.net/problem/11053 <br/>
-
-### DP
+### 동적계획법 1 (DP)
 
 1로 만들기 https://www.acmicpc.net/problem/1463 <br/>
 점프 https://www.acmicpc.net/problem/1890 <br/>
@@ -123,7 +119,6 @@ ls https://www.acmicpc.net/problem/5015 <br/>
 카드 구매하기 https://www.acmicpc.net/problem/11052 <br/>
 카드 구매하기 2 https://www.acmicpc.net/problem/16194 <br/>
 가장 긴 증가하는 부분 수열 https://www.acmicpc.net/problem/11053 <br/>
-가장 긴 증가하는 부분 수열 4 https://www.acmicpc.net/problem/14002 <br/>
 가장 큰 증가 부분 수열 https://www.acmicpc.net/problem/11055 <br/>
 가장 긴 감소하는 부분 수열 https://www.acmicpc.net/problem/11722 <br/>
 가장 긴 바이토닉 부분 수열 https://www.acmicpc.net/problem/11054<br/>
@@ -137,11 +132,20 @@ ls https://www.acmicpc.net/problem/5015 <br/>
 LCS https://www.acmicpc.net/problem/9251 <br/>
 효율적인 해킹 https://www.acmicpc.net/problem/1325 <br/>
 
+### 동적계획법 2
+
+가장 긴 증가하는 부분 수열 4 https://www.acmicpc.net/problem/14002 <br/>
+
 ### 비트 마스크
 
 집합 https://www.acmicpc.net/problem/11723 <br/>
 외판원 순회 https://www.acmicpc.net/problem/2098 <br/>
 발전소 https://www.acmicpc.net/problem/1102 <br/>
+
+### 이분 탐색
+
+가장 긴 증가하는 부분 수열 2 https://www.acmicpc.net/problem/11053 <br/>
+가장 긴 증가하는 부분 수열 3 https://www.acmicpc.net/problem/12738 <br/>
 
 ### DFS BFS
 
