@@ -336,12 +336,11 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 
 일곱 난쟁이 https://www.acmicpc.net/problem/2309 <br/>
 줄 세우기 https://www.acmicpc.net/problem/2605 <br/>
+비슷한 단어 https://www.acmicpc.net/problem/2607 <br/>
 
 ### 2014 중등부
 
 관중석 https://www.acmicpc.net/problem/10166 <br/>
-
-## 정올 지역본선
 
 ### 2007 초등부
 
