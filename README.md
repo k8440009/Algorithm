@@ -154,6 +154,7 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 텀 프로젝트 https://www.acmicpc.net/problem/9466 <br/>
 숫자고르기 https://www.acmicpc.net/problem/2668 <br/>
 연결 요소의 갯수 https://www.acmicpc.net/problem/11724 <br/>
+음식물 피하기 https://www.acmicpc.net/problem/1743 <br/>
 ABCDE https://www.acmicpc.net/problem/13023 <br/>
 이모티콘 https://www.acmicpc.net/problem/14226 <br/>
 숨바꼭질 https://www.acmicpc.net/problem/1697 <br/>
