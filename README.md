@@ -148,14 +148,18 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 가장 긴 증가하는 부분 수열 2 https://www.acmicpc.net/problem/11053 <br/>
 가장 긴 증가하는 부분 수열 3 https://www.acmicpc.net/problem/12738 <br/>
 
-### DFS BFS
+### DFS
 
 유기농 배추 https://www.acmicpc.net/problem/1012 <br/>
 텀 프로젝트 https://www.acmicpc.net/problem/9466 <br/>
 숫자고르기 https://www.acmicpc.net/problem/2668 <br/>
 연결 요소의 갯수 https://www.acmicpc.net/problem/11724 <br/>
 음식물 피하기 https://www.acmicpc.net/problem/1743 <br/>
+단지번호붙이기 https://www.acmicpc.net/problem/2667 <br/>
 ABCDE https://www.acmicpc.net/problem/13023 <br/>
+
+### BFS
+
 이모티콘 https://www.acmicpc.net/problem/14226 <br/>
 숨바꼭질 https://www.acmicpc.net/problem/1697 <br/>
 숨바꼭질 3 https://www.acmicpc.net/problem/13549 <br/>
@@ -242,18 +246,6 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 
 <hr/>
 
-## 2019 SW 역량 테스트 준비 - 연습
-
-평범한 배낭 https://www.acmicpc.net/problem/12865 <br/>
-
-## 2019 SW 역량 테스트 준비 - 문제
-
-## 2019 알고리즘 기초
-
-### 401 - 다이나믹 프로그래밍 1 (연습)
-
-타일 채우기 https://www.acmicpc.net/problem/2133 <br/>
-
 ### 402 - 다이나믹 프로그래밍 1 (도전)
 
 동물원 https://www.acmicpc.net/problem/1309 <br/>
@@ -273,10 +265,6 @@ N과 M (9) https://www.acmicpc.net/problem/15663 <br/>
 N과 M (10) https://www.acmicpc.net/problem/15664 <br/>
 N과 M (11) https://www.acmicpc.net/problem/15665 <br/>
 N과 M (12) https://www.acmicpc.net/problem/15666 <br/>
-
-### 530 - 브루트 포스 - 재귀
-
-링크와 스타트 https://www.acmicpc.net/problem/15661 <br/>
 
 ### 540 - 브루트 포스 - 비트마스크
 
