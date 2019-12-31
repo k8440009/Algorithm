@@ -153,6 +153,7 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 유기농 배추 https://www.acmicpc.net/problem/1012 <br/>
 텀 프로젝트 https://www.acmicpc.net/problem/9466 <br/>
 숫자고르기 https://www.acmicpc.net/problem/2668 <br/>
+연결 요소의 갯수 https://www.acmicpc.net/problem/11724 <br/>
 ABCDE https://www.acmicpc.net/problem/13023 <br/>
 이모티콘 https://www.acmicpc.net/problem/14226 <br/>
 숨바꼭질 https://www.acmicpc.net/problem/1697 <br/>
@@ -523,6 +524,7 @@ Matching Specific String <br/>
 괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058 <br/>
 
 <hr/>
+
 # DataStruct
 
 ## List
@@ -551,3 +553,5 @@ https://github.com/tony9402/baekjoon/tree/master
 ### Div 3
 
 Round #598 https://codeforces.com/contest/1256 <br/>
+
+<hr/>
