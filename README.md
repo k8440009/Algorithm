@@ -173,7 +173,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 퍼즐 https://www.acmicpc.net/problem/1525 <br/>
 물통 https://www.acmicpc.net/problem/2251 <br/>
 탈옥 https://www.acmicpc.net/problem/9376 <br/>
-
+보물섬 https://www.acmicpc.net/problem/2589 <br/>
 격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
 
 ## 재귀
@@ -318,6 +318,10 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 ### 1998 초등부
 
 교차점개수 https://www.acmicpc.net/problem/2650 <br/>
+
+### 2015 본선 초등부
+
+보물섬 https://www.acmicpc.net/problem/2589 <br/>
 
 ### 2014 예선 초등부
 
