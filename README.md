@@ -84,7 +84,11 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 부분수열의 합 https://www.acmicpc.net/problem/1182 <br/>
 부분수열의 합 https://www.acmicpc.net/problem/14225 <br/>
 
-## 퇴각 검색
+### 탐욕법
+
+캠핑 https://www.acmicpc.net/problem/4796 <br/>
+
+## 퇴각 검색 (백트래킹)
 
 외판원 순회 2 https://www.acmicpc.net/problem/10971 <br/>
 
@@ -319,8 +323,9 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 
 교차점개수 https://www.acmicpc.net/problem/2650 <br/>
 
-### 2015 본선 초등부
+### 2005 본선 초등부
 
+대표값 2 https://www.acmicpc.net/problem/2587 <br/>
 보물섬 https://www.acmicpc.net/problem/2589 <br/>
 
 ### 2014 예선 초등부
