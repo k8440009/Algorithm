@@ -87,6 +87,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 ### 탐욕법
 
 캠핑 https://www.acmicpc.net/problem/4796 <br/>
+수리공 항승 https://www.acmicpc.net/problem/1449 <br/>
 
 ## 퇴각 검색 (백트래킹)
 
