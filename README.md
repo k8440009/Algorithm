@@ -65,7 +65,6 @@ Starman https://www.acmicpc.net/problem/12791 <br/>
 
 연산자 끼워 넣기 https://www.acmicpc.net/problem/14888</br>
 1, 2, 3 더하기 https://www.acmicpc.net/problem/9095</br>
-암호 만들기 https://www.acmicpc.net/problem/1759</br>
 부분집합의 합 https://www.acmicpc.net/problem/1182</br>
 퇴사 https://www.acmicpc.net/problem/14501 </br>
 연산자 끼워 넣기 2 https://www.acmicpc.net/problem/15658 </br>
@@ -83,6 +82,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 체스판 다시 칠하기 https://www.acmicpc.net/problem/1018 <br/>
 부분수열의 합 https://www.acmicpc.net/problem/1182 <br/>
 부분수열의 합 https://www.acmicpc.net/problem/14225 <br/>
+암호 만들기 https://www.acmicpc.net/problem/1759 <br/>
 
 ### 탐욕법
 

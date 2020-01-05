@@ -1,6 +1,9 @@
 // 암호 만들기
 // https://www.acmicpc.net/problem/1759
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
 using namespace std;
 vector<char> alpa;
 // 최소 1개 모음, 최소 2개 자음
