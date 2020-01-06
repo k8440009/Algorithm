@@ -88,6 +88,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 
 캠핑 https://www.acmicpc.net/problem/4796 <br/>
 수리공 항승 https://www.acmicpc.net/problem/1449 <br/>
+동전 0 https://www.acmicpc.net/problem/11047 <br/>
 
 ## 퇴각 검색 (백트래킹)
 
