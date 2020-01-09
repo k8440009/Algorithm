@@ -255,6 +255,8 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 
 ### 알고리즘 기초
 
+분수 합 https://www.acmicpc.net/problem/1735 <br/>
+
 ### 자료구조
 
 구간 합 구하기 https://www.acmicpc.net/problem/2042 <br/>
