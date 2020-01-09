@@ -89,6 +89,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 캠핑 https://www.acmicpc.net/problem/4796 <br/>
 수리공 항승 https://www.acmicpc.net/problem/1449 <br/>
 동전 0 https://www.acmicpc.net/problem/11047 <br/>
+회의실배정 https://www.acmicpc.net/problem/1931 <br/>
 
 ## 퇴각 검색 (백트래킹)
 
@@ -251,6 +252,14 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 좌표 정렬하기 2 https://www.acmicpc.net/problem/11651 <br/>
 !밑비 급일 https://www.acmicpc.net/problem/11365 <br/>
 카드2 https://www.acmicpc.net/problem/2164 <br/>
+
+### 알고리즘 기초
+
+### 자료구조
+
+구간 합 구하기 https://www.acmicpc.net/problem/2042 <br/>
+
+### 정수론
 
 <hr/>
 
