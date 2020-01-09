@@ -260,9 +260,11 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 ### 자료구조
 
 구간 합 구하기 https://www.acmicpc.net/problem/2042 <br/>
-최대공약수 하나 빼기 https://www.acmicpc.net/problem/14476 <br/>
 
 ### 정수론
+
+최대공약수 하나 빼기 https://www.acmicpc.net/problem/14476 <br/>
+에라토스테네스의 체 https://www.acmicpc.net/problem/2960 <br/>
 
 <hr/>
 
