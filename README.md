@@ -253,9 +253,13 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 !밑비 급일 https://www.acmicpc.net/problem/11365 <br/>
 카드2 https://www.acmicpc.net/problem/2164 <br/>
 
+<hr/>
+
+## SDS 알고리즘 특강
+
 ### 알고리즘 기초
 
-분수 합 https://www.acmicpc.net/problem/1735 <br/>
+암호 만들기 https://www.acmicpc.net/problem/1759 <br/>
 
 ### 자료구조
 
@@ -263,6 +267,7 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 
 ### 정수론
 
+분수 합 https://www.acmicpc.net/problem/1735 <br/>
 최대공약수 하나 빼기 https://www.acmicpc.net/problem/14476 <br/>
 에라토스테네스의 체 https://www.acmicpc.net/problem/2960 <br/>
 캔디 분배 https://www.acmicpc.net/problem/3955 <br/>
