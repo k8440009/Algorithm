@@ -266,6 +266,7 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 최대공약수 하나 빼기 https://www.acmicpc.net/problem/14476 <br/>
 에라토스테네스의 체 https://www.acmicpc.net/problem/2960 <br/>
 골드바흐의 추측 https://www.acmicpc.net/problem/6588 <br/>
+소인수분해 https://www.acmicpc.net/problem/11653 <br/>
 
 <hr/>
 
