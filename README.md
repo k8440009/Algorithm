@@ -274,6 +274,10 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 골드바흐의 추측 https://www.acmicpc.net/problem/6588 <br/>
 소인수분해 https://www.acmicpc.net/problem/11653 <br/>
 
+### 조합론
+
+이항 계수 1 https://www.acmicpc.net/problem/11050 <br/>
+
 <hr/>
 
 ### 402 - 다이나믹 프로그래밍 1 (도전)
