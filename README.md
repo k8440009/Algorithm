@@ -90,6 +90,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 수리공 항승 https://www.acmicpc.net/problem/1449 <br/>
 동전 0 https://www.acmicpc.net/problem/11047 <br/>
 회의실배정 https://www.acmicpc.net/problem/1931 <br/>
+강의실 배정 https://www.acmicpc.net/problem/11000 <br/>
 
 ## 퇴각 검색 (백트래킹)
 
