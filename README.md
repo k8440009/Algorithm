@@ -278,6 +278,7 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 
 이항 계수 1 https://www.acmicpc.net/problem/11050 <br/>
 이항 계수 2 https://www.acmicpc.net/problem/11051 <br/>
+다리 놓기 https://www.acmicpc.net/problem/1010 <br/>
 
 <hr/>
 
