@@ -97,6 +97,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 외판원 순회 2 https://www.acmicpc.net/problem/10971 <br/>
 알파벳 https://www.acmicpc.net/problem/1987 <br/>
 N-Queen https://www.acmicpc.net/problem/9663 <br/>
+스도쿠 https://www.acmicpc.net/problem/2580 <br/>
 
 ### 분할 정복
 
