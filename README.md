@@ -214,6 +214,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 
 ### 이분탐색
 
+나무 자르기 https://www.acmicpc.net/problem/2805 <br/>
 숫자 카드 https://www.acmicpc.net/problem/10815 <br/>
 숫자 카드 2 https://www.acmicpc.net/problem/10816 <br/>
 공유기 설치 https://www.acmicpc.net/problem/2110 <br/>
