@@ -260,7 +260,18 @@ A + B - 8 https://www.acmicpc.net/problem/11022 <br/>
 
 ### 알고리즘 기초
 
+고스택 https://www.acmicpc.net/problem/3425 <br/>
+탈출 https://www.acmicpc.net/problem/3055 <br/>
+가르침 https://www.acmicpc.net/problem/1062 <br/>
+후보 추천하기 https://www.acmicpc.net/problem/1713 <br/>
+게임 https://www.acmicpc.net/problem/1103 <br/>
+교환 https://www.acmicpc.net/problem/1039 <br/>
+수 찾기 https://www.acmicpc.net/problem/1920 <br/>
+N-Queen https://www.acmicpc.net/problem/9663 <br/>
 암호 만들기 https://www.acmicpc.net/problem/1759 <br/>
+스도쿠 https://www.acmicpc.net/problem/2580 <br/>
+단어 수학 https://www.acmicpc.net/problem/1339 <br/>
+치킨 배달 https://www.acmicpc.net/problem/15686 <br/>
 
 ### 자료구조
 

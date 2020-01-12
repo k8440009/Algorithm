@@ -1,6 +1,10 @@
 // 탈출
 // https://www.acmicpc.net/problem/3055
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <queue>
+#include <algorithm>
+#include <vector>
 using namespace std;
 
 int N, M;
