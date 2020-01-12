@@ -224,6 +224,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 
 수들의 합 2 https://www.acmicpc.net/problem/2003 <br/>
 부분합 https://www.acmicpc.net/problem/1806 <br/>
+내려가기 https://www.acmicpc.net/problem/2096 <br/>
 
 ### 최단경로 (다익스트라)
 
