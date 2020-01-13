@@ -52,3 +52,8 @@ int main()
 	cout << '\n';
 	return 0;
 }
+
+/*	
+	참고
+	http://blog.naver.com/kks227/220800013823
+*/

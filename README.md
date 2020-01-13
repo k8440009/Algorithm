@@ -251,6 +251,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 ### 위상정렬
 
 줄 세우기 https://www.acmicpc.net/problem/2252 <br/>
+게임 개발 https://www.acmicpc.net/problem/1516 <br/>
 
 ### 최소 스패닝 트리 (크루스칼, 프림)
 
