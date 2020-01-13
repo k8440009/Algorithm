@@ -258,6 +258,11 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 최소 스패닝 트리 https://www.acmicpc.net/problem/1197 <br/>
 네트워크 연결 https://www.acmicpc.net/problem/1922 <br/>
 
+### LCA (최소 공통 조상)
+
+LCA https://www.acmicpc.net/problem/11437 <br/>
+LCA 2 https://www.acmicpc.net/problem/11438 <br/>
+
 ### 기타
 
 무한 문자열 https://www.acmicpc.net/problem/12871 <br/>
