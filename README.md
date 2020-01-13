@@ -248,6 +248,10 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 친구 네트워크 https://www.acmicpc.net/problem/4195 <br/>
 공항 https://www.acmicpc.net/problem/10775 <br/>
 
+### 위상정렬
+
+줄 세우기 https://www.acmicpc.net/problem/2252 <br/>
+
 ### 최소 스패닝 트리 (크루스칼, 프림)
 
 최소 스패닝 트리 https://www.acmicpc.net/problem/1197 <br/>
