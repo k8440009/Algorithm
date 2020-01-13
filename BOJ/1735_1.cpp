@@ -17,7 +17,7 @@ int main()
 {
     int a, b, c, d;
     cin >> a >> b >> c >> d;
-    // cout << gcd(a, c) << ' ' << gcd(b, d);
+    // 기약분수
     int ch = a * d + b * c;
     int pa = b * d;
     int temp = 0;
@@ -25,7 +25,6 @@ int main()
         temp = gcd(ch, pa);
     else
         temp = gcd(pa, ch);
-
     cout << ch / temp << ' ' << pa / temp << '\n';
     return 0;
 }

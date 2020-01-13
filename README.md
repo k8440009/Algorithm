@@ -251,6 +251,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 ### 최소 스패닝 트리 (크루스칼, 프림)
 
 최소 스패닝 트리 https://www.acmicpc.net/problem/1197 <br/>
+네트워크 연결 https://www.acmicpc.net/problem/1922 <br/>
 
 ### 기타
 
@@ -349,6 +350,18 @@ Boggle https://www.acmicpc.net/problem/9202 <br/>
 조약돌 꺼내기 https://www.acmicpc.net/problem/13251 <br/>
 N과 M (9) https://www.acmicpc.net/problem/15663 <br/>
 N과 M (10) https://www.acmicpc.net/problem/15664 <br/>
+
+### 그래프 1
+
+집합의 표현 https://www.acmicpc.net/problem/1717 <br/>
+줄 세우기 https://www.acmicpc.net/problem/2252 <br/>
+네트워크 연결 https://www.acmicpc.net/problem/1922 <br/>
+LCA 2 https://www.acmicpc.net/problem/11438 <br/>
+키 순서 https://www.acmicpc.net/problem/2458 <br/>
+게임 개발 https://www.acmicpc.net/problem/1516 <br/>
+교수님은 기다리지 않는다 https://www.acmicpc.net/problem/3830 <br/>
+도로 네트워크 https://www.acmicpc.net/problem/3176 <br/>
+두 번째로 작은 스패닝 트리 https://www.acmicpc.net/problem/1626 <br/>
 
 <hr/>
 
