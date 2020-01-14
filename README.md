@@ -98,6 +98,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 알파벳 https://www.acmicpc.net/problem/1987 <br/>
 N-Queen https://www.acmicpc.net/problem/9663 <br/>
 스도쿠 https://www.acmicpc.net/problem/2580 <br/>
+단어 수학 https://www.acmicpc.net/problem/1339 <br/>
 
 ### 분할 정복
 
@@ -240,6 +241,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 ### 최단경로 (플로이드-와샬)
 
 플로이드 https://www.acmicpc.net/problem/11404 <br/>
+키 순서 https://www.acmicpc.net/problem/2458 <br/>
 
 ### 유니온 파인드
 
