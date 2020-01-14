@@ -3,44 +3,50 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-const int INF = 987654321;
 const int MAX = 500 + 1;
-int N, M;
-vector<pair<int, int>> graph[MAX];
-// 음수 사이클이 있는 경우 텅빈 배열 반환
-vector<int> bellmanFord(int start)
+const int INF = 987654321;
+int N, M, dist[MAX];
+vector<pair<int, int>> adj[MAX];
+void bellmanFord(int start)
 {
-    vector<int> upper(N + 1, INF);
-    upper[start] = 0;
-
-    bool updated;
-    for (int node = 1; node <= N; node++)
+    bool minusCycle = false; // 음수 사이클 체크
+    // N-1번 루프, 마지막은 음수 사이클 여부
+    for (int i = 0; i < N; i++)
     {
-        updated = false;
-        for (int here = 1; here <= N; here++)
+        for (int j = 1; j <= N; j++)
         {
-            for (int i = 0; i < graph[here].size(); i++)
+            //N-1번의 루프에 걸쳐 각 정점이 i + 1개 정점을 거쳐오는 최단 경로 계산
+            for (pair<int, int> p : adj[j])
             {
-                int there = graph[here][i].first;
-                int cost = graph[here][i].second;
-                // (here, there) 간선을 따라 완화 시도
-                if (upper[here] != INF && upper[there] > upper[here] + cost)
+                int next = p.first, cost = p.second;
+                if (dist[j] != INF && dist[next] > dist[j] + cost)
                 {
-                    upper[there] = upper[here] + cost;
-                    updated = true;
+                    dist[next] = dist[j] + cost;
+                    // N번째 루프 값이 생신되는 경우 => 음수 사이클
+                    if (i == N - 1)
+                        minusCycle = true;
                 }
             }
         }
-        // 모든 간선에 대해 완화가 실패했을 경우 V-1도 돌 필요 없이 곧장 종료
-        if (!updated)
-            break;
     }
-
-    // V번째 순회에서도 완화가 성공했다면 음수 사이클이 있다.
-    if (updated)
-        upper.clear();
-
-    return upper;
+    // 음수 사이클 있으면 -1
+    if (minusCycle)
+        cout << -1 << '\n';
+    else
+        for (int i = 2; i <= N; i++)
+            cout << ((dist[i] != INF) ? dist[i] : -1) << '\n';
+}
+void init()
+{
+    cin >> N >> M;
+    fill_n(dist, MAX, INF);
+    dist[1] = 0;
+    int a, b, c;
+    for (int i = 0; i < M; i++)
+    {
+        cin >> a >> b >> c;
+        adj[a].push_back(make_pair(b, c));
+    }
 }
 int main()
 {
@@ -48,26 +54,7 @@ int main()
     cin.tie(0);
     cout.tie(0);
 
-    cin >> N >> M;
-    for (int i = 0; i < M; i++)
-    {
-        int a, b, c;
-        cin >> a >> b >> c;
-        graph[a].push_back(make_pair(b, c));
-    }
-
-    vector<int> result = bellmanFord(1);
-
-    if (result.empty())
-        cout << -1 << '\n';
-    else
-    {
-        for (int i = 2; i < result.size(); i++)
-            if (result[i] == INF)
-                cout << -1 << '\n';
-            else
-                cout << result[i] << '\n';
-    }
-
+    init();
+    bellmanFord(1);
     return 0;
 }
