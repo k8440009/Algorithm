@@ -145,6 +145,7 @@ ls https://www.acmicpc.net/problem/5015 <br/>
 팰린드롬? https://www.acmicpc.net/problem/10942 <br/>
 LCS https://www.acmicpc.net/problem/9251 <br/>
 효율적인 해킹 https://www.acmicpc.net/problem/1325 <br/>
+가장 큰 정사각형 https://www.acmicpc.net/problem/1915 <br/>
 
 ### 동적계획법 2
 
