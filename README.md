@@ -173,7 +173,6 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 음식물 피하기 https://www.acmicpc.net/problem/1743 <br/>
 단지번호붙이기 https://www.acmicpc.net/problem/2667 <br/>
 ABCDE https://www.acmicpc.net/problem/13023 <br/>
-단절점 https://www.acmicpc.net/problem/11266 <br/>
 
 ### BFS
 
@@ -259,10 +258,12 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 줄 세우기 https://www.acmicpc.net/problem/2252 <br/>
 게임 개발 https://www.acmicpc.net/problem/1516 <br/>
 
-### 최소 스패닝 트리 (크루스칼, 프림)
+### 최소 스패닝 트리
 
 최소 스패닝 트리 https://www.acmicpc.net/problem/1197 <br/>
 네트워크 연결 https://www.acmicpc.net/problem/1922 <br/>
+단절점 https://www.acmicpc.net/problem/11266 <br/>
+단절선 https://www.acmicpc.net/problem/11400 <br/>
 
 ### LCA (최소 공통 조상)
 
