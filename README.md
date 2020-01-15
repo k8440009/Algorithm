@@ -173,6 +173,7 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 음식물 피하기 https://www.acmicpc.net/problem/1743 <br/>
 단지번호붙이기 https://www.acmicpc.net/problem/2667 <br/>
 ABCDE https://www.acmicpc.net/problem/13023 <br/>
+단절점 https://www.acmicpc.net/problem/11266 <br/>
 
 ### BFS
 
