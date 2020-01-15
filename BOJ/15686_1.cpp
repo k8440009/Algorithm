@@ -1,49 +1,68 @@
 // 치킨 배달
 // https://www.acmicpc.net/problem/15686
-#include <bits/stdc++.h>
+/* 
+    사용 알고리즘 : 퇴각 검색
+	1. 치킨집 위치를 벡터에 저장 후 M개를 선택하면서 최솟값을 계산한다.
+*/
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
-const int MAX = 50;
+const int MAX = 50 + 1;
 const int INF = 987654321;
-int N, M;
-int result;
+int N, M, answer = INF;
 int board[MAX][MAX];
-bool visited[13]; // 치킨집 갯수는 최대 13개
-vector<pair<int, int>> house, chicken;
-int distance(pair<int, int> &a, pair<int, int> &b)
+bool selected[MAX];
+vector<pair<int, int>> chicken, house;
+void dfs(int curr, int cnt)
 {
-    return abs(a.first - b.first) + abs(a.second - b.second);
-}
-void dfs(int index, int selected)
-{
-    // 치킨집 M개 선택
-    if (selected == M)
+    // M개 선택
+    if (cnt == M)
     {
-        int temp = 0;
+        int total = 0;
         for (int i = 0; i < house.size(); i++)
         {
-            int dist = INF;
+            int result = INF;
             for (int j = 0; j < chicken.size(); j++)
             {
-                if (visited[j])
-                    dist = min(dist, distance(house[i], chicken[j]));
+                if (selected[j])
+                {
+                    int dist = abs(house[i].first - chicken[j].first) + abs(house[i].second - chicken[j].second);
+                    result = min(result, dist);
+                }
             }
-
-            temp += dist;
+            total += result;
         }
-        result = min(result, temp);
-        return;
+        answer = min(answer, total);
     }
-    // 기저 사례
-    // index가 chicken집 갯수와 같을 때
-    if (index == chicken.size())
-        return;
-
-    visited[index] = true;
-    // 치킨 집을 선택 한 경우
-    dfs(index + 1, selected + 1);
-    visited[index] = false;
-    // 치킨 집을 선택하지 않은 경우
-    dfs(index + 1, selected);
+    // 퇴각 검색, 조합
+    for (int i = curr; i < chicken.size(); i++)
+    {
+        selected[i] = true;
+        dfs(i + 1, cnt + 1);
+        selected[i] = false;
+    }
+}
+void solve()
+{
+    dfs(0, 0);
+    cout << answer << '\n';
+    return;
+}
+void init()
+{
+    cin >> N >> M;
+    for (int y = 0; y < N; y++)
+        for (int x = 0; x < N; x++)
+        {
+            cin >> board[y][x];
+            // 집
+            if (board[y][x] == 1)
+                house.push_back(make_pair(y, x));
+            // 치킨
+            else if (board[y][x] == 2)
+                chicken.push_back(make_pair(y, x));
+        }
 }
 int main()
 {
@@ -51,27 +70,8 @@ int main()
     cin.tie(0);
     cout.tie(0);
 
-    cin >> N >> M;
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < N; j++)
-        {
-            cin >> board[i][j];
-            // 집
-            if (board[i][j] == 1)
-            {
-                house.push_back(make_pair(i, j));
-            }
-            // 치킨 집
-            else if (board[i][j] == 2)
-            {
-                chicken.push_back(make_pair(i, j));
-            }
-        }
-    }
+    init();
+    solve();
 
-    result = INF;
-    // house, chicken
-    dfs(0, 0);
-    cout << result << '\n';
+    return 0;
 }
