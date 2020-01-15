@@ -99,6 +99,7 @@ N-Queen https://www.acmicpc.net/problem/9663 <br/>
 N-Queen https://www.acmicpc.net/problem/9663 <br/>
 스도쿠 https://www.acmicpc.net/problem/2580 <br/>
 단어 수학 https://www.acmicpc.net/problem/1339 <br/>
+가르침 https://www.acmicpc.net/problem/1062 <br/>
 
 ### 분할 정복
 
