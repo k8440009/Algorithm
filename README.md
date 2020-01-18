@@ -155,6 +155,7 @@ LCS https://www.acmicpc.net/problem/9251 <br/>
 
 가장 긴 증가하는 부분 수열 4 https://www.acmicpc.net/problem/14002 <br/>
 가장 긴 증가하는 부분 수열 5 https://www.acmicpc.net/problem/14003 <br/>
+LCS 2 https://www.acmicpc.net/problem/9252 <br/>
 
 ### 비트 마스크
 
