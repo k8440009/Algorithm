@@ -468,62 +468,36 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 
 ## 정올
 
-### 1996 초등부
+### 초등부
 
 단지번호붙이기 https://www.acmicpc.net/problem/2667 <br/>
 숫자고르기 https://www.acmicpc.net/problem/2668 <br/>
 직사각형 네개의 합집합의 면적 구하기 https://www.acmicpc.net/problem/2669 <br/>
-
-### 1997 초등부
-
 직각이등변삼각형 찾기 https://www.acmicpc.net/problem/2658 <br/>
 십자카드 문제 https://www.acmicpc.net/problem/2659 <br/>
 회장뽑기 https: //www.acmicpc.net/problem/2660 <br/>
-
-### 1998 초등부
-
 교차점개수 https://www.acmicpc.net/problem/2650 <br/>
-
-### 2005 본선 초등부
-
 대표값 2 https://www.acmicpc.net/problem/2587 <br/>
 보물섬 https://www.acmicpc.net/problem/2589 <br/>
-
-### 2014 예선 초등부
-
 전자레인지 https://www.acmicpc.net/problem/10162 <br/>
 색종이 https://www.acmicpc.net/problem/10163 <br/>
 격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
 버스 노선 https://www.acmicpc.net/problem/10165 <br/>
-
-### 2014 본선 초등부
-
 일곱 난쟁이 https://www.acmicpc.net/problem/2309 <br/>
 줄 세우기 https://www.acmicpc.net/problem/2605 <br/>
 비슷한 단어 https://www.acmicpc.net/problem/2607 <br/>
-
-### 2014 중등부
-
-관중석 https://www.acmicpc.net/problem/10166 <br/>
-
-### 2007 초등부
-
 색종이 https://www.acmicpc.net/problem/2563 <br/>
 버스 노선 https://www.acmicpc.net/problem/10165 <br/>
-
-### 2015 초등부
-
 쇠막대기 https://www.acmicpc.net/problem/10799 <br/>
 컬러볼 https://www.acmicpc.net/problem/10800 <br/>
-
-### 2019 초등부 1차
-
 막대기 https://www.acmicpc.net/problem/17608 <br/>
 회문 https://www.acmicpc.net/problem/17609 <br/>
-
-### 2019 초등부 2차
-
 369 https://www.acmicpc.net/problem/17614 <br/>
+안전 영역 https://www.acmicpc.net/problem/2468 <br/>
+
+### 중등부
+
+관중석 https://www.acmicpc.net/problem/10166 <br/>
 
 <hr/>
 
