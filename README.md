@@ -493,6 +493,7 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 막대기 https://www.acmicpc.net/problem/17608 <br/>
 회문 https://www.acmicpc.net/problem/17609 <br/>
 369 https://www.acmicpc.net/problem/17614 <br/>
+용액 https://www.acmicpc.net/problem/2467 <br/>
 안전 영역 https://www.acmicpc.net/problem/2468 <br/>
 
 ### 중등부
