@@ -196,6 +196,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 탈옥 https://www.acmicpc.net/problem/9376 <br/>
 보물섬 https://www.acmicpc.net/problem/2589 <br/>
 격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
+교환 https://www.acmicpc.net/problem/1039 <br/>
 
 ## 재귀
 
@@ -592,6 +593,7 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 4615 재미있는 오셀로 게임 <br/>
 1204 [S/W 문제해결 기본] 1일차 - 최빈수 구하기 <br/>
 1206 [S/W 문제해결 기본] 1일차 - View <br/>
+1213 [S/W 문제해결 기본] 3일차 - String <br/>
 1215 [S/W 문제해결 기본] 3일차 - 회문1 <br/>
 1220 [S/W 문제해결 기본] 5일차 - Magnetic <br/>
 1208 [S/W 문제해결 기본] 1일차 - Flatten
