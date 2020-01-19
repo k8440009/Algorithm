@@ -1,4 +1,4 @@
-// 369
+// 369 (정수)
 // https://www.acmicpc.net/problem/17614
 #include <iostream>
 using namespace std;
