@@ -235,6 +235,7 @@ DSLR https://www.acmicpc.net/problem/9019 <br/>
 수들의 합 2 https://www.acmicpc.net/problem/2003 <br/>
 부분합 https://www.acmicpc.net/problem/1806 <br/>
 내려가기 https://www.acmicpc.net/problem/2096 <br/>
+수열 https://www.acmicpc.net/problem/2559 <br/>
 
 ### 최단경로 (다익스트라)
 
@@ -495,6 +496,7 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 369 https://www.acmicpc.net/problem/17614 <br/>
 용액 https://www.acmicpc.net/problem/2467 <br/>
 안전 영역 https://www.acmicpc.net/problem/2468 <br/>
+수열 https://www.acmicpc.net/problem/2559 <br/>
 
 ### 중등부
 
