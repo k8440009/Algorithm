@@ -60,6 +60,7 @@ Starman https://www.acmicpc.net/problem/12791 <br/>
 파스칼 https://www.acmicpc.net/problem/2986 <br/>
 크리스마스 파티 https://www.acmicpc.net/problem/10708 <br/>
 투표 https://www.acmicpc.net/problem/10040 <br/>
+사다리 타기 https://www.acmicpc.net/problem/2469 <br/>
 
 ### Brute Force
 
@@ -496,6 +497,7 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 369 https://www.acmicpc.net/problem/17614 <br/>
 용액 https://www.acmicpc.net/problem/2467 <br/>
 안전 영역 https://www.acmicpc.net/problem/2468 <br/>
+사다리 타기 https://www.acmicpc.net/problem/2469 <br/>
 수열 https://www.acmicpc.net/problem/2559 <br/>
 
 ### 중등부
