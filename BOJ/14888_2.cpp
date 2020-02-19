@@ -1,51 +1,66 @@
-// 연산자 끼워 넣기
+// 연산자 끼워넣기
 // https://www.acmicpc.net/problem/14888
 #include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
-const int MAX = 11;
-const int INF = 987654321;
-int N;
-int num[MAX];
-int command[4];
-int Min = INF;
-int Max = -INF;
-void dfs(int index, int total, int plus, int minus, int mul, int div)
-{
-    if (index == N)
-    {
-        Min = min(Min, total);
-        Max = max(Max, total);
-        return;
-    }
 
-    if (plus > 0)
-        dfs(index + 1, total + num[index], plus - 1, minus, mul, div);
-    if (minus > 0)
-        dfs(index + 1, total - num[index], plus, minus - 1, mul, div);
-    if (mul > 0)
-        dfs(index + 1, total * num[index], plus, minus, mul - 1, div);
-    if (div > 0)
-        dfs(index + 1, total / num[index], plus, minus, mul, div - 1);
+const int INF = 1000000005;
+int N;
+int answer_MIN = INF;
+int answer_MAX = -INF;
+int opr[4];
+vector<int> num;
+
+void dfs(int curr, int plus, int minus, int mul, int div, int sum)
+{
+	if (curr == N)
+	{
+		if (sum > answer_MAX)
+			answer_MAX = sum;
+		if (sum < answer_MIN)
+			answer_MIN = sum;
+		return;
+	}
+
+	if (plus > 0)
+		dfs(curr + 1, plus - 1, minus, mul, div, sum + num[curr]);
+	if (minus > 0)
+		dfs(curr + 1, plus, minus - 1, mul, div, sum - num[curr]);
+	if (mul > 0)
+		dfs(curr + 1, plus, minus, mul - 1, div, sum * num[curr]);
+	if (div > 0)
+		dfs(curr + 1, plus, minus, mul, div - 1, sum / num[curr]);
+}
+
+void print()
+{
+	cout << answer_MAX << '\n';
+	cout << answer_MIN << '\n';
+}
+
+void solve()
+{
+	dfs(1, opr[0], opr[1], opr[2], opr[3], num[0]);
+}
+
+void init()
+{
+	cin >> N;
+	num.resize(N);
+	for (int i = 0; i < N; i++)
+		cin >> num[i];
+	for (int i = 0; i < 4; i++)
+		cin >> opr[i];
 }
 
 int main()
 {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
 
-    cin >> N;
-    for (int i = 0; i < N; i++)
-        cin >> num[i];
-    for (int i = 0; i < 4; i++)
-        cin >> command[i];
-
-    // cnt total, 덧셈, 뺼셈, 곱셈, 나눗셈
-    dfs(1, num[0], command[0], command[1], command[2], command[3]);
-
-    cout << Max << '\n';
-    cout << Min << '\n';
-    return 0;
+	init();
+	solve();
+	print();
 }

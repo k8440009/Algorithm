@@ -4,65 +4,80 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-const int MAX = 20;
+
 const int INF = 987654321;
-int N, answer;
+const int MAX = 20 + 1;
+
+int answer = INF;
+int N;
 int board[MAX][MAX];
-void setTeam(int index, int team[])
+int visited[MAX];
+
+void dfs(int curr, int cnt)
 {
-    if (index == N)
-    {
-        int cnt = 0;
-        for (int i = 0; i < N; i++)
-        {
-            if (team[i] == 0)
-                cnt += 1;
-        }
+	if (curr > N)
+		return;
 
-        if (cnt == N / 2)
-        {
-            int startTeam = 0, linkTeam = 0;
+	if (cnt == N / 2)
+	{
+		vector<int> a_team, b_team;
+		// 연산
+		for (int i = 0; i < N; i++)
+		{
+			if (visited[i])
+				a_team.push_back(i);
+			else
+				b_team.push_back(i);
+		}
 
-            for (int i = 0; i < N; i++)
-            {
-                for (int j = 0; j < N; j++)
-                {
-                    if (i == j)
-                        continue;
-                    else if (team[i] == 0 && team[i] == team[j])
-                        startTeam += board[i][j];
-                    else if (team[i] == 1 && team[i] == team[j])
-                        linkTeam += board[i][j];
-                }
-            }
-            answer = min(answer, abs(startTeam - linkTeam));
-        }
-        return;
-    }
+		int sum_a = 0, sum_b = 0;
+		for (int i = 0; i < N / 2; i++)
+		{
+			for (int j = i + 1; j < N / 2; j++)
+			{
 
-    team[index] = 1;
-    setTeam(index + 1, team);
-    team[index] = 0;
-    setTeam(index + 1, team);
+				sum_a += (board[a_team[i]][a_team[j]] + board[a_team[j]][a_team[i]]);
+				sum_b += (board[b_team[i]][b_team[j]] + board[b_team[j]][b_team[i]]);
+			}
+		}
+
+		int sum = abs(sum_a - sum_b);
+		if (answer > sum)
+			answer = sum;
+		return;
+	}
+
+	visited[curr] = 1;
+	dfs(curr + 1, cnt + 1);
+	visited[curr] = 0;
+	dfs(curr + 1, cnt);
 }
+
+void print()
+{
+	cout << answer;
+}
+void solve()
+{
+	dfs(0, 0);
+}
+void init()
+{
+	cin >> N;
+	for (int r = 0; r < N; r++)
+	{
+		for (int c = 0; c < N; c++)
+			cin >> board[r][c];
+	}
+}
+
 int main()
 {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
 
-    cin >> N;
-
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < N; j++)
-            cin >> board[i][j];
-    }
-
-    answer = INF;
-    int team[MAX];
-    setTeam(0, team);
-
-    cout << answer << '\n';
-    return 0;
+	init();
+	solve();
+	print();
 }
