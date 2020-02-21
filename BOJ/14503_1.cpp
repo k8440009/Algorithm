@@ -1,94 +1,89 @@
 // 로봇 청소기
 // https://www.acmicpc.net/problem/14503
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
+
+const int MAX = 50 + 1;
+const int dr[] = {-1, 0, 1, 0};
+const int dc[] = {0, 1, 0, -1};
+
 struct ROBOT
 {
-    int y, x, dir;
+	int r, c, dir;
 };
+ROBOT cleaner;
 
-ROBOT robot;
-
-const int MAX = 50;
-int N, M;
-const int dy[4] = {-1, 0, 1, 0};
-const int dx[4] = {0, 1, 0, -1};
+int N, M, answer;
 int board[MAX][MAX];
+int visited[MAX][MAX];
+
+void print()
+{
+	cout << answer << '\n';
+}
+
+void solve()
+{
+	int cnt = 0;
+	int flag = 1;
+
+	while (1)
+	{
+		if (flag && !visited[cleaner.r][cleaner.c])
+		{
+			visited[cleaner.r][cleaner.c] = 1;
+			answer++;
+			flag = 0;
+		}
+
+		int n_dir = ((cleaner.dir - 1) + 4) % 4;
+		int nr = cleaner.r + dr[n_dir];
+		int nc = cleaner.c + dc[n_dir];
+
+		if (board[nr][nc] == 0 && !visited[nr][nc])
+		{
+			cleaner.dir = n_dir;
+			cleaner.r = cleaner.r + dr[cleaner.dir];
+			cleaner.c = cleaner.c + dc[cleaner.dir];
+			flag = 1;
+			cnt = 0;
+			continue;
+		}
+		else if (cnt < 4 && (board[nr][nc] == 1 || (board[nr][nc] == 0 && visited[nr][nc])))
+		{
+			cleaner.dir = n_dir;
+			cnt++;
+			continue;
+		}
+		else if (cnt == 4 || board[nr][nc] == 1)
+		{
+			int back_dir = (cleaner.dir + 2) % 4;
+			int back_r = cleaner.r + dr[back_dir];
+			int back_c = cleaner.c + dc[back_dir];
+			if (board[back_r][back_c] == 1)
+				break;
+			cleaner.r = back_r;
+			cleaner.c = back_c;
+			cnt = 0;
+			flag = 1;
+		}
+	}
+}
+
+void init()
+{
+	cin >> N >> M;
+	cin >> cleaner.r >> cleaner.c >> cleaner.dir;
+	for (int r = 0; r < N; r++)
+		for (int c = 0; c < M; c++)
+			cin >> board[r][c];
+}
 
 int main()
 {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-
-    cin >> N >> M;
-    cin >> robot.y >> robot.x >> robot.dir;
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 0; j < M; j++)
-            cin >> board[i][j];
-    }
-
-    queue<ROBOT> q;
-    q.push(robot);
-
-    int answer = 0;
-    while (!q.empty())
-    {
-        ROBOT now = q.front();
-        q.pop();
-
-        // 1. 현재 위치 청소
-        if (board[now.y][now.x] == 0)
-        {
-            board[now.y][now.x] = 2;
-            answer += 1;
-        }
-
-        for (int dir = 0; dir < 4; dir++)
-        {
-            /*
-                왼쪽방향으로 회전하는 공식을 만듬
-                cur.dir = 0;    // 북쪽
-                dir = 0;
-                (now.dir + 3 - dir) % 4 = (now.dir + 3 + dir*3) %4
-
-                (now.dir + 3 - dir) % 4 = 3 (서쪽)
-                (now.dir + 3 - dir) % 4 = 3 (서쪽)
-                (now.dir + 3 - dir) % 4 = 3 (서쪽)
-                (now.dir + 3 - dir) % 4 = 3 (서쪽)
-            */
-            // 왼쪽 방향 부터
-            ROBOT next;
-            next.dir = (now.dir + 3 - dir) % 4;
-            next.y = now.y + dy[next.dir];
-            next.x = now.x + dx[next.dir];
-
-            // 청소할 공간이 없으면 pass
-            if (next.y < 0 || next.y >= N || next.x < 0 || next.x >= M || board[next.y][next.x] != 0)
-                continue;
-
-            q.push(next);
-            break; // 청소기 하나이므로
-        }
-
-        // 네 방향이 청소되어있거나, 벽인 경우
-        if (q.empty())
-        {
-            ROBOT next;
-            next.dir = now.dir;
-            // 후진
-            next.y = now.y + dy[(next.dir + 2) % 4];
-            next.x = now.x + dx[(next.dir + 2) % 4];
-
-            // 청소할 공간이 없으면 멈춘다.
-            if (next.y < 0 || next.y >= N || next.x < 0 || next.x >= M || board[next.y][next.x] == 1)
-                break;
-
-            q.push(next);
-        }
-    }
-
-    cout << answer << '\n';
-    return 0;
+	init();
+	solve();
+	print();
 }
