@@ -1,152 +1,152 @@
 // 미세먼지 안녕!
 // https://www.acmicpc.net/problem/17144
-/*
-    배열 이동
-    4방향 이동
-*/
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <vector>
 using namespace std;
+int R, C, T;
+const int MAX = 50 + 1;
+int board[MAX][MAX];
+int dust[MAX][MAX];
 int dr[4] = {1, 0, -1, 0};
 int dc[4] = {0, 1, 0, -1};
-const int MAX = 50;
-int R, C, T;
-int upY, upX, downY, downX;
-int board[2][MAX][MAX];
-void move(int now)
+vector<pair<int, int>> cleaner;
+void active()
 {
-    for (int y = upY - 1; y >= 0; y--)
+    int y = cleaner[0].first;
+    int x = cleaner[0].second;
+    // 윗 공기 청정기
+    // 왼쪽
+    for (int r = y - 1; r - 1 >= 0; r--)
     {
-        board[now][y][0] = board[now][y - 1][0];
+        board[r][0] = board[r - 1][0];
     }
-
-    for (int x = 0; x < C - 1; x++)
+    //위
+    for (int c = 0; c + 1 < C; c++)
     {
-        board[now][0][x] = board[now][0][x + 1];
+        board[0][c] = board[0][c + 1];
     }
-
-    for (int y = 0; y < upY; y++)
+    // 오른쪽
+    for (int r = 0; r + 1 <= y; r++)
     {
-        board[now][y][C - 1] = board[now][y + 1][C - 1];
+        board[r][C - 1] = board[r + 1][C - 1];
     }
-
-    for (int x = C - 1; x > 1; x--)
+    // 아래
+    for (int c = C - 1; c - 1 >= 1; c--)
     {
-        board[now][upY][x] = board[now][upY][x - 1];
+        board[y][c] = board[y][c - 1];
     }
-
-    board[now][upY][1] = 0;
-
-    for (int y = downY + 1; y < R; y++)
+    board[y][x + 1] = 0;
+    // 아랫 공기
+    y = cleaner[1].first;
+    x = cleaner[1].second;
+    // 왼쪽
+    for (int r = y + 1; r + 1 < R; r++)
     {
-        board[now][y][0] = board[now][y + 1][0];
+        board[r][0] = board[r + 1][0];
     }
-
-    for (int x = 0; x < C - 1; x++)
+    // 아래
+    for (int c = 0; c + 1 < C; c++)
     {
-        board[now][R - 1][x] = board[now][R - 1][x + 1];
+        board[R - 1][c] = board[R - 1][c + 1];
     }
-    for (int y = R - 1; y > downY; y--)
+    // 오른쪽
+    for (int r = R - 1; r - 1 >= y; r--)
     {
-        board[now][y][C - 1] = board[now][y - 1][C - 1];
+        board[r][C - 1] = board[r - 1][C - 1];
     }
-    for (int x = C - 1; x > 1; x--)
+    // 위
+    for (int c = C - 1; c - 1 >= 1; c--)
     {
-        board[now][downY][x] = board[now][downY][x - 1];
+        board[y][c] = board[y][c - 1];
     }
-
-    board[now][downY][1] = 0;
+    board[y][x + 1] = 0;
 }
-void spread(int now)
+void spread()
 {
-    int next = (now + 1) % 2;
     for (int r = 0; r < R; r++)
     {
         for (int c = 0; c < C; c++)
         {
-            if (board[now][r][c] == -1)
-                board[next][r][c] = -1;
-            else
-                board[next][r][c] = 0;
-        }
-    }
-
-    for (int r = 0; r < R; r++)
-    {
-        for (int c = 0; c < C; c++)
-        {
-            if (board[now][r][c] == -1)
-                continue;
-
-            int value = 0;
-            int mass = board[now][r][c] / 5;
-            for (int dir = 0; dir < 4; dir++)
+            if (board[r][c] > 0)
             {
-                int nr = r + dr[dir];
-                int nc = c + dc[dir];
+                int spreadDust = board[r][c] / 5;
+                int value = 0; // 확산되는 곳
+                for (int dir = 0; dir < 4; dir++)
+                {
+                    int nr = r + dr[dir];
+                    int nc = c + dc[dir];
 
-                if (nr < 0 || nc < 0 || nr >= R || nc >= C)
-                    continue;
-                if (board[next][nr][nc] == -1)
-                    continue;
+                    if (nr < 0 || nr >= R || nc < 0 || nc >= C || board[nr][nc] == -1)
+                        continue;
 
-                board[next][nr][nc] += mass;
-                value += mass;
+                    dust[nr][nc] += spreadDust;
+                    value += spreadDust;
+                }
+                dust[r][c] += (board[r][c] - value);
             }
+        }
+    }
 
-            board[next][r][c] += (board[now][r][c] - value);
+    for (int r = 0; r < R; r++)
+    {
+        for (int c = 0; c < C; c++)
+        {
+
+            if (board[r][c] == -1)
+            {
+                dust[r][c] = -1;
+                continue;
+            }
+            else
+            {
+                board[r][c] = dust[r][c];
+                dust[r][c] = 0;
+            }
         }
     }
 }
-
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
 
-    upY = -1;
-
     cin >> R >> C >> T;
+    cleaner.resize(2);
+    int index = 0;
     for (int r = 0; r < R; r++)
     {
         for (int c = 0; c < C; c++)
         {
-            cin >> board[0][r][c];
-            if (board[0][r][c] == -1)
+            cin >> board[r][c];
+            if (board[r][c] == -1)
             {
-                if (upY == -1)
-                {
-                    upY = r;
-                    upX = c;
-                }
-                else
-                {
-                    downY = r;
-                    downX = c;
-                }
+                cleaner[index].first = r;
+                cleaner[index].second = c;
+                index += 1;
+                dust[r][c] = -1;
             }
         }
     }
 
-    int now = 0;
-    // 현재 0, next 1
     for (int time = 0; time < T; time++)
     {
-        spread(now); // 확산
-        now = (now + 1) % 2;
-        move(now); // 공기 청정기
+        spread();
+        active();
     }
 
-    int result = 0;
+    int answer = 0;
     for (int r = 0; r < R; r++)
     {
         for (int c = 0; c < C; c++)
         {
-            if (board[now][r][c] != -1)
-                result += board[now][r][c];
+            if (board[r][c] == -1)
+                continue;
+            answer += board[r][c];
         }
     }
+    cout << answer << '\n';
 
-    cout << result << '\n';
     return 0;
 }
