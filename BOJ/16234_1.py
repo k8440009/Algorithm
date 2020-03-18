@@ -1,10 +1,6 @@
 # 인구 이동
 # https://www.acmicpc.net/problem/16234
 
-'''
-	pypy3
-'''
-
 import sys
 
 dr = [1, -1, 0, 0]
@@ -25,7 +21,7 @@ def bfs(start):
     total = board[start[0]][start[1]]
     alias = []
     while q:
-        r, c = q.pop()
+        r, c = q.pop(0)
         for dir in range(4):
             nr = r + dr[dir]
             nc = c + dc[dir]
