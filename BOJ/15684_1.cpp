@@ -1,77 +1,98 @@
 // 사다리 조작
 // https://www.acmicpc.net/problem/15684
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 using namespace std;
-int N, M, H;
-bool board[11][31];
-bool visited[11][31];
-vector<pair<int, int>> line;
-int answer;
-bool search()
+
+int N, M, H, answer = 987654321;
+
+int board[31][11];
+
+void print_board()
 {
-    for (int i = 1; i <= N; i++)
-    {
-        int current = i;
-        for (int j = 1; j <= H; j++)
-        {
-            if (visited[current][j])
-                current += 1;
-            else if (visited[current - 1][j])
-                current -= 1;
-        }
-
-        if (current != i)
-            return false;
-    }
-    return true;
+	cout << '\n';
+	for (int r = 1; r <= H; r++)
+	{
+		for (int c = 1; c <= N; c++)
+		{
+			cout << board[r][c] << ' ';
+		}
+		cout << '\n';
+	}
+	cout << '\n';
 }
-void dfs(int index, int cnt)
+
+int check()
 {
-    if (cnt >= 4)
-        return;
+	for (int c = 1; c <= N; c++)
+	{
+		int pos = c;
 
-    if (search())
-    {
-        answer = min(answer, cnt);
-        return;
-    }
+		for (int r = 1; r <= H; r++)
+		{
+			if (board[r][pos] == 1)
+				pos++;
+			else if (board[r][pos - 1] == 1)
+				pos--;
+		}
 
-    for (int r = index; r <= H; r++)
-    {
-        for (int c = 1; c < N; c++)
-        {
-            if (visited[c][r])
-                continue;
-            if (visited[c - 1][r])
-                continue;
-            if (visited[c + 1][r])
-                continue;
-
-            visited[c][r] = true;
-            dfs(r, cnt + 1);
-            visited[c][r] = false;
-        }
-    }
+		if (pos != c)
+			return 0;
+	}
+	return 1;
 }
+
+void dfs(int s_r, int s_c, int cnt)
+{
+	if (cnt >= answer)
+		return;
+	if (check())
+	{
+		answer = cnt;
+		return;
+	}
+	if (cnt == 3)
+		return;
+
+	for (int r = s_r; r <= H; r++)
+	{
+		for (int c = s_c; c < N; c++)
+		{
+			if (board[r][c] == 0 && board[r][c - 1] == 0 && board[r][c + 1] == 0)
+			{
+				board[r][c] = 1;
+				dfs(r, c, cnt + 1);
+				board[r][c] = 0;
+			}
+		}
+		s_c = 1;
+	}
+}
+
+void solve()
+{
+	dfs(1, 1, 0);
+	if (answer == 987654321)
+		answer = -1;
+	cout << answer << '\n';
+}
+void init()
+{
+	cin >> N >> M >> H;
+	for (int i = 0; i < M; i++)
+	{
+		int r, c;
+		cin >> r >> c;
+		board[r][c] = 1;
+	}
+}
+
 int main()
 {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
 
-    cin >> N >> M >> H;
-
-    for (int i = 1; i <= M; i++)
-    {
-        int a, b;
-        cin >> a >> b;
-        visited[b][a] = true;
-    }
-
-    answer = 987654321;
-    dfs(1, 0);
-    if (answer == 987654321)
-        answer = -1;
-    cout << answer << '\n';
-    return 0;
+	init();
+	solve();
 }
