@@ -550,6 +550,24 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 캐슬 디펜스 https://www.acmicpc.net/problem/17135 <br/>
 원판 돌리기 https://www.acmicpc.net/problem/17822 <br/>
 
+## 2019 코딩테스트 모의고사
+- 2020-03-21 코드
+https://blog.encrypted.gg/
+https://www.acmicpc.net/problem/5427
+
+- 평가
+1번) Rotate 알지 못하면 못푸는 문제, rotate를 암기하기
+2번) 백트래킹으로 짜기 어려운 조합 + bfs 변화 주의 해야하는 문제
+백트래킹으로 조합을 못짜겠다면 next_permutation으로 짜도록 하자. 그러는 편이 구현하는데 시간이 덜든다.
+
+## 참고 자료
+- 코딩테스트-대비-특강
+http://www.secmem.org/blog/2019/03/07/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8C%80%EB%B9%84-%ED%8A%B9%EA%B0%95/
+https://www.acmicpc.net/problem/16985
+https://www.acmicpc.net/problem/16986
+https://www.acmicpc.net/problem/16987
+https://www.acmicpc.net/problem/16988
+
 ### SWEA
 
 #### D1
@@ -685,9 +703,6 @@ Matching Specific String <br/>
 
 <hr/>
 
-# 참고
-
-https://github.com/tony9402/baekjoon/tree/master
 
 <hr/>
 
@@ -698,3 +713,9 @@ https://github.com/tony9402/baekjoon/tree/master
 Round #598 https://codeforces.com/contest/1256 <br/>
 
 <hr/>
+
+# 참고자료
+
+## algorithm
+1. fill
+https://modoocode.com/267
