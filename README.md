@@ -680,6 +680,10 @@ Matching Specific String <br/>
 
 ## 카카오
 
+### 2018
+셔틀 버스 https://programmers.co.kr/learn/courses/30/lessons/17678 <br/>
+뉴스 클러스터링 https://programmers.co.kr/learn/courses/30/lessons/17677 <br/>
+
 ### 2020
 
 괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058 <br/>
@@ -719,3 +723,9 @@ Round #598 https://codeforces.com/contest/1256 <br/>
 ## algorithm
 1. fill
 https://modoocode.com/267
+
+## 파이썬 시간 표현
+https://cnpnote.tistory.com/entry/PYTHON-%EC%B4%88%EB%A5%BC%EC%8B%9C-%EB%B6%84-%EC%B4%88%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9E%85%EB%8B%88%EA%B9%8C
+
+## 파이썬 print() 옵션
+https://www.opentutorials.org/module/2980/17535
