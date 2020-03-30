@@ -1,7 +1,5 @@
 # 뉴스 클러스터링
 # https://programmers.co.kr/learn/courses/30/lessons/17677
-
-import math
 def union(a, b):
 	l = []
 
@@ -73,8 +71,7 @@ def solution(str1, str2):
 	else :
 		sun = inter(a,b)
 		mother = union(a,b)
-		answer = (sun / mother) * 65536
-		answer = math.trunc(answer)
+		answer = int((sun / mother) * 65536)
 	print(answer)
 	return answer
 
