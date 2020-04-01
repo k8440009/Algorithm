@@ -724,8 +724,16 @@ Round #598 https://codeforces.com/contest/1256 <br/>
 1. fill
 https://modoocode.com/267
 
-## 파이썬 시간 표현
+## 파이썬
+### 파이썬 시간 표현
 https://cnpnote.tistory.com/entry/PYTHON-%EC%B4%88%EB%A5%BC%EC%8B%9C-%EB%B6%84-%EC%B4%88%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9E%85%EB%8B%88%EA%B9%8C
 
-## 파이썬 print() 옵션
+### 파이썬 print() 옵션
 https://www.opentutorials.org/module/2980/17535
+
+### 파이썬 정렬 옵션
+https://dailyheumsi.tistory.com/67
+https://wayhome25.github.io/python/2017/03/07/key-function/
+
+### 파이썬 집합
+https://blog.hexabrain.net/320
