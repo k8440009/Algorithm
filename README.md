@@ -737,3 +737,10 @@ https://wayhome25.github.io/python/2017/03/07/key-function/
 
 ### 파이썬 집합
 https://blog.hexabrain.net/320
+
+### 파이썬 음수 인덱싱
+https://itholic.github.io/python-reverse-string/
+
+## 파이썬 깊은 복사 얕은 복사
+- 얕은 복사 : 같은 주소씀 => 복사본과 서로 영향
+- 깊은 복사 : 새로운 객체 만듬
