@@ -470,39 +470,15 @@ BFS 스페셜 저지 https://www.acmicpc.net/problem/16940 <br/>
 
 ## 정올
 
-### 초등부
+## 2016 한국정보올림피아드 초등부
 
-단지번호붙이기 https://www.acmicpc.net/problem/2667 <br/>
-숫자고르기 https://www.acmicpc.net/problem/2668 <br/>
-직사각형 네개의 합집합의 면적 구하기 https://www.acmicpc.net/problem/2669 <br/>
-직각이등변삼각형 찾기 https://www.acmicpc.net/problem/2658 <br/>
-십자카드 문제 https://www.acmicpc.net/problem/2659 <br/>
-회장뽑기 https: //www.acmicpc.net/problem/2660 <br/>
-교차점개수 https://www.acmicpc.net/problem/2650 <br/>
-대표값 2 https://www.acmicpc.net/problem/2587 <br/>
-보물섬 https://www.acmicpc.net/problem/2589 <br/>
-전자레인지 https://www.acmicpc.net/problem/10162 <br/>
-색종이 https://www.acmicpc.net/problem/10163 <br/>
-격자상의 경로 https://www.acmicpc.net/problem/10164 <br/>
-버스 노선 https://www.acmicpc.net/problem/10165 <br/>
-일곱 난쟁이 https://www.acmicpc.net/problem/2309 <br/>
-줄 세우기 https://www.acmicpc.net/problem/2605 <br/>
-비슷한 단어 https://www.acmicpc.net/problem/2607 <br/>
-색종이 https://www.acmicpc.net/problem/2563 <br/>
-버스 노선 https://www.acmicpc.net/problem/10165 <br/>
-쇠막대기 https://www.acmicpc.net/problem/10799 <br/>
-컬러볼 https://www.acmicpc.net/problem/10800 <br/>
-막대기 https://www.acmicpc.net/problem/17608 <br/>
-회문 https://www.acmicpc.net/problem/17609 <br/>
-369 https://www.acmicpc.net/problem/17614 <br/>
-용액 https://www.acmicpc.net/problem/2467 <br/>
-안전 영역 https://www.acmicpc.net/problem/2468 <br/>
-사다리 타기 https://www.acmicpc.net/problem/2469 <br/>
-수열 https://www.acmicpc.net/problem/2559 <br/>
+## 2017 한국정보올림피아드 초등부
+ 딱지놀이 https://www.acmicpc.net/problem/14696 <br/>
+ 방 배정하기 https://www.acmicpc.net/problem/14697 <br/>
 
-### 중등부
-
-관중석 https://www.acmicpc.net/problem/10166 <br/>
+## 2018 한국정보올림피아드 초등부
+ 행복 https://www.acmicpc.net/problem/15969 <br/>
+ 화살표 그리기 https://www.acmicpc.net/problem/15970 <br/>
 
 <hr/>
 
@@ -603,6 +579,7 @@ https://www.acmicpc.net/problem/16988
 
 1953 [모의 SW 역량테스트] 탈주범 검거 <br/>
 2105 [모의 SW 역량테스트] 디저트 카페 <br/>
+2115 [모의 SW 역량테스트] 벌꿀채취 <br/>
 4012 [모의 SW 역량테스트] 요리사 <br/>
 4130 [모의 SW 역량테스트] 특이한 자석 <br/>
 5644 [모의 SW 역량테스트] 무선 충전 <br/>

@@ -1,5 +1,4 @@
 // 2115. [모의 SW 역량테스트] 벌꿀채취
-// 1800ms
 #include <iostream>
 #include <vector>
 using namespace std;
