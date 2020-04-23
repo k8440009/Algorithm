@@ -580,8 +580,10 @@ https://www.acmicpc.net/problem/16988
 1953 [모의 SW 역량테스트] 탈주범 검거 <br/>
 2105 [모의 SW 역량테스트] 디저트 카페 <br/>
 2115 [모의 SW 역량테스트] 벌꿀채취 <br/>
+2382 [모의 SW 역량테스트] 미생물 격리 <br/>
 2477 [모의 SW 역량테스트] 차량 정비소 <br/>
 4012 [모의 SW 역량테스트] 요리사 <br/>
+4014 [모의 SW 역량테스트] 활주로 건설 <br/>
 4130 [모의 SW 역량테스트] 특이한 자석 <br/>
 5644 [모의 SW 역량테스트] 무선 충전 <br/>
 5656 [모의 SW 역량테스트] 벽돌 깨기 <br/>
@@ -722,3 +724,9 @@ https://itholic.github.io/python-reverse-string/
 ## 파이썬 깊은 복사 얕은 복사
 - 얕은 복사 : 같은 주소씀 => 복사본과 서로 영향
 - 깊은 복사 : 새로운 객체 만듬
+
+### 잡기술
+- 1차원 배열 90도 회전 알고리즘
+https://shoark7.github.io/programming/algorithm/5-ways-to-rotate-array.html
+- 2차원 배열 90도 회전 알고리즘
+https://shoark7.github.io/programming/algorithm/rotate-2d-array
