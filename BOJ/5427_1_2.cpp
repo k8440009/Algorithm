@@ -1,4 +1,4 @@
-// 불 메모리 초과 - 1600MB
+// 불
 // https://www.acmicpc.net/problem/5427
 #include <iostream>
 #include <queue>
@@ -6,14 +6,17 @@
 #include <vector>
 using namespace std;
 
+struct STATE
+{
+	int r, c, state, time;
+};
 int dr[4] = {1, -1, 0, 0};
 int dc[4] = {0, 0, 1, -1};
 
 int W, H;
 
-char board[1000][1000];
-bool visited[1000][1000];
-vector<pair<int, int>> save_p, save_f;
+char board[1002][1002];
+bool visited[1002][1002];
 
 int main()
 {
@@ -25,90 +28,70 @@ int main()
 	cin >> tc;
 	for (int ts = 1; ts <= tc; ts++)
 	{
+		fill_n(visited[0], 1002 * 1002, 0);
 		int answer = 987654321;
 		cin >> W >> H;
-		fill_n(board[0], 1000 * 1000, '.');
-		fill_n(visited[0], 1000 * 1000, 0);
-
-		queue<pair<int, int>> fire, people;
-
+		queue<STATE> q;
+		int p_r, p_c;
 		for (int r = 0; r < H; r++)
 		{
-			string tmp;
-			cin >> tmp;
 			for (int c = 0; c < W; c++)
 			{
-				board[r][c] = tmp[c];
+				cin >> board[r][c];
 				if (board[r][c] == '*')
-					fire.push(make_pair(r, c));
+				{
+					STATE tmp;
+					tmp.r = r, tmp.c = c, tmp.state = 1, tmp.time = 0;
+					q.push(tmp);
+				}
 				else if (board[r][c] == '@')
 				{
-					people.push(make_pair(r, c));
-					visited[r][c] = 1;
+					p_r = r, p_c = c;
 					board[r][c] = '.';
+					visited[r][c] = 1;
 				}
 			}
 		}
+		STATE tmp;
+		tmp.r = p_r, tmp.c = p_c, tmp.time = 0, tmp.state = 2;
+		q.push(tmp);
 
-		int time = 0;
 		bool flag = 1;
-		while (flag)
+		while (!q.empty() && flag)
 		{
-			save_p.clear(), save_f.clear();
-			// 상근이가 움직인다.
-			while (!people.empty())
+			STATE cur = q.front();
+			q.pop();
+
+			for (int dir = 0; dir < 4; dir++)
 			{
-				pair<int, int> cur = people.front();
-				people.pop();
-				for (int dir = 0; dir < 4; dir++)
+				int nr = cur.r + dr[dir];
+				int nc = cur.c + dc[dir];
+
+				if (nr < 0 || nr >= H || nc < 0 || nc >= W)
 				{
-					int nr = cur.first + dr[dir], nc = cur.second + dc[dir];
-					if (nr < 0 || nr >= H || nc < 0 || nc >= W)
+					if (cur.state == 2)
 					{
-						if (answer > time + 1)
-							answer = time + 1;
+						answer = cur.time + 1;
 						flag = 0;
 						break;
 					}
-					if (board[nr][nc] == '#' || board[nr][nc] == '*' || visited[nr][nc] == 1)
+					else
 						continue;
-					pair<int, int> next;
-					next.first = nr, next.second = nc;
-					save_p.push_back(next);
 				}
-			}
-			if (!flag)
-				break;
-			while (!fire.empty())
-			{
-				pair<int, int> cur = fire.front();
-				fire.pop();
-				for (int dir = 0; dir < 4; dir++)
-				{
-					int nr = cur.first + dr[dir], nc = cur.second + dc[dir];
-					if (nr < 0 || nr >= H || nc < 0 || nc >= W)
-						continue;
-					if (board[nr][nc] == '#' || board[nr][nc] == '*')
-						continue;
-					board[nr][nc] = '*';
-					pair<int, int> next;
-					next.first = nr, next.second = nc;
-					save_f.push_back(next);
-				}
-			}
-			for (int i = 0; i < save_f.size(); i++)
-				fire.push(save_f[i]);
-			for (int i = 0; i < save_p.size(); i++)
-			{
-				if (board[save_p[i].first][save_p[i].second] == '*')
+
+				if (board[nr][nc] == '*' || board[nr][nc] == '#' || visited[nr][nc] == 1)
 					continue;
-				people.push(save_p[i]);
-				visited[save_p[i].first][save_p[i].second] = 1;
+
+				STATE next;
+				next.r = nr, next.c = nc, next.time = cur.time + 1, next.state = cur.state;
+				if (cur.state == 1)
+					board[nr][nc] = '*';
+				else if (cur.state == 2)
+					visited[nr][nc] = 1;
+				q.push(next);
 			}
-			if (people.empty())
-				break;
-			time++;
 		}
+
 		if (answer == 987654321)
 			cout << "IMPOSSIBLE" << '\n';
 		else
