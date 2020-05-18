@@ -3,103 +3,82 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <algorithm>
 using namespace std;
-const int MAX = 100 + 2;
-const int dr[] = {0, 1, 0, -1};
-const int dc[] = {1, 0, -1, 0};
-struct Animal
+struct SNAKE
 {
-	int row = 1;
-	int col = 1;
-	int dir = 0;
+    int y, x, dir;
 };
-
-Animal snake_head;
-
-int board[MAX][MAX];
+const int MAX = 100;
+const int dy[] = {0, 1, 0, -1};
+const int dx[] = {1, 0, -1, 0};
 int N, K, L;
-int time = 1;
-vector<pair<int, char>> change_position;
-
-void print()
-{
-	cout << time << '\n';
-}
-void solve()
-{
-	int index = 0;
-	queue<pair<int, int>> snake_body;
-	snake_body.push(make_pair(1, 1));
-	board[1][1] = 2;
-
-	while (1)
-	{
-		int nr = snake_head.row + dr[snake_head.dir];
-		int nc = snake_head.col + dc[snake_head.dir];
-
-		// printf("time : %d, (r,c) : %d %d, (nr,nc) : %d %d\n", time, snake_head.row, snake_head.col, nr, nc);
-		if (nr < 1 || nr > N || nc < 1 || nc > N || board[nr][nc] == 2)
-			break;
-
-		if (board[nr][nc] == 1)
-		{
-			snake_head.row = nr, snake_head.col = nc;
-			snake_body.push(make_pair(nr, nc));
-			board[nr][nc] = 2;
-		}
-		else
-		{
-			snake_head.row = nr, snake_head.col = nc;
-			board[snake_body.front().first][snake_body.front().second] = 0;
-			snake_body.pop();
-			board[nr][nc] = 2;
-			snake_body.push(make_pair(nr, nc));
-		}
-
-		if (change_position[index].first == time)
-		{
-			if (change_position[index].second == 'L')
-			{
-				snake_head.dir -= 1;
-				if (snake_head.dir < 0)
-					snake_head.dir = 3;
-			}
-			else
-			{
-				snake_head.dir += 1;
-				snake_head.dir %= 4;
-			}
-			index++;
-		}
-		time++;
-	}
-}
-
-void init()
-{
-	cin >> N >> K;
-	for (int i = 0; i < K; i++)
-	{
-		int r, c;
-		cin >> r >> c;
-		board[r][c] = 1;
-	}
-	cin >> L;
-	change_position.resize(L);
-	for (int i = 0; i < L; i++)
-	{
-		int t;
-		char dir;
-		cin >> t >> dir;
-		change_position[i].first = t;
-		change_position[i].second = dir;
-	}
-}
-
+int board[MAX][MAX];
 int main()
 {
-	init();
-	solve();
-	print();
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    cin >> N >> K;
+    for (int i = 0; i < K; i++)
+    {
+        int y, x;
+        cin >> y >> x;
+        y -= 1;
+        x -= 1;
+        board[y][x] = 1;
+    }
+    cin >> L;
+    vector<pair<int, char>> command(L);
+    for (int i = 0; i < L; i++)
+    {
+        int t;
+        char c;
+        cin >> t >> c;
+        command[i].first = t;
+        command[i].second = c;
+    }
+    // 뱀
+    SNAKE head;
+    head.x = 0;
+    head.y = 0;
+    head.dir = 0;
+    board[head.y][head.x] = -1;
+    queue<pair<int, int>> tail;
+    tail.push(make_pair(0, 0));
+
+    int time = 0, index = 0;
+    while (true)
+    {
+        time += 1;
+
+        int ny = head.y + dy[head.dir];
+        int nx = head.x + dx[head.dir];
+
+        if (ny < 0 || ny >= N || nx < 0 || nx >= N || board[ny][nx] == -1)
+            break;
+
+        if (board[ny][nx] == 0)
+        {
+            board[tail.front().first][tail.front().second] = 0;
+            tail.pop();
+        }
+
+        board[ny][nx] = -1;
+        tail.push(make_pair(ny, nx));
+        head.y = ny;
+        head.x = nx;
+
+        if (command[index].first == time)
+        {
+            if (command[index].second == 'L')
+                head.dir = (head.dir + 3) % 4;
+            else
+                head.dir = (head.dir + 1) % 4;
+            index += 1;
+        }
+    }
+
+    cout << time << '\n';
+    return 0;
 }

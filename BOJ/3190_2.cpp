@@ -1,84 +1,86 @@
-// 뱀
+// 뱀 2회 - 35분
 // https://www.acmicpc.net/problem/3190
 #include <iostream>
 #include <vector>
 #include <queue>
 using namespace std;
-struct SNAKE
+
+const int dr[] = {-1,0,1,0};
+const int dc[] = {0,1,0,-1};
+
+struct HEAD
 {
-    int y, x, dir;
+    int r, c, dir;
 };
-const int MAX = 100;
-const int dy[] = {0, 1, 0, -1};
-const int dx[] = {1, 0, -1, 0};
 int N, K, L;
-int board[MAX][MAX];
+int answer;
+
+int board[102][102];
+int body[102][102];
+
+vector <pair<int, char>> chage_dir;
+
+void solve()
+{
+    queue <pair<int,int>> q;
+    HEAD head;
+    int time = 0, idx = 0;
+    head.r = 1, head.c = 1, head.dir = 1;
+    q.push(make_pair(1,1));
+    while (true)
+    {
+        if (time == chage_dir[idx].first)
+        {
+            if(chage_dir[idx].second == 'L')
+                head.dir = ((head.dir - 1) + 4) % 4;
+            else
+                head.dir = (head.dir + 1) % 4;
+            idx++;
+        }
+        // 머리가 움직임 
+        int nr = head.r + dr[head.dir], nc = head.c + dc[head.dir];
+        if(nr < 1 || nr >= N + 1 || nc < 1 || nc >= N + 1 || body[nr][nc] == 1)
+            break;
+        pair<int,int> tmp;
+        // 몸늘림
+        head.r = nr, head.c = nc;
+        tmp.first = nr, tmp.second = nc;
+        q.push(tmp);
+        body[nr][nc] = 1;
+        // 사과 있음
+        if(board[nr][nc] == 1)
+        {
+            board[nr][nc] = 0;
+        }
+        // 없음
+        else
+        {
+            pair<int,int> cur = q.front();
+            q.pop();
+            body[cur.first][cur.second] = 0;
+        }
+        time++;
+    }
+    answer = time + 1;
+}
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
 
+    answer = 0;
     cin >> N >> K;
-    for (int i = 0; i < K; i++)
+    for(int i = 0; i < K; i++)
     {
-        int y, x;
-        cin >> y >> x;
-        y -= 1;
-        x -= 1;
-        board[y][x] = 1;
+        int r,c;
+        cin >> r >> c;
+        board[r][c] = 1;
     }
     cin >> L;
-    vector<pair<int, char>> command(L);
-    for (int i = 0; i < L; i++)
-    {
-        int t;
-        char c;
-        cin >> t >> c;
-        command[i].first = t;
-        command[i].second = c;
-    }
-    // 뱀
-    SNAKE head;
-    head.x = 0;
-    head.y = 0;
-    head.dir = 0;
-    board[head.y][head.x] = -1;
-    queue<pair<int, int>> tail;
-    tail.push(make_pair(0, 0));
-
-    int time = 0, index = 0;
-    while (true)
-    {
-        time += 1;
-
-        int ny = head.y + dy[head.dir];
-        int nx = head.x + dx[head.dir];
-
-        if (ny < 0 || ny >= N || nx < 0 || nx >= N || board[ny][nx] == -1)
-            break;
-
-        if (board[ny][nx] == 0)
-        {
-            board[tail.front().first][tail.front().second] = 0;
-            tail.pop();
-        }
-
-        board[ny][nx] = -1;
-        tail.push(make_pair(ny, nx));
-        head.y = ny;
-        head.x = nx;
-
-        if (command[index].first == time)
-        {
-            if (command[index].second == 'L')
-                head.dir = (head.dir + 3) % 4;
-            else
-                head.dir = (head.dir + 1) % 4;
-            index += 1;
-        }
-    }
-
-    cout << time << '\n';
-    return 0;
+    chage_dir.resize(L);
+    for(int i = 0; i < L; i++)
+        cin >> chage_dir[i].first >> chage_dir[i].second;
+    solve();
+    cout << answer << '\n';
 }
