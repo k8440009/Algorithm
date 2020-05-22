@@ -1,129 +1,119 @@
 // 연구소
 // https://www.acmicpc.net/problem/14502
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <algorithm>
 using namespace std;
-/*
-    0. 맵을 복사
-    1. 복사한 맵에 재귀로 벽을 세움
-    2. 바이러스로 bfs
-    3. 끝나면 0 지역을 센다
-*/
-const int MAX = 8;
-int dx[4] = {1, -1, 0, 0};
-int dy[4] = {0, 0, 1, -1};
 
-int N, M;
-int answer = 0;
+const int MAX = 8 + 1;
+const int dr[4] = {1, 0, -1, 0};
+const int dc[4] = {0, 1, 0, -1};
 
+int N, M, answer;
 int board[MAX][MAX];
-int tempBoard[MAX][MAX];
+vector<pair<int, int>> blank;
 
-void copyBoard(int (*a)[MAX], int (*b)[MAX])
+void print()
 {
-	for (int i = 0; i < N; i++)
-		for (int j = 0; j < M; j++)
-			a[i][j] = b[i][j];
+	printf("%d\n", answer);
 }
-
-// 바이러스 움직임
-void moveVirus()
+void simulation()
 {
-	int spreadBoard[MAX][MAX];
-	copyBoard(spreadBoard, tempBoard);
-
+	int test_board[MAX][MAX];
+	bool visited[MAX][MAX];
 	queue<pair<int, int>> q;
-	// 바이러스 찾음
-	for (int i = 0; i < N; i++)
+
+	fill_n(visited[0], MAX * MAX, 0);
+
+	for (int r = 0; r < N; r++)
 	{
-		for (int j = 0; j < M; j++)
+		for (int c = 0; c < M; c++)
 		{
-			if (spreadBoard[i][j] == 2)
-				q.push({i, j});
+			test_board[r][c] = board[r][c];
+			if (board[r][c] == 2)
+			{
+				q.push(make_pair(r, c));
+				visited[r][c] = 1;
+			}
 		}
 	}
 
 	while (!q.empty())
 	{
-		int x, y;
-		x = q.front().first;
-		y = q.front().second;
+		pair<int, int> cur = q.front();
 		q.pop();
 
 		for (int dir = 0; dir < 4; dir++)
 		{
-			int nx = x + dx[dir];
-			int ny = y + dy[dir];
+			int nr = cur.first + dr[dir];
+			int nc = cur.second + dc[dir];
 
-			if (nx < 0 || nx >= N || ny < 0 || ny >= M)
+			if (nr < 0 || nr >= N || nc < 0 || nc >= M)
 				continue;
-
-			if (spreadBoard[nx][ny] == 0)
+			if (!visited[nr][nc] && test_board[nr][nc] == 0)
 			{
-				spreadBoard[nx][ny] = 2;
-				q.push({nx, ny});
+				visited[nr][nc] = 1;
+				test_board[nr][nc] = 2;
+				q.push(make_pair(nr, nc));
 			}
 		}
 	}
 
-	// 안전지역
-	int cnt = 0;
-	for (int i = 0; i < N; i++)
+	int safe = 0;
+	for (int r = 0; r < N; r++)
 	{
-		for (int j = 0; j < M; j++)
+		for (int c = 0; c < M; c++)
 		{
-			if (spreadBoard[i][j] == 0)
-				cnt++;
+			if (test_board[r][c] == 0)
+				safe++;
 		}
 	}
-	answer = max(answer, cnt);
+	if (safe >= answer)
+		answer = safe;
 }
-// 벽 세우기
-void makeWall(int cnt)
+void dfs(int curr, int cnt)
 {
 	if (cnt == 3)
 	{
-		moveVirus();
+		simulation();
 		return;
 	}
-	for (int i = 0; i < N; i++)
+
+	if (curr == blank.size())
+		return;
+
+	int row = blank[curr].first, col = blank[curr].second;
+	board[row][col] = 1;
+	dfs(curr + 1, cnt + 1);
+	board[row][col] = 0;
+	dfs(curr + 1, cnt);
+}
+void solve()
+{
+	dfs(0, 0);
+}
+void init()
+{
+	cin >> N >> M;
+	for (int r = 0; r < N; r++)
 	{
-		for (int j = 0; j < M; j++)
+		for (int c = 0; c < M; c++)
 		{
-			if (tempBoard[i][j] == 0)
-			{
-				tempBoard[i][j] = 1;
-				makeWall(cnt + 1);
-				tempBoard[i][j] = 0;
-			}
+			cin >> board[r][c];
+			if (board[r][c] == 0)
+				blank.push_back(make_pair(r, c));
 		}
 	}
 }
+
 int main()
 {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 	cout.tie(0);
 
-	cin >> N >> M;
-	for (int i = 0; i < N; i++)
-		for (int j = 0; j < M; j++)
-			cin >> board[i][j];
-
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = 0; j < M; j++)
-		{
-			if (board[i][j] == 0)
-			{
-				copyBoard(tempBoard, board);
-				tempBoard[i][j] = 1;
-				makeWall(1);
-				tempBoard[i][j] = 0;
-			}
-		}
-	}
-
-	cout << answer << '\n';
-
-	return 0;
+	init();
+	solve();
+	print();
 }

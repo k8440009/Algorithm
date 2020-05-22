@@ -1,119 +1,102 @@
-// 연구소
+// 연구소 2회 : 60분
 // https://www.acmicpc.net/problem/14502
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <algorithm>
 using namespace std;
 
-const int MAX = 8 + 1;
-const int dr[4] = {1, 0, -1, 0};
-const int dc[4] = {0, 1, 0, -1};
+const int dr[] = {-1,1,0,0};
+const int dc[] = {0,0,-1,1};
+int N,M, answer;
+int board[10][10];
+vector <pair<int,int>> loc;
 
-int N, M, answer;
-int board[MAX][MAX];
-vector<pair<int, int>> blank;
-
-void print()
+void print_board(int desc[10][10])
 {
-	printf("%d\n", answer);
+    cout << '\n';
+    for(int r = 0; r < N; r++)
+    {
+        for(int c = 0; c < M; c++)
+        {
+            cout << desc[r][c] << ' ';
+        }
+        cout << '\n';
+    }
 }
-void simulation()
+void bfs()
 {
-	int test_board[MAX][MAX];
-	bool visited[MAX][MAX];
-	queue<pair<int, int>> q;
+    queue <pair<int,int>> q;
+    int visited[10][10];
 
-	fill_n(visited[0], MAX * MAX, 0);
+    fill_n(visited[0], 10 * 10, 0);
+    for(int i = 0; i < loc.size(); i++)
+    {
+        q.push(make_pair(loc[i].first, loc[i].second));
+        visited[loc[i].first][loc[i].second] = 1;
+    }
 
-	for (int r = 0; r < N; r++)
-	{
-		for (int c = 0; c < M; c++)
-		{
-			test_board[r][c] = board[r][c];
-			if (board[r][c] == 2)
-			{
-				q.push(make_pair(r, c));
-				visited[r][c] = 1;
-			}
-		}
-	}
+    while (!q.empty())
+    {
+        pair<int,int> cur = q.front();
+        q.pop();
 
-	while (!q.empty())
-	{
-		pair<int, int> cur = q.front();
-		q.pop();
-
-		for (int dir = 0; dir < 4; dir++)
-		{
-			int nr = cur.first + dr[dir];
-			int nc = cur.second + dc[dir];
-
-			if (nr < 0 || nr >= N || nc < 0 || nc >= M)
-				continue;
-			if (!visited[nr][nc] && test_board[nr][nc] == 0)
-			{
-				visited[nr][nc] = 1;
-				test_board[nr][nc] = 2;
-				q.push(make_pair(nr, nc));
-			}
-		}
-	}
-
-	int safe = 0;
-	for (int r = 0; r < N; r++)
-	{
-		for (int c = 0; c < M; c++)
-		{
-			if (test_board[r][c] == 0)
-				safe++;
-		}
-	}
-	if (safe >= answer)
-		answer = safe;
+        for(int dir = 0; dir < 4; dir++)
+        {
+            int nr = cur.first + dr[dir], nc = cur.second + dc[dir];
+            if(nr < 0 || nr >= N || nc < 0 || nc >= M || board[nr][nc] == 1 || visited[nr][nc])
+                continue;
+            q.push(make_pair(nr, nc));
+            visited[nr][nc] = 1;
+        }
+    }
+    int total = 0;
+    for(int r = 0; r < N; r++)
+        for(int c = 0; c < M; c++)
+            if(board[r][c] == 0 && visited[r][c] == 0)
+                total += 1;
+    answer = max(answer, total);
+    
 }
-void dfs(int curr, int cnt)
-{
-	if (cnt == 3)
-	{
-		simulation();
-		return;
-	}
 
-	if (curr == blank.size())
-		return;
-
-	int row = blank[curr].first, col = blank[curr].second;
-	board[row][col] = 1;
-	dfs(curr + 1, cnt + 1);
-	board[row][col] = 0;
-	dfs(curr + 1, cnt);
-}
-void solve()
+void dfs(int cnt, int s_r, int s_c)
 {
-	dfs(0, 0);
-}
-void init()
-{
-	cin >> N >> M;
-	for (int r = 0; r < N; r++)
-	{
-		for (int c = 0; c < M; c++)
-		{
-			cin >> board[r][c];
-			if (board[r][c] == 0)
-				blank.push_back(make_pair(r, c));
-		}
-	}
+    if(cnt == 3)
+    {
+        bfs();
+        return ;
+    }
+    for(int r = s_r; r < N; r++)
+    {
+        for(int c = s_c; c < M; c++)
+        {
+            if(board[r][c] == 0)
+            {
+                board[r][c] = 1;
+                dfs(cnt + 1, r, c);
+                board[r][c] = 0;
+            }
+        }
+        s_c = 0;
+    }
 }
 
 int main()
 {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
 
-	init();
-	solve();
-	print();
+    answer = 0;
+    cin >> N >> M;
+    for(int r = 0; r < N; r++)
+    {
+        for(int c = 0; c < M; c++)
+        {
+            cin >> board[r][c];
+            if(board[r][c] == 2)
+                loc.push_back(make_pair(r,c));
+        }
+    }
+    dfs(0, 0, 0);
+    cout << answer << '\n';
 }
