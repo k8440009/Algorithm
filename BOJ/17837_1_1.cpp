@@ -12,6 +12,7 @@ struct HORSE
 {
     int r, c, dir;
 };
+
 int N,K, answer;
 int color[14][14];
 vector <int> board[14][14];
@@ -41,6 +42,7 @@ int red(vector<int> data, int k)
     cnt = board[nr][nc].size();
     return cnt;
 }
+
 int white(vector<int> data, int k)
 {
     int cnt = 0;
@@ -84,6 +86,7 @@ int blue(int k)
     return cnt;
     
 }
+
 void solve()
 {
     int time = 1;
@@ -119,7 +122,6 @@ void solve()
                 else if(color[nr][nc] == 1)
                     cnt = red(tmp,k);
             }
-
             if(cnt >= 4)
             {
                 answer = time;
@@ -127,9 +129,9 @@ void solve()
             }
         }
         time++;
-    }
-       
+    } 
 }
+
 int main()
 {
     ios::sync_with_stdio(0);
