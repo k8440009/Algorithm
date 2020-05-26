@@ -24,6 +24,20 @@ void print()
 	cout << answer << '\n';
 }
 
+void print_board(int desc[51][51])
+{
+	cout << '\n';
+	for (int r = 0; r < N; r++)
+	{
+		for (int c = 0; c < M; c++)
+		{
+			cout << desc[r][c] << ' ';
+		}
+		cout << '\n';
+	}
+
+}
+
 void solve()
 {
 	int cnt = 0;
@@ -37,6 +51,9 @@ void solve()
 			answer++;
 			flag = 0;
 		}
+
+
+		print_board(visited);
 
 		int n_dir = ((cleaner.dir - 1) + 4) % 4;
 		int nr = cleaner.r + dr[n_dir];
