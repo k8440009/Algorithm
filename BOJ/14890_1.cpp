@@ -1,4 +1,4 @@
-// 경사로
+// 경사로 1회차
 // https://www.acmicpc.net/problem/14890
 #include <iostream>
 using namespace std;
