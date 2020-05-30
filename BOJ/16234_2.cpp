@@ -1,4 +1,4 @@
-// 인구이동
+// 인구이동 2회차
 // https://www.acmicpc.net/problem/16234
 #include <iostream>
 #include <vector>
@@ -32,6 +32,9 @@ bool solve()
 	{
 		for (int c = 1; c <= N; c++)
 		{
+			if(visited[r][c])
+				continue;
+
 			int total = board[r][c];
 			queue <pair<int, int>> q;
 			vector<pair<int, int>> alias;
