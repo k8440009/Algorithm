@@ -1,4 +1,4 @@
-// 인구이동 2회차
+// 인구이동 2회차 : 180분
 // https://www.acmicpc.net/problem/16234
 #include <iostream>
 #include <vector>
