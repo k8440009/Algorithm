@@ -1,121 +1,158 @@
-// 캐슬 디펜스
+// 캐슬 디펜스 1회차 : 90분
 // https://www.acmicpc.net/problem/17135
 #include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
-const int MAX = 15;
-int N, M, D;
-int board[MAX][MAX];
-int copyBoard[MAX][MAX];
-vector<pair<int, int>> v;
+
+struct INFO
+{
+	int r, c, dist;
+};
+
+int N, M, D, answer;
+int next_board[16][16];
+bool selected[16];
+
+int dist(int r1, int c1, int r2, int c2)
+{
+	int d = abs(r1 - r2) + abs(c1 - c2);
+	if (d <= D)
+		return d;
+	else
+		return 0;
+}
+
+void solve(int board[16][16])
+{
+	int total = 0;
+	vector<pair<int, int>> archer;
+
+	for (int i = 0; i < M; i++)
+	{
+		if (selected[i])
+		{
+			archer.push_back(make_pair(N, i));
+		}
+	}
+	while (true)
+	{
+		vector<INFO> target;
+		for (int i = 0; i < 3; i++)
+		{
+			INFO tmp;
+			tmp.r = N, tmp.c = M, tmp.dist =  N * M;
+			target.push_back(tmp);
+		}
+		for (int r = 0; r < N; r++)
+		{
+			for (int c = 0; c < M; c++)
+			{
+				if (board[r][c] == 0)
+					continue;
+				for (int i = 0; i < archer.size(); i++)
+				{
+					int d = dist(archer[i].first, archer[i].second, r, c);
+					if (d > 0)
+					{
+						// 처음
+						if (target[i].r == N)
+							target[i].r = r, target[i].c = c, target[i].dist = d;
+						else
+						{
+							// 거리가 작을 때
+							if (target[i].dist > d)
+								target[i].r = r, target[i].c = c, target[i].dist = d;
+							else if (target[i].dist == d)
+							{
+								if (target[i].c > c)
+									target[i].r = r, target[i].c = c;
+							}
+						}
+					}
+				}
+			}
+		}
+		// 삭제
+		for (int i = 0; i < 3; i++)
+		{
+			if (target[i].r == N)
+				continue;
+			int r = target[i].r, c = target[i].c;
+			if (board[r][c] == 1)
+			{
+				total += 1;
+				board[r][c] = 0;
+			}
+		}
+
+		bool flag = false;
+		for (int r = N - 1; r >= 0; r--)
+		{
+			for (int c = 0; c < M; c++)
+			{
+				if (board[r][c] == 1)
+				{
+					if (r + 1 == N)
+						next_board[r][c] = 0;
+					else
+					{
+						next_board[r + 1][c] = 1;
+						flag = true;
+					}
+				}
+			}
+		}
+		if (!flag)
+		{
+			answer = max(answer, total);
+			return;
+		}
+		for (int r = 0; r < N; r++)
+		{
+			for (int c = 0; c < M; c++)
+			{
+				board[r][c] = next_board[r][c];
+				next_board[r][c] = 0;
+			}
+		}
+	}
+}
+
+void dfs(int curr, int prev, int cnt, int board[16][16])
+{
+	if (cnt == 3)
+	{
+		int cur_board[16][16];
+		for (int r = 0; r < N; r++)
+			for (int c = 0; c < M; c++)
+				cur_board[r][c] = board[r][c];
+		solve(cur_board);
+		return;
+	}
+
+	for (int i = 0; i < M; i++)
+	{
+		if (selected[i] || prev > i)
+			continue;
+		selected[i] = 1;
+		dfs(curr + 1, i, cnt + 1, board);
+		selected[i] = 0;
+	}
+}
+
 int main()
 {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
 
-    cin >> N >> M >> D;
-    for (int y = 0; y < N; y++)
-    {
-        for (int x = 0; x < M; x++)
-        {
-            cin >> board[y][x];
-            if (board[y][x] == 1)
-                v.push_back(make_pair(y, x));
-        }
-    }
-
-    vector<int> select;
-    for (int i = 0; i < M - 3; i++)
-        select.push_back(0);
-    for (int i = 0; i < 3; i++)
-        select.push_back(1);
-
-    int result = 0;
-    do
-    {
-        int cnt = 0;
-        // 적들의 좌표 복사
-        vector<pair<int, int>> enemy = v;
-
-        vector<int> archer;
-        for (int i = 0; i < select.size(); i++)
-        {
-            // 궁수 위치
-            if (select[i] == 1)
-                archer.push_back(i);
-        }
-
-        while (!enemy.empty())
-        {
-            int y = N;
-            vector<int> target;
-            for (int i = 0; i < archer.size(); i++)
-            {
-                int x = archer[i];
-                int index = 0;
-                int enemyX = enemy[0].second;
-                int dist = abs(y - enemy[0].first) + abs(x - enemy[0].second);
-
-                // 최단거리 타겟 찾기
-                for (int j = 1; j < enemy.size(); j++)
-                {
-                    int temp = abs(y - enemy[j].first) + abs(x - enemy[j].second);
-
-                    if (dist > temp)
-                    {
-                        enemyX = enemy[j].second;
-                        dist = temp;
-                        index = j;
-                    }
-                    // 거리가 같으면 왼쪽의 적
-                    else if (dist == temp && enemyX > enemy[j].second)
-                    {
-                        enemyX = enemy[j].second;
-                        index = j;
-                    }
-                }
-                //  D이내에 있는 적만 처치 가능
-                if (dist <= D)
-                    target.push_back(index);
-            }
-
-            sort(target.begin(), target.end());
-            target.erase(unique(target.begin(), target.end()), target.end());
-
-            int index = 0;
-            vector<pair<int, int>> copyEnemy;
-            for (int i = 0; i < enemy.size(); i++)
-            {
-                bool flag = true;
-                for (int j = index; j < target.size(); j++)
-                {
-                    if (i == target[j])
-                    {
-                        flag = false;
-                        index++;
-                        cnt++;
-                    }
-                }
-
-                if (flag)
-                {
-                    if (enemy[i].first < N - 1)
-                        copyEnemy.push_back(make_pair(enemy[i].first + 1, enemy[i].second));
-                }
-            }
-
-            if (copyEnemy.empty())
-                break;
-
-            enemy = copyEnemy;
-        }
-
-        result = max(result, cnt);
-
-    } while (next_permutation(select.begin(), select.end()));
-
-    cout << result << '\n';
-    return 0;
+	answer = 0;
+	cin >> N >> M >> D;
+	int board[16][16];
+	for (int r = 0; r < N; r++)
+		for (int c = 0; c < M; c++)
+			cin >> board[r][c];
+	dfs(0,0,0, board);
+	cout << answer << '\n';
 }
