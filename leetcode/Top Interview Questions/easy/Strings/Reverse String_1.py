@@ -5,8 +5,12 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
+        '''
+        my solution
         tmp = []
         for i in reversed(range(len(s))):
             tmp.append(s[i])
         for i in range(len(tmp)):
             s[i] = tmp[i]
+        '''
+        s.reversed()
