@@ -1,0 +1,73 @@
+// 로봇청소기
+// https://www.acmicpc.net/problem/14503
+#include <iostream>
+using namespace std;
+
+const int MAX = 50 + 1;
+const int dr[] = {-1,0,1,0};
+const int dc[] = {0,1,0,-1};
+
+struct ROBOT
+{
+	int r, c, dir;
+};
+
+ROBOT	robot;
+int		N,M, answer;
+int		board[MAX][MAX];
+int		visited[MAX][MAX];
+
+void	clean()
+{
+	visited[robot.r][robot.c] = 1;
+	answer++;
+}
+
+int		main()
+{
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+
+	cin >> N >> M;
+	cin >> robot.r >> robot.c >> robot.dir;
+	for (int r = 0; r < N; r++)
+		for (int c = 0; c < M; c++)
+			cin >> board[r][c];
+
+	clean();
+	while (true)
+	{
+		int		cnt, next_dir;
+		bool	flag = false;
+		int 	nr, nc;
+
+		for (cnt = 0; cnt < 4; cnt++)
+		{
+			next_dir = (robot.dir - 1 + 4) % 4;
+			nr = robot.r + dr[next_dir], nc = robot.c + dc[next_dir];
+			if (board[nr][nc] == 0 && !visited[nr][nc])
+			{
+				robot.r = nr, robot.c = nc, robot.dir = next_dir;
+				clean();
+				break;
+			}
+			else if (board[nr][nc] == 1 || (board[nr][nc] == 0 && visited[nr][nc]))
+			{
+				robot.dir = next_dir;
+				continue;
+			}
+		}
+
+		if (cnt == 4 || board[nr][nc] == 1)
+		{
+			int		back_dir = (robot.dir + 2) % 4;
+			nr = robot.r + dr[back_dir], nc = robot.c + dc[back_dir];
+			if (board[nr][nc] == 1)
+				break;
+			else
+				robot.r = nr, robot.c = nc;	
+		}
+	}
+	cout << answer << '\n';
+}
