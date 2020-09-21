@@ -25,71 +25,63 @@ bool solve()
 
 	fill_n(visited[0], MAX * MAX, 0);
 
-	int candi_dist = (N + 1) * (N + 1);
+	int candi_dist = MAX * MAX + 1;
 	pair <int,int> candi;
-	queue <pair<int, SHARK> > q;
+	queue <pair <int, SHARK> > q;
 
+	candi.first = N + 1, candi.second = N + 1;
 	q.push(make_pair(0, baby));
 	visited[baby.r][baby.c] = 1;
-	candi.first = N + 1, candi.second = N + 1;
+	board[baby.r][baby.c] = 0;
 
 	while (!q.empty())
 	{
-		pair<int,SHARK> data = q.front();
+		pair <int, SHARK> data = q.front();
 		q.pop();
 
-		int dist = data.first;
+		int cur_dist = data.first;
 		SHARK cur = data.second;
 
-		if (candi.first != N + 1 && candi_dist > dist)
+		if (candi_dist != N + 1 && cur_dist > candi_dist)
 			break;
-
+		
 		for (int dir = 0; dir < 4; dir++)
 		{
 			int nr = cur.r + dr[dir], nc = cur.c + dc[dir];
-
-			if (nr < 0 || nr >= N || nc < 0 || nc >= N || visited[nr][nc] || board[nr][nc] > cur.size)
+			if (nr < 0 || nr >= N || nc < 0 || nc >= N
+				|| visited[nr][nc] || board[nr][nc] > cur.size)
 				continue;
 			
-			if (board[nr][nc] == 0)
+			if (board[nr][nc] != 0 && cur.size > board[nr][nc])
 			{
-				SHARK next;
-				next.r = nr, next.c = nc;
-				q.push(make_pair(dist + 1, next));
-				visited[nr][nc] = 1;
-			}
-			else
-			{
-				if (cur.size > board[nr][nc])
+				if (cur_dist + 1 <= candi_dist)
 				{
-					if (dist + 1 < candi_dist)
-						candi.first = nr, candi.second = nc, candi_dist = dist + 1;
-					else if (dist == candi_dist)
-					{
-						if (nr < candi.first)
-							candi.first = nr, candi.second = nc, candi_dist = dist + 1;
-						else if (nr == candi.first && nc < candi.second)
-							candi.second = nc, candi_dist = dist;
-					}
+					if (nr < candi.first)
+						candi.first = nr, candi.second = nc, candi_dist = cur_dist + 1;
+					else if (nr == candi.first && nc < candi.second)
+						candi.first = nr, candi.second = nc, candi_dist = cur_dist + 1;
 				}
-
-				SHARK next;
-				next.r = nr, next.c = nc;
-				q.push(make_pair(dist + 1, next));
-				visited[nr][nc] = 1;
 			}
+
+			SHARK next = baby;
+			next.r = nr, next.c = nc;
+			
+			q.push(make_pair(cur_dist + 1, next));
+			visited[next.r][next.c] = 1;
 		}
 	}
 
+	// cout << candi.first << ' ' << candi.second << '\n';
 	if (candi.first != N + 1)
 	{
-		baby.cnt += 1;
-		board[candi.first][candi.second] = 0;
-		if (baby.cnt == baby.size)
-			baby.cnt = 0, baby.size += 1;
+		baby.r = candi.first, baby.c = candi.second, baby.cnt += 1;
+		board[baby.r][baby.c] = 0;
+		if (baby.size == baby.cnt)
+			baby.size += 1, baby.cnt = 0;
 		answer += candi_dist;
 		return false;
 	}
+
 	return true;
 }
 
@@ -106,10 +98,7 @@ int main()
 		{
 			cin >> board[r][c];
 			if (board[r][c] == 9)
-			{
 				baby.r = r, baby.c = c, baby.cnt = 0, baby.size = 2;
-				board[r][c] = 0;
-			}
 		}
 	}
 
