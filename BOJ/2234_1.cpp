@@ -1,4 +1,4 @@
-// 성곽 60분 미완성
+// 성곽 60분
 // https://www.acmicpc.net/problem/2234
 #include <iostream>
 #include <vector>
@@ -15,7 +15,7 @@ struct WALL
 };
 
 int M, N;
-int start_room, max_room;
+int start_room, max_room, sum_room;
 vector <WALL> board[MAX][MAX];
 
 void fillWall(int num, WALL &tmp)
@@ -43,19 +43,6 @@ void fillWall(int num, WALL &tmp)
 		tmp.we = 1;
 	}
 
-}
-
-void print_board(int tmp_board[MAX][MAX])
-{
-	cout << '\n';
-	for (int r = 0; r < M; r++)
-	{
-		for (int c = 0; c < N; c++)
-		{
-			cout << tmp_board[r][c] << ' ';
-		}
-		cout << '\n';
-	}
 }
 
 void solve()
@@ -104,8 +91,70 @@ void solve()
 					}
 				}
 				max_room = max(max_room, room_cnt);
+			}
+		}
+	}
 
-				//print_board(visited);
+	for (int r = 0; r < M; r++)
+	{
+		for (int c = 0; c < N; c++)
+		{
+			for (int dir = 0; dir < 4; dir++)
+			{
+				if (dir == 0 && board[r][c][0].no == 1)
+					board[r][c][0].no = 0;
+				else if (dir == 1 && board[r][c][0].ea == 1)
+					board[r][c][0].ea = 0;
+				else if (dir == 2 && board[r][c][0].so == 1)
+					board[r][c][0].so = 0;
+				else if (dir == 3 && board[r][c][0].we == 1)
+					board[r][c][0].we = 0;
+				else
+					continue;
+				
+				fill_n(visited[0], MAX * MAX, 0);
+
+				int room_cnt = 1;
+				queue <pair <int,int> > q;
+
+				q.push(make_pair(r,c));
+				visited[r][c] = 1;
+
+				while (!q.empty())
+				{
+					pair <int,int> cur = q.front();
+					q.pop();
+
+					for (int dir = 0; dir < 4; dir++)
+					{
+						int nr = cur.first + dr[dir], nc = cur.second + dc[dir];
+
+						if (nr < 0 || nr >= M || nc < 0 || nc >= N || visited[nr][nc])
+							continue;
+						if (dir == 0 && board[cur.first][cur.second][0].no == 1)
+							continue;
+						else if (dir == 1 && board[cur.first][cur.second][0].ea == 1)
+							continue;
+						else if (dir == 2 && board[cur.first][cur.second][0].so == 1)
+							continue;
+						else if (dir == 3 && board[cur.first][cur.second][0].we == 1)
+							continue;
+						
+						q.push(make_pair(nr, nc));
+						visited[nr][nc] = 1;
+						room_cnt += 1;
+					}
+				}
+				sum_room = max(sum_room, room_cnt);
+
+				if (dir == 0)
+					board[r][c][0].no = 1;
+				else if (dir == 1)
+					board[r][c][0].ea = 1;
+				else if (dir == 2)
+					board[r][c][0].so = 1;
+				else if (dir == 3)
+					board[r][c][0].we = 1;
 			}
 		}
 	}
@@ -134,16 +183,8 @@ int main()
 	}
 
 	solve();
-	/*
-	for (int r = 0; r < M; r++)
-	{
-		for (int c = 0; c < N; c++)
-		{
-			cout << board[r][c][0].we << ' ' << board[r][c][0].no << ' ' << board[r][c][0].ea << ' ' << board[r][c][0].so << '\n';
-		}
-		cout << '\n';
-	}
-	*/
+
 	cout << start_room << '\n';
 	cout << max_room << '\n';
+	cout << sum_room << '\n';
 }
