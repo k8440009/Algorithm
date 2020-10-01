@@ -5,6 +5,7 @@
 #include <algorithm>
 using namespace std;
 
+int N,M;
 int n, m;
 int board[50][50];
 int d[50][50];
