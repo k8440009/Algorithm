@@ -1,4 +1,4 @@
-// 구슬 탈출 2
+// 구슬 탈출 2 refactoring
 // https://www.acmicpc.net/problem/13460
 #include <iostream>
 #include <queue>
@@ -119,3 +119,9 @@ int main()
 		answer = -1;
 	cout << answer;
 }
+
+/*
+	참고자료
+	https://www.youtube.com/watch?v=SarTy3ZwmVo
+	https://na982.tistory.com/82
+*/

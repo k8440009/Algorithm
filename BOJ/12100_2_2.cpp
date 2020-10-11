@@ -108,3 +108,9 @@ int main()
 	dfs(board, 0);
 	cout << answer;
 }
+
+/*
+	참고자료
+	https://youtu.be/Y56idJ9vJc4
+	https://na982.tistory.com/83?category=145346
+*/
