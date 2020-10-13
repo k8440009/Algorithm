@@ -15,7 +15,7 @@ struct SHARK
 };
 
 int N, M, K, answer;
-// 0 : 원판, 1 : 냄새 주인, 2 : 냄새의 남은 시간
+// 0 : r,c 좌표에 있는 상어 번호, 1 :  r,c 좌표에 있는 상어 냄새 number, 2 :  r,c 좌표에 있는 냄새의 강도
 int board[MAX][MAX][3];
 
 SHARK shark[MAX * MAX];
@@ -61,12 +61,12 @@ void solve()
 					
 				is_move = true;
 				new_board[s_r][s_c][0] = 0;
-				// 상어 움직임
 				if (new_board[nr][nc][0] == 0)
 				{
 					new_board[nr][nc][0] = i, new_board[nr][nc][1] = i, new_board[nr][nc][2] = K;
 					shark[i].r = nr, shark[i].c = nc, shark[i].d = nd;
 				}
+				// 상어 번호가 증가 하는 순서로 움직이고 있기 때문에, 상어가 이미 존재하고 있다면 제거당한다. (이미 앞 번호가 있기 때문)
 				else
 				{
 					++kill_shark;
@@ -84,7 +84,7 @@ void solve()
 
 					if (nr < 1 || nr > N || nc < 1 || nc > N)
 						continue;
-
+					// 다른 상어의 냄새가 존재하는 경우
 					if (board[nr][nc][2] != 0 && board[nr][nc][1] != i)
 						continue;
 					
@@ -121,7 +121,6 @@ void solve()
 
 	if (time <= 1000)
 		answer = time;
-	
 }
 
 int main()
