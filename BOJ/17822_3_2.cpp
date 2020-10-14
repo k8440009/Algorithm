@@ -1,4 +1,4 @@
-// 원판 돌리기 - 3회 120분
+// 원판 돌리기 - 3회 refactoring
 // https://www.acmicpc.net/problem/17822
 #include <iostream>
 using namespace std;
