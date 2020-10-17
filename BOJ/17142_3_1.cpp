@@ -1,4 +1,4 @@
-// 연구소 3
+// 연구소 3회차 : 40분
 // https://www.acmicpc.net/problem/17142
 #include <iostream>
 #include <vector>
