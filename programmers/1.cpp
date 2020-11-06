@@ -1,4 +1,5 @@
 // 저울
+/*
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -15,3 +16,4 @@ int solution(vector<int> weight)
     }
     return answer;
 }
+*/

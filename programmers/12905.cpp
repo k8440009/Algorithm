@@ -3,7 +3,7 @@
 /*
     브포는 됨
     dp써야함
-*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int n, m;
@@ -47,3 +47,4 @@ int solution(vector<vector<int>> board)
 
     return answer;
 }
+*/
