@@ -19,7 +19,6 @@ void dfs(int idx, string num){
 			return;
 	}
 
-
 	for (int i = 0; i < 10; i++){
 		if (broken[i])
 			continue;
@@ -35,8 +34,7 @@ int main(){
 	cin.tie(0);
 	cout.tie(0);
 
-	freopen("input.txt", "r", stdin);
-
+	// freopen("input.txt", "r", stdin);
 	cin >> N;
 	cin >> M;
 	for (int i = 0; i < M; i++){
