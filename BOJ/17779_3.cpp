@@ -1,5 +1,3 @@
-# define _CRT_SECURE_NO_WARNINGS
-
 // 게리맨더링 2
 // https://www.acmicpc.net/problem/17779
 #include <iostream>
@@ -7,6 +5,7 @@
 
 using namespace std;
 
+# define _CRT_SECURE_NO_WARNINGS
 const int MAX = 20 + 1;
 int N, total, answer = 987654321;
 int board[MAX][MAX];
