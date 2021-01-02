@@ -11,7 +11,7 @@ int main(){
 	cin.tie(0);
 	cout.tie(0);
 	
-	freopen("input.txt", "r", stdin);
+	// freopen("input.txt", "r", stdin);
 
 	queue <int> q;
 	cin >> N;
