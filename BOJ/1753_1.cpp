@@ -4,7 +4,10 @@
     우선 순위 큐 비교연산자
     https://www.acmicpc.net/board/view/37791
 */
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <algorithm>
 using namespace std;
 const int INF = 987654321;
 int V, E, K;
