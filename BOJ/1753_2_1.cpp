@@ -12,7 +12,7 @@ int main(){
 	cin.tie(0);
 	cout.tie(0);
 
-	freopen("input.txt", "r", stdin);
+	// freopen("input.txt", "r", stdin);
 
 	int V,E,K;
 	vector <pair<int,int> > adj[MAX_V];
