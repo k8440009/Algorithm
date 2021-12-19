@@ -1,6 +1,6 @@
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/1912.java)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2309.java)
 ## 2231번: 분해합
 ## 3085번: 사탕 게임
 ## 10448번: 유레카 이론
