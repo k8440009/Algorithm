@@ -8,10 +8,86 @@
 ## 1018번: 체스판 다시 칠하기 (★)
 ## 1182번: 부분집합의 합 (★)
 
-### 출처 : https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220769870195&navType=by
+### 출처
+- [Ries 마법의 슈퍼마리오-완전탐색](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220769870195&navType=by)
 
-2. 
+# 2. 탐욕적 기법
+## 4796번: 캠핑
+## 1449번: 수리공 항승
+## 17509번: And the Winner is... Ourselves!
+## 11047번: 동전 0
+## 1931번: 회의실배정
+## 11000번: 강의실 배정
+## 1700번: 멀티탭 스케쥴링
+## 2212번: 센서
+## 13904번: 과제 (★)
+## 15748번: Rest Stops (★)
+## 1493: 박스 채우기 (★)
 
+### 출처
+- [Ries 마법의 슈퍼마리오-탐욕적 기법](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220775134486&navType=by)
+
+# 3. 분할 정복(Divide and Conquer)
+# 4. 동적 계획법(Dynamic Programming) 
+# 5. 이분 탐색(Binary Search)
+# 6. 리스트(List), 배열(Array), 연결 리스트(Linked List)
+# 7. 스택(Stack) 
+# 8. 큐(Queue), 덱(Dequeue)
+# 9. 깊이 우선 탐색(Depth-First Search)
+# 10. 너비 우선 탐색(Breadth-First Search)
+# 11. 백트래킹(Backtracking)
+# 12. 비트마스킹(Bit Masking)
+# 13. 구간합 배열(Prefix Sum)
+# 14. 트리(Tree)
+# 15. 이진 검색 트리(Binary Search Tree)
+# 16. 우선순위 큐(Priority Queue)
+# 17. 유니온 파인드(Union-Find)
+# 18. 세그먼트 트리(Segment Tree)
+# 19. 동적 계획법 2(Dynamic Programming 2)
+# 20. 에라토스테네스의 체(Sieve of Eratosthenes)
+# 21. 희소 테이블(Sparse Table)
+# 22. 기하 - 벡터의 활용(geometry)
+# 23. 투 포인터(Two Pointers Algorithm), 슬라이딩 윈도우(Sliding Window)
+# 24. 다익스트라 알고리즘(Dijkstra's Algorithm) (수정: 2019-08-16)
+# 25. 벨만 포드 알고리즘(Bellman-Ford Algorithm)
+# 26. 플로이드 와샬 알고리즘(Floyd-Warshall Algorithm
+# 27. 최소 스패닝 트리(Minimum Spanning Tree)
+# 28. 위상 정렬(Topological Sort)
+# 29. 오일러 경로(Eulerian Path), 오일러 회로(Eulerian Circuit)
+# 30. 강한 연결 요소(Strongly Connected Component)
+# 31. 이중 연결 요소(Biconnected Component)
+# 32. 2-SAT 문제(2-Satisfiability Problem)
+# 33. 네트워크 유량(Network Flow)
+# 34. 최소 컷(Minimum Cut)
+# 35. 최소 비용 최대 유량(Minimum Cost Maximum Flow)
+# 36. 디닉 알고리즘(Dinic's Algorithm)
+# 37. 호프크로프트 카프 알고리즘 (Hopcroft-Karp Algorithm)
+# 38. 최소 공통 조상(Lowest Common Ancestor)
+# 39. 레이지 프로퍼게이션(Lazy Propagation)
+# 40. 볼록 껍질(Convex Hull)
+# 41. 스위핑 기법(Sweeping Algorithm)
+# 42. KMP 알고리즘(Knuth–Morris–Pratt Algorithm)
+# 43. 라빈 카프 알고리즘(Rabin-Karp Algorithm)
+# 44. 트라이(Trie) (수정: 2017-04-26)
+# 45. 아호코라식(Aho-Corasick)
+# 46. 접미사 배열(Suffix Array)
+# 47. 밋 인 더 미들(Meet in the Middle)
+# 48. 동적 계획법 3(Dynamic Programming 3)
+# 49. 동적 계획법 4(Dynamic Programming 4)
+# 50. 동적 계획법 5(Dynamic Programming 5)
+# 51. 머지 소트 트리(Merge Sort Tree)
+# 52. 오프라인 쿼리(Offline Query)
+# 53. 평방 분할(Square Root Decomposition), 모스 알고리즘(Mo's Algorithm)
+# 54. 병렬 이분 탐색(Parallel Binary Search)
+# 55. 퍼시스턴트 세그먼트 트리(Persistent Segment Tree)
+# 56. 헤비 라이트 디컴포지션(Heavy-Light Decomposition)
+# 57. 확장 유클리드 알고리즘(Extended Euclidean Algorithm)
+# 58. 컨벡스 헐 트릭(Convex Hull Trick)
+# 59. 서큘레이션(Circulation)
+# 60. 삼분 탐색(Ternary Search)
+# 61. 블록 컷 트리(Block-Cut Tree)
+# 62. 고속 푸리에 변환(Fast Fourier Transform)
+# 63. 중국인의 나머지 정리(Chinese Remainder Theorem)
 
 # 참고
 ## [Ries 마법의 슈퍼마리오](https://m.blog.naver.com/PostList.naver?blogId=kks227&categoryNo=299)
