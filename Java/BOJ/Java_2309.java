@@ -9,7 +9,7 @@ public class Java_2309 {
     static boolean flag = false;
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-   
+
         for (int i = 0; i < 9; i++){
             arrayList.add(i, Integer.parseInt(br.readLine()));
         }
@@ -29,7 +29,7 @@ public class Java_2309 {
         if (sum > 100 || flag == true){
             return ;
         }
-    
+
         if (cnt == 7){
             if (sum == 100){
                 Collections.sort(numbers);
@@ -40,7 +40,7 @@ public class Java_2309 {
             }
             return ;
         }
-    
+
         for (int i = idx + 1; i < 9; i++){
             numbers.add(arrayList.get(i));
             dfs(i, cnt + 1, sum + arrayList.get(i), numbers);
@@ -48,6 +48,3 @@ public class Java_2309 {
         }
     }
 }
-
-
-
