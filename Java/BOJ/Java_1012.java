@@ -1,50 +1,58 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
 
 public class Java_1012 {
-    static ArrayList <Integer> arrayList = new ArrayList<>();
-    static boolean flag = false;
+    static int N, M, K;
+    static int [] dr = {-1, 1, 0, 0};
+    static int [] dc = {0, 0, -1, 1};
+
+    static int [][] map;
+    static boolean [][] visited;
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        for (int i = 0; i < 9; i++){
-            arrayList.add(i, Integer.parseInt(br.readLine()));
-        }
         
-        int cnt = 0;
-        int sum = 0;
-        ArrayList <Integer> numbers = new ArrayList<>();
-        for (int i = 0; i < 9; i++){
-            int start = arrayList.get(i);
-            numbers.add(start);
-            dfs(i, cnt + 1, sum + arrayList.get(i), numbers);
-            numbers.clear();
+        int testCase = Integer.parseInt(br.readLine());
+
+        for (int tc = 0; tc < testCase; tc++){
+            String [] tokens = br.readLine().split(" ");
+            M = Integer.parseInt(tokens[0]);
+            N = Integer.parseInt(tokens[1]);
+            K = Integer.parseInt(tokens[2]);
+
+            map = new int[N][M];
+            visited = new boolean[N][M];
+
+            for (int k = 0; k < K; k++){
+                String [] param = br.readLine().split(" ");
+                map[Integer.parseInt(param[1])][Integer.parseInt(param[0])] = 1;
+            }
+
+            int count = 0;
+            for (int r = 0; r < N; r++){
+                for (int c = 0; c < M; c++){
+                    if (map[r][c] == 1 && visited[r][c] == false){
+                        count += 1;
+                        dfs(r, c);
+                    }
+                }
+            }
+            System.out.println(count);
         }
     }
 
-    public static void dfs (int idx, int cnt, int sum, ArrayList<Integer> numbers) {
-        if (sum > 100 || flag == true){
-            return ;
-        }
+    public static void dfs(int r, int c){
 
-        if (cnt == 7){
-            if (sum == 100){
-                Collections.sort(numbers);
-                flag = true;
-                for (int i = 0; i < 7; i++){
-                    System.out.println(numbers.get(i));
+        visited[r][c] = true;
+        for (int dir = 0; dir < 4; dir ++){
+            int nr = r + dr[dir];
+            int nc = c + dc[dir];
+
+            if (nr >= 0 && nr < N && nc >= 0 && nc < M){
+                if (map[nr][nc] == 1 && visited[nr][nc] == false){
+                    dfs(nr, nc);
                 }
             }
-            return ;
-        }
-
-        for (int i = idx + 1; i < 9; i++){
-            numbers.add(arrayList.get(i));
-            dfs(i, cnt + 1, sum + arrayList.get(i), numbers);
-            numbers.remove(numbers.size() - 1);
         }
     }
 }

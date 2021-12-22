@@ -37,7 +37,7 @@
 # 9. 깊이 우선 탐색(Depth-First Search)
 ## 11724번: 연결 요소의 개수
 ## [1012번: 유기농 배추](https://www.acmicpc.net/problem/1012)
-
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1012.java)
 ### 출처
 - [Ries 마법의 슈퍼마리오-깊이 우선 탐색](https://m.blog.naver.com/kks227/220785731077)
 
