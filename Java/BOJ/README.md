@@ -42,6 +42,11 @@
 - [Ries 마법의 슈퍼마리오-깊이 우선 탐색](https://m.blog.naver.com/kks227/220785731077)
 
 # 10. 너비 우선 탐색(Breadth-First Search)
+## [2178번: 미로 탐색](https://www.acmicpc.net/problem/2178)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2178.java)
+
+### 출처
+- [Ries 마법의 슈퍼마리오-너비 우선 탐색](https://m.blog.naver.com/kks227/220785747864)
 # 11. 백트래킹(Backtracking)
 # 12. 비트마스킹(Bit Masking)
 # 13. 구간합 배열(Prefix Sum)
