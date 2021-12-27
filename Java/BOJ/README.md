@@ -13,7 +13,8 @@
 
 # 2. 탐욕적 기법
 ## 4796번: 캠핑
-## 1449번: 수리공 항승
+## 1449번: 수리공 항승(https://www.acmicpc.net/problem/1449)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1449.java)
 ## 17509번: And the Winner is... Ourselves!
 ## 11047번: 동전 0
 ## 1931번: 회의실배정
