@@ -13,7 +13,7 @@
 
 # 2. 탐욕적 기법
 ## 4796번: 캠핑
-## 1449번: 수리공 항승(https://www.acmicpc.net/problem/1449)
+## [1449번: 수리공 항승](https://www.acmicpc.net/problem/1449)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1449.java)
 ## 17509번: And the Winner is... Ourselves!
 ## 11047번: 동전 0
@@ -29,7 +29,25 @@
 - [Ries 마법의 슈퍼마리오-탐욕적 기법](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220775134486&navType=by)
 
 # 3. 분할 정복(Divide and Conquer)
-# 4. 동적 계획법(Dynamic Programming) 
+# 4. 동적 계획법(Dynamic Programming)
+## [1463번: 1로 만들기](https://www.acmicpc.net/problem/1463)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1463_topDown.java)
+## 2193번: 이친수
+## 1904번: 01타일
+## 11726번: 2×n 타일링
+## 11727번: 2×n 타일링 2
+## 9465번: 스티커
+## 1699번: 제곱수의 합
+## 11052번: 붕어빵 판매하기
+## 10844번: 쉬운 계단 수
+## 11057번: 오르막 수
+## 11051번: 이항 계수 2
+## 12865번: 평범한 배낭 (★)
+## 16500번: 문자열 판별 (★)
+## 11055번: 가장 큰 증가 부분 수열 (★)
+### 출처
+- [Ries 마법의 슈퍼마리오-동적 계획법](https://m.blog.naver.com/kks227/220777103650)
+
 # 5. 이분 탐색(Binary Search)
 # 6. 리스트(List), 배열(Array), 연결 리스트(Linked List)
 # 7. 스택(Stack) 
