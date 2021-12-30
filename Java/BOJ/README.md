@@ -32,7 +32,8 @@
 # 4. 동적 계획법(Dynamic Programming)
 ## [1463번: 1로 만들기](https://www.acmicpc.net/problem/1463)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1463_topDown.java)
-## 2193번: 이친수
+## 2193번: 이친수(https://www.acmicpc.net/problem/2193)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2193.java)
 ## 1904번: 01타일
 ## 11726번: 2×n 타일링
 ## 11727번: 2×n 타일링 2
