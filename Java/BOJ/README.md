@@ -50,12 +50,15 @@
 - [Ries 마법의 슈퍼마리오-동적 계획법](https://m.blog.naver.com/kks227/220777103650)
 
 # 5. 이분 탐색(Binary Search)
+## [2805번 : 나무자르기](https://www.acmicpc.net/problem/2805)
+### 출처
+-[Ries 마법의 슈퍼마리오-이분 탐색](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220777333252&navType=by)
 # 6. 리스트(List), 배열(Array), 연결 리스트(Linked List)
 # 7. 스택(Stack) 
 # 8. 큐(Queue), 덱(Dequeue)
 
 # 9. 깊이 우선 탐색(Depth-First Search)
-## 11724번: 연결 요소의 개수
+## 11724번 : 연결 요소의 개수
 ## [1012번: 유기농 배추](https://www.acmicpc.net/problem/1012)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1012.java)
 ### 출처
@@ -80,6 +83,12 @@
 # 21. 희소 테이블(Sparse Table)
 # 22. 기하 - 벡터의 활용(geometry)
 # 23. 투 포인터(Two Pointers Algorithm), 슬라이딩 윈도우(Sliding Window)
+## [2003번: 수들의 합 2](https://www.acmicpc.net/problem/2003)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2003.java)
+## [2075번: N번째 큰 수](https://www.acmicpc.net/problem/2075)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2075.java)
+### 출처
+- [Ries 마법의 슈퍼마리오-너비 우선 탐색](https://m.blog.naver.com/kks227/220785747864)
 # 24. 다익스트라 알고리즘(Dijkstra's Algorithm) (수정: 2019-08-16)
 # 25. 벨만 포드 알고리즘(Bellman-Ford Algorithm)
 # 26. 플로이드 와샬 알고리즘(Floyd-Warshall Algorithm
