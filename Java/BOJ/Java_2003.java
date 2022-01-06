@@ -1,8 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
 
 public class Java_2003 {
     static int N, M;
@@ -21,28 +19,25 @@ public class Java_2003 {
             arr[i] = Integer.parseInt(tokens[i]);
         }
 
-        int start = 0, end = 0;
-        int sum = arr[0];
-        int cnt = 0;
-        while (start <= end){
-
-            if (end == N-1) {
+        int st = 0;
+        int ed = 0;
+        int sum = 0;
+        int result = 0;
+        while (true) {
+            if (sum >= M){
+                sum -= arr[st];
+                st += 1;
+            } else if (ed == N){
                 break;
+            } else {
+                sum += arr[ed];
+                ed += 1;
             }
             
-            if (sum <= M){
-                end += 1;
-                sum += arr[end];
-
-                if (sum == M){
-                    cnt += 1;
-                }
-
-            } else{
-                sum -= arr[start];
-                start += 1;
-            }
+            if (sum == M)
+                result += 1;
+    
         }
-        System.out.println(cnt);
+        System.out.println(result);
     }
 }
