@@ -76,6 +76,12 @@
 # 14. 트리(Tree)
 # 15. 이진 검색 트리(Binary Search Tree)
 # 16. 우선순위 큐(Priority Queue)
+## [11279번: 최대 힙](https://www.acmicpc.net/problem/11279)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11279.java)
+## [1927번: 최소 힙](https://www.acmicpc.net/problem/1927)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1927.java)
+### 출처
+- [Ries 마법의 슈퍼마리오-우선순위 큐(Priority Queue)](https://m.blog.naver.com/kks227/220791188929)
 # 17. 유니온 파인드(Union-Find)
 # 18. 세그먼트 트리(Segment Tree)
 # 19. 동적 계획법 2(Dynamic Programming 2)
