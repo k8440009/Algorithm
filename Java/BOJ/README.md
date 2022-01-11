@@ -36,7 +36,7 @@
 - [코드-탑다운](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2193_1.java)
 ## [1904번: 01타일](https://www.acmicpc.net/problem/1904)
 - [코드-탑다운](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1904_1.java)
-- [참고자료](https://blog.naver.com/occidere/220787441430)
+- [참고자료-01타일](https://blog.naver.com/occidere/220787441430)
 ## 11726번: 2×n 타일링
 ## 11727번: 2×n 타일링 2
 ## 9465번: 스티커
@@ -53,6 +53,8 @@
 # 5. 이분 탐색(Binary Search)
 ## [2805번 : 나무자르기](https://www.acmicpc.net/problem/2805)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2805.java)
+## [2512번 : 예산](https://www.acmicpc.net/problem/2512)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2512.java)
 ### 출처
 -[Ries 마법의 슈퍼마리오-이분 탐색](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220777333252&navType=by)
 # 6. 리스트(List), 배열(Array), 연결 리스트(Linked List)
