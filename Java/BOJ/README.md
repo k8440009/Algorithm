@@ -75,6 +75,9 @@
 ### 출처
 - [Ries 마법의 슈퍼마리오-너비 우선 탐색](https://m.blog.naver.com/kks227/220785747864)
 # 11. 백트래킹(Backtracking)
+## [1181번: 부분수열의 합](https://www.acmicpc.net/problem/1182)
+### 출처
+-[Ries 마법의 슈퍼마리오-백트래킹(Backtracking)](https://m.blog.naver.com/kks227/220786417910)
 # 12. 비트마스킹(Bit Masking)
 # 13. 구간합 배열(Prefix Sum)
 # 14. 트리(Tree)
