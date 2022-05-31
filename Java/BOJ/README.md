@@ -69,6 +69,8 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1743.java)
 ## [2667번: 단지번호붙이기](https://www.acmicpc.net/problem/2667)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2667.java)
+## [2583번: 영역 구하기](https://www.acmicpc.net/problem/2583)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2583.java)
 ### 출처
 - [Ries 마법의 슈퍼마리오-깊이 우선 탐색](https://m.blog.naver.com/kks227/220785731077)
 
