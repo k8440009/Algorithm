@@ -77,9 +77,12 @@
 # 10. 너비 우선 탐색(Breadth-First Search)
 ## [2178번: 미로 탐색](https://www.acmicpc.net/problem/2178)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2178.java)
+## [7576번: 토마토](https://www.acmicpc.net/problem/7576)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_7576.java)
 
 ### 출처
 - [Ries 마법의 슈퍼마리오-너비 우선 탐색](https://m.blog.naver.com/kks227/220785747864)
+
 # 11. 백트래킹(Backtracking)
 ## [1181번: 부분수열의 합](https://www.acmicpc.net/problem/1182)
 ### 출처
