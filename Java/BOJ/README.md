@@ -75,8 +75,14 @@
 - [Ries 마법의 슈퍼마리오-깊이 우선 탐색](https://m.blog.naver.com/kks227/220785731077)
 
 # 10. 너비 우선 탐색(Breadth-First Search)
+## [2644번: 촌수계산](https://www.acmicpc.net/problem/2644)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2644.java)
 ## [2178번: 미로 탐색](https://www.acmicpc.net/problem/2178)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2178.java)
+## [6593번: 상범 빌딩](https://www.acmicpc.net/problem/6593)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_6593.java)
+## [5427번: 불 (★)](https://www.acmicpc.net/problem/5427)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_5427.java)
 ## [7576번: 토마토](https://www.acmicpc.net/problem/7576)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_7576.java)
 
