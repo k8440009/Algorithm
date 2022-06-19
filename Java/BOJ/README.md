@@ -1,3 +1,7 @@
+# 0. 기출
+## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/13460)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_13460.java)
+
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2309.java)
