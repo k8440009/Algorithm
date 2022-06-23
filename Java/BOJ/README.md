@@ -3,6 +3,9 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_13460.java)
 ## [14502 : 연구소](https://www.acmicpc.net/problem/14502)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14502.java)
+## [15686 : 치킨 배달](https://www.acmicpc.net/problem/15686)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_15686.java)
+
 
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
