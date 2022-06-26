@@ -5,7 +5,10 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14502.java)
 ## [15686 : 치킨 배달](https://www.acmicpc.net/problem/15686)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_15686.java)
-
+## [16234 : 인구 이동](https://www.acmicpc.net/problem/16234)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_16234.java)
+## [14890 : 경사로](https://www.acmicpc.net/problem/14890)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14890.java)
 
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
