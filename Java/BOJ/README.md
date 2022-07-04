@@ -11,6 +11,8 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14890.java)
 ## [14499 : 주사위굴리기](https://www.acmicpc.net/problem/14499)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14499.java)
+## [14500 : 테트로미노](https://www.acmicpc.net/problem/14500)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14500.java)
 
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
