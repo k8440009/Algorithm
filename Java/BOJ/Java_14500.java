@@ -5,7 +5,6 @@ import java.io.InputStreamReader;
 public class Java_14500 {
     static int N, M;
     static int [][] board = null;
-    static boolean [][] visited = null;
     // size r, c
     static String [][] tetromino = {
         // 1
@@ -54,26 +53,26 @@ public class Java_14500 {
         "0000"
         },
         {
-        "1111",
+        "1110",
         "1000",
         "0000",
         "0000"
         },
         {
-        "1111",
-        "0001",
+        "1110",
+        "0010",
         "0000",
         "0000"
         },
         {
         "1000",
-        "1111",
+        "1110",
         "0000",
         "0000"
         },
         {
-        "0001",
-        "1111",
+        "0010",
+        "1110",
         "0000",
         "0000"
         },
@@ -137,7 +136,6 @@ public class Java_14500 {
         M = Integer.parseInt(params[1]);
 
         board = new int[N + 4][M + 4];
-        visited = new boolean[N + 4][M + 4];
 
         for (int r = 0; r < N; r++) {
             String [] tokens = br.readLine().split(" ");
@@ -149,11 +147,28 @@ public class Java_14500 {
             for (int sc = 0; sc < M; sc++) {
                 // 테트로미노 놓기
                 for (int size = 0; size < tetromino.length; size++) {
+                    int cnt = 0;
+                    boolean flag = false;
                     for (int r = 0; r < 4; r++) {
-                        System.out.println(tetromino[size][r]);
+                        for (int c = 0; c < 4; c++) {
+                            String data = Character.toString(tetromino[size][r].charAt(c));
+
+                            if (sr + r >= N || sc + c >= M) {
+                                if (data.equals("1")) {
+                                    flag = true;
+                                }
+                            } else {
+                                if (data.equals("1")) {
+                                    cnt += board[sr + r][sc + c];
+                                }
+                            }
+                        }
                     }
-                    System.out.println();
-                    System.out.println();
+
+                    if (flag == false && cnt > maxCnt) {
+                        maxCnt = cnt;
+                        // System.out.println("sr=" + sr + " sc=" + sc + " size=" + size + " cnt=" + maxCnt);
+                    }
                 }
             }
         }
