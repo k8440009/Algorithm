@@ -1,6 +1,8 @@
 # 0. 기출
 ## [13460 : 구슬 탈출 2](https://www.acmicpc.net/problem/13460)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_13460.java)
+## [12100 : 2048 (Easy)](https://www.acmicpc.net/problem/12100)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_12100.java)
 ## [14502 : 연구소](https://www.acmicpc.net/problem/14502)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14502.java)
 ## [15686 : 치킨 배달](https://www.acmicpc.net/problem/15686)
