@@ -13,6 +13,7 @@ class Location {
         this.c = c;
     }
 }
+
 public class Java_16234 {
     static int N, L, R;
     static int [] dr = {-1, 0, 1, 0};
