@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Java_92334 {
     public static void main(String[] args) {
         Solution test = new Solution();
@@ -6,8 +8,23 @@ public class Java_92334 {
 }
 
 class Solution {
-    public String solution(String new_id) {
-        String answer = "";
-        return answer;
+    public int[] solution(String[] id_list, String[] reports, int k) {
+        int [] data = new int[4];
+        int idCnt = id_list.length;
+
+        for (String id : id_list) {
+
+        }
+
+        // ArrayList <String> arr[idCnt] = new ArrayList<String>();
+
+        for (String report : reports) {
+            String [] tokens = report.split(" ");
+            String id = tokens[0];
+            String problemId = tokens[1];
+
+        }
+
+       return data;
     }
 }
