@@ -1,4 +1,4 @@
-# 0. 기출
+# 0-1. 삼성 기출
 ## [13460 : 구슬 탈출 2](https://www.acmicpc.net/problem/13460)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_13460.java)
 ## [12100 : 2048 (Easy)](https://www.acmicpc.net/problem/12100)
@@ -19,6 +19,14 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14499.java)
 ## [14500 : 테트로미노](https://www.acmicpc.net/problem/14500)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14500.java)
+
+# 0-2. 카카오 기출
+## [72410 : 신규 아이디 추천](https://school.programmers.co.kr/learn/courses/30/lessons/72410)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72410.java)
+## [77484 : 로또의 최고 순위와 최저순위](https://school.programmers.co.kr/learn/courses/30/lessons/77484)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_77484.java)
+## [92334 : 신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92334.java)
 
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
