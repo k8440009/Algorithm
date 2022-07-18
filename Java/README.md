@@ -21,10 +21,22 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14500.java)
 
 # 0-2. 카카오 기출
+## [17681 : 비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17681.java)
+## [17682 : 다트 게임](https://school.programmers.co.kr/learn/courses/30/lessons/17682)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17682.java)
+## [42889 : 실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_42889.java)
+## [64061 : 크레인 인형뽑기](https://school.programmers.co.kr/learn/courses/30/lessons/64061)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_64061.java)
+## [67256 : 키패드 누르기](https://school.programmers.co.kr/learn/courses/30/lessons/67256)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_67256.java)
 ## [72410 : 신규 아이디 추천](https://school.programmers.co.kr/learn/courses/30/lessons/72410)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72410.java)
 ## [77484 : 로또의 최고 순위와 최저순위](https://school.programmers.co.kr/learn/courses/30/lessons/77484)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_77484.java)
+## [81301 : 숫자 문자열과 영단어](https://school.programmers.co.kr/learn/courses/30/lessons/81301)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_81301.java)
 ## [92334 : 신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92334.java)
 
