@@ -44,6 +44,7 @@
 ## Level2
 ## [92341 : 주차 요금 계산](https://school.programmers.co.kr/learn/courses/30/lessons/92341)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92341.java)
+
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2309.java)
