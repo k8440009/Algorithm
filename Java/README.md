@@ -21,6 +21,7 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14500.java)
 
 # 0-2. 카카오 기출
+## 1) Level1
 ## [17681 : 비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17681.java)
 ## [17682 : 다트 게임](https://school.programmers.co.kr/learn/courses/30/lessons/17682)
@@ -40,6 +41,9 @@
 ## [92334 : 신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92334.java)
 
+## Level2
+## [92341 : 주차 요금 계산](https://school.programmers.co.kr/learn/courses/30/lessons/92341)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92341.java)
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2309.java)

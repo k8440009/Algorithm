@@ -4,6 +4,6 @@ public class Java_17681 {
     }
 }
 
-class Solution_17681{
+class Solution_17681 {
 
 }
