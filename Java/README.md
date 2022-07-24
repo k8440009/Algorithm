@@ -28,6 +28,7 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17682.java)
 ## [42889 : 실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_42889.java)
+- 정렬 : https://hianna.tistory.com/569
 ## [64061 : 크레인 인형뽑기](https://school.programmers.co.kr/learn/courses/30/lessons/64061)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_64061.java)
 ## [67256 : 키패드 누르기](https://school.programmers.co.kr/learn/courses/30/lessons/67256)
