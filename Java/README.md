@@ -39,7 +39,8 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_77484.java)
 ## [81301 : 숫자 문자열과 영단어](https://school.programmers.co.kr/learn/courses/30/lessons/81301)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_81301.java)
-## [92334 : 신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
+## [92334 : 신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/les
+sons/92334)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92334.java)
 
 ## Level2
@@ -49,7 +50,14 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_60057.java)
 ## [42888 : 오픈채팅방](https://school.programmers.co.kr/learn/courses/30/lessons/42888)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_42888.java)
-
+## [1829 : 카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1829.java)
+## [1835 : 단체사진 찍기](https://school.programmers.co.kr/learn/courses/30/lessons/1835)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1835.java)
+## [72411 : 메뉴 리뉴얼](https://school.programmers.co.kr/learn/courses/30/lessons/72411)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72411.java)
+## [60058 : 괄호 변환](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_60058.java)
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2309.java)
