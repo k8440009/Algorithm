@@ -39,8 +39,7 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_77484.java)
 ## [81301 : 숫자 문자열과 영단어](https://school.programmers.co.kr/learn/courses/30/lessons/81301)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_81301.java)
-## [92334 : 신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/les
-sons/92334)
+## [92334 : 신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92334.java)
 
 ## Level2
@@ -58,6 +57,10 @@ sons/92334)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72411.java)
 ## [60058 : 괄호 변환](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_60058.java)
+## [92335 : k진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92335.java)
+- https://cornarong.tistory.com/48
+- https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=javaking75&logNo=220289619566
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2309.java)
