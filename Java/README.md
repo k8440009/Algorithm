@@ -61,6 +61,9 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92335.java)
 - https://cornarong.tistory.com/48
 - https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=javaking75&logNo=220289619566
+## [92342 :양궁대회](https://school.programmers.co.kr/learn/courses/30/lessons/92342)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92342.java)
+
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2309.java)
