@@ -55,6 +55,11 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1835.java)
 ## [72411 : 메뉴 리뉴얼](https://school.programmers.co.kr/learn/courses/30/lessons/72411)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72411.java)
+- https://bangu4.tistory.com/287
+- https://velog.io/@dev-easy/Java-Map%EC%9D%84-Key-Value%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0
+- https://pangtrue.tistory.com/232
+- https://bcp0109.tistory.com/15
+- https://codechacha.com/ko/java-convert-set-to-list-and-list-to-set/
 ## [60058 : 괄호 변환](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_60058.java)
 ## [92335 : k진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)
