@@ -70,6 +70,12 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92342.java)
 ## [17687 : [3차] n진수 게임](https://school.programmers.co.kr/learn/courses/30/lessons/17687)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17687.java)
+## [92343 : 양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92343.java)
+## [92344 : 파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92344.java)
+## [92345 : 사라지는 발판](https://school.programmers.co.kr/learn/courses/30/lessons/92345)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92345.java)
 
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
