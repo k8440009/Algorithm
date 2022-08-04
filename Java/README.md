@@ -214,6 +214,9 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2003.java)
 ## [2075번: N번째 큰 수](https://www.acmicpc.net/problem/2075)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2075.java)
+## https://itchallenger.tistory.com/178
+## https://codedrive.tistory.com/368
+
 ### 출처
 - [Ries 마법의 슈퍼마리오-투 포인터(Two Pointers Algorithm), 슬라이딩 윈도우(Sliding Window)](https://m.blog.naver.com/kks227/220795165570)
 # 24. 다익스트라 알고리즘(Dijkstra's Algorithm) (수정: 2019-08-16)
