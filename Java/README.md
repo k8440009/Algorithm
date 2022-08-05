@@ -77,6 +77,10 @@
 ## [92345 : 사라지는 발판](https://school.programmers.co.kr/learn/courses/30/lessons/92345)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92345.java)
 
+## Level3
+## [92345 : 사라지는 발판](https://school.programmers.co.kr/learn/courses/30/lessons/67258)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_67258.java)
+
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2309.java)
@@ -201,6 +205,8 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11279.java)
 ## [1927번: 최소 힙](https://www.acmicpc.net/problem/1927)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1927.java)
+## [2075번: N번째 큰 수](https://www.acmicpc.net/problem/2075)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2075_1.java)
 ### 출처
 - [Ries 마법의 슈퍼마리오-우선순위 큐(Priority Queue)](https://m.blog.naver.com/kks227/220791188929)
 # 17. 유니온 파인드(Union-Find)
