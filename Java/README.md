@@ -95,11 +95,12 @@
 - [Ries 마법의 슈퍼마리오-완전탐색](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220769870195&navType=by)
 
 # 2. 탐욕적 기법
+## [11047번: 동전 0](https://www.acmicpc.net/problem/11047)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11047.java)
 ## 4796번: 캠핑
 ## [1449번: 수리공 항승](https://www.acmicpc.net/problem/1449)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1449.java)
 ## 17509번: And the Winner is... Ourselves!
-## 11047번: 동전 0
 ## 1931번: 회의실배정
 ## 11000번: 강의실 배정
 ## 1700번: 멀티탭 스케쥴링
@@ -109,6 +110,7 @@
 ## 1493: 박스 채우기 (★)
 
 ### 출처
+- [[실전 알고리즘] 0x11강 - 그리디](https://blog.encrypted.gg/975?category=773649)
 - [Ries 마법의 슈퍼마리오-탐욕적 기법](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220775134486&navType=by)
 
 # 3. 분할 정복(Divide and Conquer)
@@ -122,8 +124,8 @@
 - [코드-탑다운](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1904_1.java)
 - [참고자료-01타일](https://blog.naver.com/occidere/220787441430)
 ### 출처
-- [Ries 마법의 슈퍼마리오- 동적계획법](https://m.blog.naver.com/kks227/220777103650)
 - [[실전 알고리즘] 0x10강 - 다이나믹 프로그래밍](https://blog.encrypted.gg/974?category=773649)
+- [Ries 마법의 슈퍼마리오- 동적계획법](https://m.blog.naver.com/kks227/220777103650)
 ## 11726번: 2×n 타일링
 ## 11727번: 2×n 타일링 2
 ## 9465번: 스티커
@@ -147,7 +149,6 @@
 # 6. 리스트(List), 배열(Array), 연결 리스트(Linked List)
 # 7. 스택(Stack) 
 # 8. 큐(Queue), 덱(Dequeue)
-
 # 9. 깊이 우선 탐색(Depth-First Search)
 ## 11724번 : 연결 요소의 개수
 ## [1012번: 유기농 배추](https://www.acmicpc.net/problem/1012)
