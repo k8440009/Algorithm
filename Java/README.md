@@ -147,7 +147,8 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2512.java)
 ### 출처
 - [[실전 알고리즘] 0x13강 - 이분탐색](https://blog.encrypted.gg/985?category=773649)
--[Ries 마법의 슈퍼마리오-이분 탐색](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220777333252&navType=by)
+- [STL](https://code0xff.tistory.com/68)
+- [Ries 마법의 슈퍼마리오-이분 탐색](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220777333252&navType=by)
 
 
 # 6. 리스트(List), 배열(Array), 연결 리스트(Linked List)
@@ -212,10 +213,8 @@
 - [[실전 알고리즘] 0x18강 - 그래프](https://blog.encrypted.gg/1016?category=773649)
 
 # 15. 이진 검색 트리(Binary Search Tree)
-## [1920 : 수 찾기](https://www.acmicpc.net/problem/1920)
-- [코드 - STL](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1920_1.java)
-- [코드 - 구현1](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1920_2_1.java)
-- [코드 - 구현2](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1920_2_2.java)
+## [2512번 : 예산](https://www.acmicpc.net/problem/2512)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2512.java)
 ### 출처
 - [[실전 알고리즘] 0x16강 - 이진 검색 트리](https://blog.encrypted.gg/1013?category=773649)
 
@@ -287,6 +286,9 @@
 # 62. 고속 푸리에 변환(Fast Fourier Transform)
 # 63. 중국인의 나머지 정리(Chinese Remainder Theorem)
 
+# 자료구조
+## [set]
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_set_test.java)
 # 참고
 ## [baaaaaaaarkingDog](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 ## [Ries 마법의 슈퍼마리오](https://m.blog.naver.com/PostList.naver?blogId=kks227&categoryNo=299)
