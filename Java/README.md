@@ -208,7 +208,10 @@
 -[Ries 마법의 슈퍼마리오-백트래킹(Backtracking)](https://m.blog.naver.com/kks227/220786417910)
 # 12. 비트마스킹(Bit Masking)
 # 13. 구간합 배열(Prefix Sum)
-# 14. 트리(Tree)
+# 14. 그래프, 트리(Tree)
+## [11724: 연결요소의 개수](https://www.acmicpc.net/problem/11724)
+- [코드 - BFS](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11724_1_1.java)
+
 ### 출처
 - [[실전 알고리즘] 0x18강 - 그래프](https://blog.encrypted.gg/1016?category=773649)
 
