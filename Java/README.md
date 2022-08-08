@@ -139,13 +139,17 @@
 ## 11055번: 가장 큰 증가 부분 수열 (★)
 ### 출처
 - [Ries 마법의 슈퍼마리오-동적 계획법](https://m.blog.naver.com/kks227/220777103650)
+
 # 5. 이분 탐색(Binary Search)
 ## [2805번 : 나무자르기](https://www.acmicpc.net/problem/2805)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2805.java)
 ## [2512번 : 예산](https://www.acmicpc.net/problem/2512)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2512.java)
 ### 출처
+- [[실전 알고리즘] 0x13강 - 이분탐색](https://blog.encrypted.gg/985?category=773649)
 -[Ries 마법의 슈퍼마리오-이분 탐색](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220777333252&navType=by)
+
+
 # 6. 리스트(List), 배열(Array), 연결 리스트(Linked List)
 # 7. 스택(Stack) 
 # 8. 큐(Queue), 덱(Dequeue)
@@ -204,7 +208,17 @@
 # 12. 비트마스킹(Bit Masking)
 # 13. 구간합 배열(Prefix Sum)
 # 14. 트리(Tree)
+### 출처
+- [[실전 알고리즘] 0x18강 - 그래프](https://blog.encrypted.gg/1016?category=773649)
+
 # 15. 이진 검색 트리(Binary Search Tree)
+## [1920 : 수 찾기](https://www.acmicpc.net/problem/1920)
+- [코드 - STL](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1920_1.java)
+- [코드 - 구현1](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1920_2_1.java)
+- [코드 - 구현2](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1920_2_2.java)
+### 출처
+- [[실전 알고리즘] 0x16강 - 이진 검색 트리](https://blog.encrypted.gg/1013?category=773649)
+
 # 16. 우선순위 큐(Priority Queue)
 ## [11279번: 최대 힙](https://www.acmicpc.net/problem/11279)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11279.java)
@@ -274,7 +288,7 @@
 # 63. 중국인의 나머지 정리(Chinese Remainder Theorem)
 
 # 참고
-## [Ries 마법의 슈퍼마리오](https://m.blog.naver.com/PostList.naver?blogId=kks227&categoryNo=299)
 ## [baaaaaaaarkingDog](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+## [Ries 마법의 슈퍼마리오](https://m.blog.naver.com/PostList.naver?blogId=kks227&categoryNo=299)
 ## [링크와 이미지넣기](https://gist.github.com/ninanung/2b81a5db946c26c98c573e3662a92b62#4-1%EB%A7%81%ED%81%AC)
 ## [ArrayList](https://psychoria.tistory.com/765);
