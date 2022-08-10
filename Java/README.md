@@ -214,6 +214,7 @@
 
 ### 출처
 - [[실전 알고리즘] 0x18강 - 그래프](https://blog.encrypted.gg/1016?category=773649)
+- [[실전 알고리즘] 0x19강 - 트리](https://blog.encrypted.gg/1019?category=773649)
 
 # 15. 이진 검색 트리(Binary Search Tree)
 ## [2512번 : 예산](https://www.acmicpc.net/problem/2512)
