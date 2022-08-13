@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Java_11725 {
     static ArrayList<ArrayList<Integer>> adj;
+    static int [] nodeRoot;
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
@@ -24,25 +25,21 @@ public class Java_11725 {
             adj.get(b).add(a);
         }
 
-        int [] nodeRoot = new int[adj.size()];
-        boolean [] visited = new boolean[adj.size()];
+        nodeRoot = new int[adj.size()];
 
-        visited[1] = true;
-        dfs(1, visited, nodeRoot);
+        dfs(1);
 
         for (int i = 2; i <= N; i++) {
             System.out.println(nodeRoot[i]);
         }
     }
 
-    public static void dfs(int now, boolean [] visited, int [] nodeRoot) {
-
-        visited[now] = true;
+    public static void dfs(int now) {
         for (int node : adj.get(now)) {
-            if (visited[node] == false) {
-                nodeRoot[node]  = now;
-                dfs(node, visited, nodeRoot);
-            }
+            if (nodeRoot[now] == node)
+                continue;
+            nodeRoot[node] = now;
+            dfs(node);
         }
     }
 }
