@@ -39,7 +39,6 @@ class Solution_92343  {
             connect[a].add(b);
             connect[b].add(a);
         }
-
         visited = new boolean[info.length][info.length + 1][info.length + 1];
 
         dfs(0, 0, 0);

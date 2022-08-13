@@ -211,6 +211,8 @@
 # 14. 그래프, 트리(Tree)
 ## [11724: 연결요소의 개수](https://www.acmicpc.net/problem/11724)
 - [코드 - BFS](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11724_1_1.java)
+## [11725: 트리의 부모 찾기](https://www.acmicpc.net/problem/11725)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11725.java)
 
 ### 출처
 - [[실전 알고리즘] 0x18강 - 그래프](https://blog.encrypted.gg/1016?category=773649)
