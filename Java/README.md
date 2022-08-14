@@ -81,6 +81,40 @@
 ## [92345 : 사라지는 발판](https://school.programmers.co.kr/learn/courses/30/lessons/67258)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_67258.java)
 
+
+# 03. 배열
+# 04. 연결리스트
+# 05. 스택
+# 06. 큐
+# 07. 덱
+# 08. 스택의 활활용용
+# 09. BFS
+# 10. DFS
+# 11. 재귀
+# 12. 백트래킹
+# 13. 시뮬레이션
+# 14. 정렬1
+# 15. 정렬2
+# 16. 다이나믹 프로그래밍
+# 17. 그리디
+# 18. 수학
+# 19. 이분탐색
+# 20. 투 포인터
+# 21. 해시
+# 22. 이진 검색 트리
+# 23. 우선순위 큐
+# 24. 그래프
+# 25. 트리
+# 26. 위상정렬
+## [2252번: 줄 세우기](https://www.acmicpc.net/problem/2252)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2252.java)
+### 참고
+- [[실전 알고리즘] 0x1A강 - 위상 정렬](https://blog.encrypted.gg/1020?category=773649)
+# 27. 최소 신장 트리
+# 28. 플로이드 알고리즘
+# 29. 다익스트라 알고리즘
+
+
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2309.java)
