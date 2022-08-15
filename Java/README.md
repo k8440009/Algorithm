@@ -96,6 +96,20 @@
 # 14. 정렬1
 # 15. 정렬2
 # 16. 다이나믹 프로그래밍
+## [1463번: 1로 만들기](https://www.acmicpc.net/problem/1463)
+- [코드 : Bottom-Up](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1463_1.java)
+- [코드 : Top-Down](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1463_2.java)
+## [9095번: 1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)
+- [코드 : Bottom-Up](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_9095.java)
+
+
+## [2193번: 이친수](https://www.acmicpc.net/problem/2193)
+- [코드-탑다운](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2193_1.java)
+## [1904번: 01타일](https://www.acmicpc.net/problem/1904)
+- [코드-탑다운](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1904_1.java)
+- [참고자료-01타일](https://blog.naver.com/occidere/220787441430)
+### 출처
+- [[실전 알고리즘] 0x10강 - 다이나믹 프로그래밍](https://blog.encrypted.gg/974?category=773649)
 # 17. 그리디
 # 18. 수학
 # 19. 이분탐색
@@ -285,8 +299,6 @@
 ### 출처
 - [Ries 마법의 슈퍼마리오-투 포인터(Two Pointers Algorithm), 슬라이딩 윈도우(Sliding Window)](https://m.blog.naver.com/kks227/220795165570)
 # 24. 다익스트라 알고리즘(Dijkstra's Algorithm) (수정: 2019-08-16)
-### 출처
-- [[실전 알고리즘] 0x10강 - 다이나믹 프로그래밍](https://blog.encrypted.gg/974?category=773649)
 # 25. 벨만 포드 알고리즘(Bellman-Ford Algorithm)
 # 26. 플로이드 와샬 알고리즘(Floyd-Warshall Algorithm
 # 27. 최소 스패닝 트리(Minimum Spanning Tree)
