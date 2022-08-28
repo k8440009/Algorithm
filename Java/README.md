@@ -346,4 +346,4 @@
 ## [baaaaaaaarkingDog](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 ## [Ries 마법의 슈퍼마리오](https://m.blog.naver.com/PostList.naver?blogId=kks227&categoryNo=299)
 ## [링크와 이미지넣기](https://gist.github.com/ninanung/2b81a5db946c26c98c573e3662a92b62#4-1%EB%A7%81%ED%81%AC)
-## [ArrayList](https://psychoria.tistory.com/765);
+## [ArrayList](https://psychoria.tistory.com/765)
