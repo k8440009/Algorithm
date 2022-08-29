@@ -187,7 +187,6 @@
 ## 11055번: 가장 큰 증가 부분 수열 (★)
 ### 출처
 - [Ries 마법의 슈퍼마리오-동적 계획법](https://m.blog.naver.com/kks227/220777103650)
-
 # 5. 이분 탐색(Binary Search)
 ## [2805번 : 나무자르기](https://www.acmicpc.net/problem/2805)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2805.java)
@@ -197,8 +196,6 @@
 - [[실전 알고리즘] 0x13강 - 이분탐색](https://blog.encrypted.gg/985?category=773649)
 - [STL](https://code0xff.tistory.com/68)
 - [Ries 마법의 슈퍼마리오-이분 탐색](https://m.blog.naver.com/PostView.naver?blogId=kks227&logNo=220777333252&navType=by)
-
-
 # 6. 리스트(List), 배열(Array), 연결 리스트(Linked List)
 # 7. 스택(Stack) 
 # 8. 큐(Queue), 덱(Dequeue)
@@ -216,7 +213,6 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_10026.java)
 ### 출처
 - [Ries 마법의 슈퍼마리오-깊이 우선 탐색](https://m.blog.naver.com/kks227/220785731077)
-
 # 10. 너비 우선 탐색(Breadth-First Search)
 ## [2644번: 촌수계산](https://www.acmicpc.net/problem/2644)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2644.java)
@@ -246,10 +242,8 @@
 - [코드]()
 ## [1039번: 교환 (★)](https://www.acmicpc.net/problem/1039)
 - [코드]()
-
 ### 출처
 - [Ries 마법의 슈퍼마리오-너비 우선 탐색](https://m.blog.naver.com/kks227/220785747864)
-
 # 11. 백트래킹(Backtracking)
 ## [1181번: 부분수열의 합](https://www.acmicpc.net/problem/1182)
 ### 출처
@@ -266,13 +260,11 @@
 ### 출처
 - [[실전 알고리즘] 0x18강 - 그래프](https://blog.encrypted.gg/1016?category=773649)
 - [[실전 알고리즘] 0x19강 - 트리](https://blog.encrypted.gg/1019?category=773649)
-
 # 15. 이진 검색 트리(Binary Search Tree)
 ## [2512번 : 예산](https://www.acmicpc.net/problem/2512)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2512.java)
 ### 출처
 - [[실전 알고리즘] 0x16강 - 이진 검색 트리](https://blog.encrypted.gg/1013?category=773649)
-
 # 16. 우선순위 큐(Priority Queue)
 ## [11279번: 최대 힙](https://www.acmicpc.net/problem/11279)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11279.java)
