@@ -101,7 +101,8 @@
 - [코드 : Top-Down](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1463_2.java)
 ## [9095번: 1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)
 - [코드 : Bottom-Up](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_9095.java)
-
+## [2579번: 계단 오르기](https://www.acmicpc.net/problem/2579)
+- [코드 : Bottom-Up](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2579.java)
 
 ## [2193번: 이친수](https://www.acmicpc.net/problem/2193)
 - [코드-탑다운](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2193_1.java)
