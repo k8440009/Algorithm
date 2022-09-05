@@ -21,6 +21,16 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14500.java)
 
 # 0-2. 카카오 기출
+## 2022 BLIND
+## 2021 BLIND
+## [72412 : 비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/72412)
+- [코드 : 정확성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_1.java)
+- [코드 : 정확성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_2.java)
+
+
+
+
+
 ## 1) Level1
 ## [17681 : 비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17681.java)
