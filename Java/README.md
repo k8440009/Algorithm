@@ -23,9 +23,25 @@
 # 0-2. 카카오 기출
 ## 2022 BLIND
 ## 2021 BLIND
+## [72410 : 신규 아이디 추천](https://school.programmers.co.kr/learn/courses/30/lessons/72410)
+- [코드 : 정확성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72410.java)
+## [72411 : 메뉴 리뉴얼](https://school.programmers.co.kr/learn/courses/30/lessons/72411)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72411.java)
+- https://bangu4.tistory.com/287
+- https://velog.io/@dev-easy/Java-Map%EC%9D%84-Key-Value%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0
+- https://pangtrue.tistory.com/232
+- https://bcp0109.tistory.com/15
+- https://codechacha.com/ko/java-convert-set-to-list-and-list-to-set/
 ## [72412 : 순위검색](https://school.programmers.co.kr/learn/courses/30/lessons/72412)
-- [코드 : 정확성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_1.java)
-- [코드 : 정확성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_2.java)
+- [코드 : 정확성구현](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_1.java)
+- [코드 : 효율성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_2.java)
+
+## [72413 : 합승택시요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413)
+- [코드 : 정확성구현](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72413_1.java)
+- [코드 : 효율성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72413_2.java)
+
+## [72415 : 카드짝맞추기](https://school.programmers.co.kr/learn/courses/30/lessons/72415)
+- [코드 : 브루트포스](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72415.java)
 
 
 
@@ -43,8 +59,7 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_64061.java)
 ## [67256 : 키패드 누르기](https://school.programmers.co.kr/learn/courses/30/lessons/67256)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_67256.java)
-## [72410 : 신규 아이디 추천](https://school.programmers.co.kr/learn/courses/30/lessons/72410)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72410.java)
+
 ## [77484 : 로또의 최고 순위와 최저순위](https://school.programmers.co.kr/learn/courses/30/lessons/77484)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_77484.java)
 ## [81301 : 숫자 문자열과 영단어](https://school.programmers.co.kr/learn/courses/30/lessons/81301)
@@ -63,13 +78,6 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1829.java)
 ## [1835 : 단체사진 찍기](https://school.programmers.co.kr/learn/courses/30/lessons/1835)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1835.java)
-## [72411 : 메뉴 리뉴얼](https://school.programmers.co.kr/learn/courses/30/lessons/72411)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72411.java)
-- https://bangu4.tistory.com/287
-- https://velog.io/@dev-easy/Java-Map%EC%9D%84-Key-Value%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0
-- https://pangtrue.tistory.com/232
-- https://bcp0109.tistory.com/15
-- https://codechacha.com/ko/java-convert-set-to-list-and-list-to-set/
 ## [60058 : 괄호 변환](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_60058.java)
 ## [92335 : k진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)
@@ -140,7 +148,11 @@
 # 27. 최소 신장 트리
 # 28. 플로이드 알고리즘
 # 29. 다익스트라 알고리즘
-
+## [1753번: 최단경로](https://www.acmicpc.net/problem/1753)
+- [코드 : 테이블](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1753_1.java)
+- [코드 : 우선순위큐](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1753_2.java)
+### 참고
+- [[실전 알고리즘] 0x1D강 - 다익스트라 알고리즘](https://blog.encrypted.gg/1037?category=773649)
 
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)

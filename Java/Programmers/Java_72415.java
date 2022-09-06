@@ -2,10 +2,9 @@ import java.util.ArrayList;
 /**
  * 72415
  * 
- * 정확성 : 0점
- * 효율성 : 0점
+ * 못 품
  * 
- * 푸는데 걸린 시간 : 40분 => 30분정도 되야함
+ * 1시간
  * 
  * @since 2022-09-05
  * @author SungSoo Lee
