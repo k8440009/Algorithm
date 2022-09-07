@@ -35,10 +35,8 @@
 ## [72412 : 순위검색](https://school.programmers.co.kr/learn/courses/30/lessons/72412)
 - [코드 : 정확성구현](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_1.java)
 - [코드 : 효율성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_2.java)
-
 ## [72413 : 합승택시요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413)
-- [코드 : 정확성구현](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72413_1.java)
-- [코드 : 효율성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72413_2.java)
+- [코드 : 다익스트라](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72413.java)
 
 ## [72415 : 카드짝맞추기](https://school.programmers.co.kr/learn/courses/30/lessons/72415)
 - [코드 : 브루트포스](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72415.java)
