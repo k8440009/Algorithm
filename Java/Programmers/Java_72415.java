@@ -16,11 +16,11 @@ public class Java_72415 {
     }
 }
 
-class Location {
+class Location_72415_1 {
     int r, c;
     int num = 0;
 
-    Location(int r, int c, int num) {
+    Location_72415_1(int r, int c, int num) {
         this.r = r;
         this.c = c;
         this.num = num;
@@ -31,7 +31,7 @@ class Solution_72415 {
     static int [] dr = {-1, 0, 1, 0};
     static int [] dc = {0, -1, 0, 1};
     static int minMove = Integer.MAX_VALUE;
-    static ArrayList <Location> arrayList = new ArrayList<Location> ();
+    static ArrayList <Location_72415_1> arrayList = new ArrayList<Location_72415_1> ();
 
     public int solution(int[][] board, int r, int c) {
         int answer = 0;
@@ -39,7 +39,7 @@ class Solution_72415 {
         for (int sr = 0; sr < 4; r++) {
             for (int sc = 0; sc < 4; c++) {
                 if (board[r][c] != 0) {
-                    arrayList.add(new Location(r, c, board[r][c]));
+                    arrayList.add(new Location_72415_1(r, c, board[r][c]));
                 }
             }
         }
@@ -67,7 +67,7 @@ class Solution_72415 {
         int [][] nextBoard = new int [4][4];
         
         for (int dir = 0; dir < 4; dir++) {
-            Location location = moveCtrlYn(r, c, dir, board);
+            Location_72415_1 location = moveCtrlYn(r, c, dir, board);
             if (location.r != -1 && location.c != -1) {
                 copyBoard(nextBoard, board);
                 
@@ -98,7 +98,7 @@ class Solution_72415 {
         int cnt = 2; // enter
 
         int er = -1, ec = -1;
-        for (Location location : arrayList) {
+        for (Location_72415_1 location : arrayList) {
             if (location.num == num) {
                 if (location.r != sr && location.c != sc) {
                     er = location.r;
@@ -123,8 +123,8 @@ class Solution_72415 {
     }
 
 
-    public Location moveCtrlYn(int sr, int sc, int dir, int [][] board) {
-        Location location = new Location(-1, -1, -1);
+    public Location_72415_1 moveCtrlYn(int sr, int sc, int dir, int [][] board) {
+        Location_72415_1 location = new Location_72415_1(-1, -1, -1);
 
         if (dir == 0) {
             int r = sr;

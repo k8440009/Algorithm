@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /**
- * 다익스트라 우선순위 없이 구현
+ * 다익스트라 우선순위 큐 없이 구현
  * O(V^2 + E)
  * 
  * @since 2022-09-06
@@ -54,44 +54,38 @@ public class Java_1753_1 {
         int u = start;
         dist[u] = 0;
         while(true) {
-            
+            int idx = -1;
+
+            for (int v = 1; v <= V; v++) {
+                if (fix[v]) {
+                    continue;
+                }
+
+                if (idx == -1) {
+                    idx = v;
+                } else if (dist[v] < dist[idx]){
+                    idx = v;
+                }
+            }
+
+            if (idx == -1 || dist[idx] == Integer.MAX_VALUE) {
+                break;
+            }
+
+            ArrayList <Node_1753_1> arrayList = adj.get(idx);
+            fix[idx] = true;
+            for (Node_1753_1 node : arrayList) {
+                dist[node.end] = Math.min(dist[node.end], dist[idx] + node.weight);
+            }
         }
 
-        // int u = start;
-        // dist[u] = 0;
-        // while(true) {
-        //     int idx = -1;
-
-        //     for (int v = 1; v <= V; v++) {
-        //         if (fix[v]) {
-        //             continue;
-        //         }
-
-        //         if (idx == -1) {
-        //             idx = v;
-        //         } else if (dist[v] < dist[idx]){
-        //             idx = v;
-        //         }
-        //     }
-
-        //     if (idx == -1 || dist[idx] == Integer.MAX_VALUE) {
-        //         break;
-        //     }
-
-        //     ArrayList <Node_1753_1> arrayList = adj.get(idx);
-        //     fix[idx] = true;
-        //     for (Node_1753_1 node : arrayList) {
-        //         dist[node.end] = Math.min(dist[node.end], dist[idx] + node.weight);
-        //     }
-        // }
-
-        // for (int i = 1; i <= V; i++) {
-        //     int d = dist[i];
-        //     if (d == Integer.MAX_VALUE) {
-        //         System.out.println("INF");
-        //     } else {
-        //         System.out.println(d);
-        //     }
-        // }
+        for (int i = 1; i <= V; i++) {
+            int d = dist[i];
+            if (d == Integer.MAX_VALUE) {
+                System.out.println("INF");
+            } else {
+                System.out.println(d);
+            }
+        }
     }
 }
