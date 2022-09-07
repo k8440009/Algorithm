@@ -10,6 +10,15 @@ public class Java_72413 {
     }
 }
 
+/**
+ * 다익스트라 응용
+ * 1. 모든 점의 최소 거리를 구하기 위해 전체 노드 다익스트라
+ * 2. 2차원 배열로 저장
+ * 3. 전체 노드 루프돌면서 최솟값 구함
+ * 1) 각각 : totalDist[start][a] + totalDist[start][b]
+ * 2) 중간 : totalDist[start][i] + totalDist[i][a] + totalDist[i][b]
+ */
+
 class Node_72413 implements Comparable<Node_72413>{ // 비용, 간선번호
     int weight;
     int end; 
