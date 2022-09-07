@@ -151,6 +151,8 @@
 ## [1753번: 최단경로](https://www.acmicpc.net/problem/1753)
 - [코드 : 테이블](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1753_1.java)
 - [코드 : 우선순위큐](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1753_2.java)
+## [11779번: 최소비용 구하기 2](https://www.acmicpc.net/problem/11779)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11779.java)
 ### 참고
 - [[실전 알고리즘] 0x1D강 - 다익스트라 알고리즘](https://blog.encrypted.gg/1037?category=773649)
 - [정리](https://www.notion.so/e6ddb81bd6af4398a71b8f9b82e1f92b)

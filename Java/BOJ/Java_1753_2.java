@@ -24,8 +24,6 @@ class Node_1753_2 implements Comparable<Node_1753_2>{ // 비용, 간선번호
     public int compareTo(Node_1753_2 o) {
         return this.weight - o.weight;
     }
-
-
 }
 
 public class Java_1753_2 {
