@@ -22,19 +22,7 @@ class Node_1753_2 implements Comparable<Node_1753_2>{ // 비용, 간선번호
 
     @Override
     public int compareTo(Node_1753_2 o) {
-        if (this.weight > o.weight) {
-            return 1;
-        } else if (this.weight < o.weight) {
-            return -1;
-        } else {
-            if (this.end > o.end) {
-                return -1;
-            } else if (this.end < o.end) {
-                return 1;
-            } else {
-                return 0;
-            }
-        }
+        return this.weight - o.weight;
     }
 
 
@@ -50,7 +38,6 @@ public class Java_1753_2 {
         int V = Integer.parseInt(tokens[0]);
         int E = Integer.parseInt(tokens[1]);
         int [] dist = new int[V + 1]; // 최단거리 테이블
-        // boolean [] fix = new boolean[V + 1]; // 방문
         
         for (int i = 0; i <= V; i++) {
             adj.add(new ArrayList<>());

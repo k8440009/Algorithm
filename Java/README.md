@@ -153,6 +153,7 @@
 - [코드 : 우선순위큐](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1753_2.java)
 ### 참고
 - [[실전 알고리즘] 0x1D강 - 다익스트라 알고리즘](https://blog.encrypted.gg/1037?category=773649)
+- [정리](https://www.notion.so/e6ddb81bd6af4398a71b8f9b82e1f92b)
 
 # 1. 완전탐색
 ## [2309번: 일곱 난쟁이](https://www.acmicpc.net/problem/2309)
