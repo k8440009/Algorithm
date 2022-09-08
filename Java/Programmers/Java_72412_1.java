@@ -23,14 +23,14 @@ public class Java_72412_1 {
     }
 }
 
-class People {
+class People_72412_1 {
     String lang;
     String job;
     String year;
     String food;
     int  score;
 
-    People(String lang, String job, String year, String food, int score) {
+    People_72412_1(String lang, String job, String year, String food, int score) {
         this.lang = lang;
         this.job = job;
         this.year = year;
@@ -50,22 +50,17 @@ class Solution_72412_1 {
     public int[] solution(String[] infos, String[] querys) {
         int[] answer = new int [querys.length];
 
-        ArrayList <People> arrayList = new ArrayList<People>();
+        ArrayList <People_72412_1> arrayList = new ArrayList<>();
 
         for (String info : infos) {
             String [] tokens = info.split(" ");
 
-            arrayList.add(new People(tokens[0], tokens[1], tokens[2], tokens[3], Integer.parseInt(tokens[4])));
+            arrayList.add(new People_72412_1(tokens[0], tokens[1], tokens[2], tokens[3], Integer.parseInt(tokens[4])));
         }
 
         int index = 0;
         for (String query : querys) {
             String [] tokens = query.split("and");
-
-            // for (String token : tokens) {
-            //     System.out.print(token.trim() + " ");
-            // }
-            // System.out.println();
             
             String lang = tokens[0].trim();
             String job = tokens[1].trim();
@@ -77,7 +72,7 @@ class Solution_72412_1 {
 
 
             int cnt = 0;
-            for (People people : arrayList) {
+            for (People_72412_1 people : arrayList) {
                 // if (index != 2)
                 //     break;
 

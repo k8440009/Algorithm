@@ -1,12 +1,13 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
- * 정확성 : 40점
- * 효율성 : 0점
+ * 효율성 푸는중..
  * 
- * 푸는데 걸린 시간 : 40분 => 30분정도 되야함
- * 
- * @since 2022-09-05
+ * 해시 + 이분탐색
+ * @since 2022-09-08
  * @author SungSoo Lee
  */
 public class Java_72412_2 {
@@ -23,7 +24,7 @@ public class Java_72412_2 {
     }
 }
 
-class People_72412_2 {
+class People_72412_2 implements Comparable<People_72412_2>{
     String lang;
     String job;
     String year;
@@ -39,33 +40,40 @@ class People_72412_2 {
     }
 
     @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(this.lang).append(" ").append(this.job).append(" ").append(this.year).append(" ").append(this.food).append(" ").append(Integer.toString(score));
-        return sb.toString();
+    public int compareTo(People_72412_2 o) {
+        return this.score - o.score;
     }
 }
 
-class Solution_72412_2 {
+class Solution_72412_2{
+    static Map<String, ArrayList<Integer>> aMap;
     public int[] solution(String[] infos, String[] querys) {
-        int[] answer = new int [querys.length];
+        StringBuilder sb = new StringBuilder();
 
-        ArrayList <People_72412_2> arrayList = new ArrayList<>();
+        //ArrayList <People_72412_2> arrayList = new ArrayList<>();
+        int[] answer = new int [querys.length];
+        aMap = new HashMap<>();
+        int answerIndex = 0;
 
         for (String info : infos) {
             String [] tokens = info.split(" ");
 
-            arrayList.add(new People_72412_2(tokens[0], tokens[1], tokens[2], tokens[3], Integer.parseInt(tokens[4])));
+            //arrayList.add(new People_72412_2(tokens[0], tokens[1], tokens[2], tokens[3], Integer.parseInt(tokens[4])));
+
+           // System.out.println("mod0");
+            String key = tokens[0];
+            dfs(1, key, tokens);
+            //System.out.println("mod1");
+            key = "-";
+            dfs(1, key, tokens);
         }
 
-        int index = 0;
+        for (Map.Entry<String, ArrayList<Integer>> entry : aMap.entrySet()) {
+            Collections.sort(entry.getValue());
+        }
+
         for (String query : querys) {
             String [] tokens = query.split("and");
-
-            // for (String token : tokens) {
-            //     System.out.print(token.trim() + " ");
-            // }
-            // System.out.println();
             
             String lang = tokens[0].trim();
             String job = tokens[1].trim();
@@ -73,50 +81,85 @@ class Solution_72412_2 {
 
             String [] splitStr = tokens[3].trim().split(" ");
             String food = splitStr[0].trim();
-            int  score = Integer.parseInt(splitStr[1].trim());
+            int target = Integer.parseInt(splitStr[1].trim());
 
+            sb.setLength(0);
 
-            int cnt = 0;
-            for (People_72412_2 people : arrayList) {
-                // if (index != 2)
-                //     break;
+            String key = sb.append(lang).append(job).append(year).append(food).toString();
+            //System.out.println("key=" + key + " target=" + target);
 
-                // System.out.println(index);
-                // System.out.println(people.toString());
-                if ("-".equals(lang) == false
-                    && people.lang.equals(lang) == false) {
-                        //System.out.println("hello1");
-                        continue;
-                }
+            ArrayList <Integer> scoreArrayList;
+            scoreArrayList = aMap.get(key);
+            
+            int lo = 0;
+            int hi = scoreArrayList.size() - 1;
+            int mid = -1;
+            boolean findTarget = false;
+            while(lo <= hi) {
+                mid = (lo + hi)  / 2;
 
-                if ("-".equals(job) == false
-                && people.job.equals(job) == false) {
-                    //System.out.println("hello2");
-                    continue;
-                }
-
-                if ("-".equals(year) == false
-                        && people.year.equals(year) == false) {
-                           // System.out.println("hello3");
-                            continue;
-                    }
-
-                if ("-".equals(food) == false
-                    && people.food.equals(food) == false) {
-                       // System.out.println("hello4");
-                        continue;
-                }
-
-                if (people.score >= score) {
-                    cnt += 1;
+                if (scoreArrayList.get(mid) < target) {
+                    lo = mid + 1;
+                } else if (scoreArrayList.get(mid) > target) {
+                    hi = mid - 1;
                 } else {
-                   // System.out.println("hello5");
+                    lo = mid; // 만족하는 최소값
+                    findTarget = true;
+                    break;
                 }
             }
-
-            answer[index] = cnt;
-            index += 1;
+            
+            // if ()
+            answer[answerIndex] = scoreArrayList.size() - (lo);
+            answerIndex += 1;
+            // scoreArrayList.size() - 1;
+            //scoreArrayList.size() - (lo + 1);
+            // if (findTarget == true) {
+            //     System.out.println("Found");
+            //     System.out.println("lo=" + lo + " hi=" + hi + " diff=" + (hi - lo) + "size=" + scoreArrayList.size() + " end=" + scoreArrayList.get(scoreArrayList.size() - 1));
+            //     System.out.println("data=" + scoreArrayList.get(lo));
+            //     System.out.println("data=" + scoreArrayList.get(hi));
+            // } else {
+            //     System.out.println("Not Found");
+            //     System.out.println("lo=" + lo + " hi=" + hi + " diff=" + (hi - lo) + "size=" + scoreArrayList.size() + " end=" + scoreArrayList.get(scoreArrayList.size() - 1));
+            //     System.out.println("data=" + scoreArrayList.get(lo));
+            // }
         }
+
         return answer;
     }
+
+    // String lang;
+    // String job;
+    // String year;
+    // String food;
+    // int  score;
+
+    static void dfs(int index, String key, String [] tokens) {
+        if (index == 4) {
+
+            // System.out.println("key=" + key);
+            // aMap.get(key);
+            ArrayList <Integer> arr = new ArrayList<>();
+            if (aMap.containsKey(key)) {
+                arr = aMap.get(key);
+            }
+            arr.add(Integer.parseInt(tokens[4]));
+
+            //Collections.sort(arr);
+            aMap.put(key, arr);
+
+            return ;
+        }
+
+        String key1 = key;
+        String key2 = key;
+        //key1 = key1.concat("and");
+        key1 = key1.concat(tokens[index]);
+        dfs(index + 1, key1, tokens);
+        //key2 = key2.concat("and");
+        key2 = key2.concat("-");
+        dfs(index + 1, key2, tokens);
+    }
 }
+
