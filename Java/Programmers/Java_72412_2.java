@@ -95,7 +95,9 @@ class Solution_72412_2{
         }
         return answer;
     }
-
+/**
+ * dfs를 사용하여 모든 쿼리의 경우의 수 처리
+ */
     static void dfs(int index, String key, String [] tokens) {
         if (index == 4) {
             ArrayList <Integer> arr = new ArrayList<>();
@@ -117,7 +119,9 @@ class Solution_72412_2{
         key2 = key2.concat("-");
         dfs(index + 1, key2, tokens);
     }
-
+/**
+ * lowerBound 중복된 데이터 중 가장 작은 index 구함
+ */
     static int lowerIndex(int target, int len) { // C++ lower_bound
         int st = 0;
         int en = len;

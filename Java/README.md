@@ -37,7 +37,6 @@
 - [코드 : 효율성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_2.java)
 ## [72413 : 합승택시요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413)
 - [코드 : 다익스트라](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72413.java)
-
 ## [72415 : 카드짝맞추기](https://school.programmers.co.kr/learn/courses/30/lessons/72415)
 - [코드 : 브루트포스](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72415.java)
 
@@ -217,8 +216,8 @@
 ## [1920번 : 수 찾기](https://www.acmicpc.net/problem/1920)
 - [코드 : 직관](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1920_2_1.java)
 - [코드 : STL 방식](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1920_2_2.java)
-## [1920번 : 수 찾기](https://www.acmicpc.net/problem/1920)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1920.java)
+## [10816번 : 숫자 카드 2](https://www.acmicpc.net/problem/10816)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_10816.java)
 
 ## [2805번 : 나무자르기](https://www.acmicpc.net/problem/2805)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2805.java)
