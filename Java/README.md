@@ -214,6 +214,12 @@
 ### 출처
 - [Ries 마법의 슈퍼마리오-동적 계획법](https://m.blog.naver.com/kks227/220777103650)
 # 5. 이분 탐색(Binary Search)
+## [1920번 : 수 찾기](https://www.acmicpc.net/problem/1920)
+- [코드 : 직관](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1920_2_1.java)
+- [코드 : STL 방식](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1920_2_2.java)
+## [1920번 : 수 찾기](https://www.acmicpc.net/problem/1920)
+- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1920.java)
+
 ## [2805번 : 나무자르기](https://www.acmicpc.net/problem/2805)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2805.java)
 ## [2512번 : 예산](https://www.acmicpc.net/problem/2512)

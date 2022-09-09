@@ -4,10 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 효율성 푸는중..
- * 
  * 해시 + 이분탐색
- * @since 2022-09-08
+ * 1. HashMap으로 쿼리 데이터 그룹화
+ * 2. 이분탐색으로 점수 효율성 체크
+ * 
+ * @since 2022-09-09
  * @author SungSoo Lee
  */
 public class Java_72412_2 {
@@ -23,7 +24,7 @@ public class Java_72412_2 {
         System.out.println();
     }
 }
-
+// 점수순으로 정렬
 class People_72412_2 implements Comparable<People_72412_2>{
     String lang;
     String job;
@@ -47,31 +48,27 @@ class People_72412_2 implements Comparable<People_72412_2>{
 
 class Solution_72412_2{
     static Map<String, ArrayList<Integer>> aMap;
+    static ArrayList <Integer> scoreArrayList;
     public int[] solution(String[] infos, String[] querys) {
         StringBuilder sb = new StringBuilder();
 
-        //ArrayList <People_72412_2> arrayList = new ArrayList<>();
         int[] answer = new int [querys.length];
         aMap = new HashMap<>();
         int answerIndex = 0;
-
+        // 해시 생성
         for (String info : infos) {
             String [] tokens = info.split(" ");
 
-            //arrayList.add(new People_72412_2(tokens[0], tokens[1], tokens[2], tokens[3], Integer.parseInt(tokens[4])));
-
-           // System.out.println("mod0");
             String key = tokens[0];
             dfs(1, key, tokens);
-            //System.out.println("mod1");
             key = "-";
             dfs(1, key, tokens);
         }
-
+        // 정렬
         for (Map.Entry<String, ArrayList<Integer>> entry : aMap.entrySet()) {
             Collections.sort(entry.getValue());
         }
-
+        
         for (String query : querys) {
             String [] tokens = query.split("and");
             
@@ -86,80 +83,54 @@ class Solution_72412_2{
             sb.setLength(0);
 
             String key = sb.append(lang).append(job).append(year).append(food).toString();
-            //System.out.println("key=" + key + " target=" + target);
 
-            ArrayList <Integer> scoreArrayList;
             scoreArrayList = aMap.get(key);
-            
-            int lo = 0;
-            int hi = scoreArrayList.size() - 1;
-            int mid = -1;
-            boolean findTarget = false;
-            while(lo <= hi) {
-                mid = (lo + hi)  / 2;
 
-                if (scoreArrayList.get(mid) < target) {
-                    lo = mid + 1;
-                } else if (scoreArrayList.get(mid) > target) {
-                    hi = mid - 1;
-                } else {
-                    lo = mid; // 만족하는 최소값
-                    findTarget = true;
-                    break;
-                }
+            int cnt = 0;
+            if (scoreArrayList != null) { // 잘못된 쿼리 입력 되는 경우 pass
+                cnt =  scoreArrayList.size() - lowerIndex(target, scoreArrayList.size());
             }
-            
-            // if ()
-            answer[answerIndex] = scoreArrayList.size() - (lo);
+            answer[answerIndex] = cnt;
             answerIndex += 1;
-            // scoreArrayList.size() - 1;
-            //scoreArrayList.size() - (lo + 1);
-            // if (findTarget == true) {
-            //     System.out.println("Found");
-            //     System.out.println("lo=" + lo + " hi=" + hi + " diff=" + (hi - lo) + "size=" + scoreArrayList.size() + " end=" + scoreArrayList.get(scoreArrayList.size() - 1));
-            //     System.out.println("data=" + scoreArrayList.get(lo));
-            //     System.out.println("data=" + scoreArrayList.get(hi));
-            // } else {
-            //     System.out.println("Not Found");
-            //     System.out.println("lo=" + lo + " hi=" + hi + " diff=" + (hi - lo) + "size=" + scoreArrayList.size() + " end=" + scoreArrayList.get(scoreArrayList.size() - 1));
-            //     System.out.println("data=" + scoreArrayList.get(lo));
-            // }
         }
-
         return answer;
     }
 
-    // String lang;
-    // String job;
-    // String year;
-    // String food;
-    // int  score;
-
     static void dfs(int index, String key, String [] tokens) {
         if (index == 4) {
-
-            // System.out.println("key=" + key);
-            // aMap.get(key);
             ArrayList <Integer> arr = new ArrayList<>();
             if (aMap.containsKey(key)) {
                 arr = aMap.get(key);
             }
             arr.add(Integer.parseInt(tokens[4]));
 
-            //Collections.sort(arr);
             aMap.put(key, arr);
 
             return ;
         }
-
         String key1 = key;
         String key2 = key;
-        //key1 = key1.concat("and");
+
         key1 = key1.concat(tokens[index]);
         dfs(index + 1, key1, tokens);
-        //key2 = key2.concat("and");
+
         key2 = key2.concat("-");
         dfs(index + 1, key2, tokens);
     }
-}
 
+    static int lowerIndex(int target, int len) { // C++ lower_bound
+        int st = 0;
+        int en = len;
+        int mid = 0;
+
+        while(st < en) {
+            mid = (st + en) / 2;
+            if (scoreArrayList.get(mid) >= target) {
+                en = mid;
+            } else {
+                st = mid + 1;
+            }
+        }
+        return st;
+    }
+}
