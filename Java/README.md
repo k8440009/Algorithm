@@ -24,9 +24,9 @@
 ## 2022 BLIND
 ## 2021 BLIND
 ## [72410 : 신규 아이디 추천](https://school.programmers.co.kr/learn/courses/30/lessons/72410)
-- [코드 : 정확성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72410.java)
+- [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72410.java)
 ## [72411 : 메뉴 리뉴얼](https://school.programmers.co.kr/learn/courses/30/lessons/72411)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72411.java)
+- [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72411.java)
 - https://bangu4.tistory.com/287
 - https://velog.io/@dev-easy/Java-Map%EC%9D%84-Key-Value%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0
 - https://pangtrue.tistory.com/232
@@ -34,7 +34,7 @@
 - https://codechacha.com/ko/java-convert-set-to-list-and-list-to-set/
 ## [72412 : 순위검색](https://school.programmers.co.kr/learn/courses/30/lessons/72412)
 - [코드 : 정확성구현](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_1.java)
-- [코드 : 효율성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_2.java)
+- [코드 : 해시 + 중복있는 이분탐색](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_2.java)
 ## [72413 : 합승택시요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413)
 - [코드 : 다익스트라](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72413.java)
 ## [72415 : 카드짝맞추기](https://school.programmers.co.kr/learn/courses/30/lessons/72415)
@@ -109,7 +109,12 @@
 # 12. 백트래킹
 # 13. 시뮬레이션
 # 14. 정렬1
-# 15. 정렬2
+# 15. 정렬2 (STL 연습, 정렬 응용)
+## [1431번: 카드](https://www.acmicpc.net/problem/1431)
+- [코드 : STL 연습](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1431.java)
+## [11652번: 시리얼 번호](https://www.acmicpc.net/problem/11652)
+- [코드 : 정렬 응용](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11652.java)
+
 # 16. 다이나믹 프로그래밍
 ## [1463번: 1로 만들기](https://www.acmicpc.net/problem/1463)
 - [코드 : Bottom-Up](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1463_1.java)
@@ -131,6 +136,16 @@
 # 17. 그리디
 # 18. 수학
 # 19. 이분탐색
+
+## [1920번: 수 찾기](https://www.acmicpc.net/problem/1920)
+- [코드 : 중복없는 이분탐색](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1920_1.java)
+## [10816번: 숫자 카드 2](https://www.acmicpc.net/problem/10816)
+- [코드 : 중복있는 이분탐색](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_10816.java)
+## [18870번: 좌표 압축](https://www.acmicpc.net/problem/18870)
+- [코드 : 중복제거 + 이분탐색](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_18870.java)
+### 참고
+- [[실전 알고리즘] 0x13강 - 이분탐색](https://blog.encrypted.gg/985?category=773649)
+
 # 20. 투 포인터
 # 21. 해시
 # 22. 이진 검색 트리
