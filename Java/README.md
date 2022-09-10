@@ -36,7 +36,7 @@
 - [코드 : 정확성구현](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_1.java)
 - [코드 : 해시 + 중복있는 이분탐색](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72412_2.java)
 ## [72413 : 합승택시요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413)
-- [코드 : 다익스트라](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72413.java)
+- [코드 : 다익스트라 응용](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72413.java)
 ## [72415 : 카드짝맞추기](https://school.programmers.co.kr/learn/courses/30/lessons/72415)
 - [코드 : 브루트포스](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72415.java)
 
@@ -158,13 +158,19 @@
 ### 참고
 - [[실전 알고리즘] 0x1A강 - 위상 정렬](https://blog.encrypted.gg/1020?category=773649)
 # 27. 최소 신장 트리
+## [1197번: 최소 스패닝 트리](https://www.acmicpc.net/problem/1197)
+- [코드 : 크루스칼 알고리즘](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1197_1.java)
+- [코드 : 프림 알고리즘](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1197_2.java)
+### 참고
+- [[실전 알고리즘] 0x1B강 - 최소 신장 트리](https://blog.encrypted.gg/1024?category=773649)
+
 # 28. 플로이드 알고리즘
 # 29. 다익스트라 알고리즘
 ## [1753번: 최단경로](https://www.acmicpc.net/problem/1753)
 - [코드 : 테이블](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1753_1.java)
 - [코드 : 우선순위큐](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1753_2.java)
 ## [11779번: 최소비용 구하기 2](https://www.acmicpc.net/problem/11779)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11779.java)
+- [코드 : 경로 복원](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11779.java)
 ### 참고
 - [[실전 알고리즘] 0x1D강 - 다익스트라 알고리즘](https://blog.encrypted.gg/1037?category=773649)
 - [정리](https://www.notion.so/e6ddb81bd6af4398a71b8f9b82e1f92b)
@@ -333,7 +339,6 @@
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_2075.java)
 ## https://itchallenger.tistory.com/178
 ## https://codedrive.tistory.com/368
-
 ### 출처
 - [Ries 마법의 슈퍼마리오-투 포인터(Two Pointers Algorithm), 슬라이딩 윈도우(Sliding Window)](https://m.blog.naver.com/kks227/220795165570)
 # 24. 다익스트라 알고리즘(Dijkstra's Algorithm) (수정: 2019-08-16)
