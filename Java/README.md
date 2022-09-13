@@ -161,6 +161,9 @@
 ## [1197번: 최소 스패닝 트리](https://www.acmicpc.net/problem/1197)
 - [코드 : 크루스칼 알고리즘](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1197_1.java)
 - [코드 : 프림 알고리즘](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1197_2.java)
+## [17472 : 다리 만들기 2](https://www.acmicpc.net/problem/17472)
+- [코드 : 일반구현](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_17472_1.java)
+- [코드 : 크루스칼 알고리즘](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_17472_2.java)
 ### 참고
 - [[실전 알고리즘] 0x1B강 - 최소 신장 트리](https://blog.encrypted.gg/1024?category=773649)
 
