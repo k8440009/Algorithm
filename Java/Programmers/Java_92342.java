@@ -15,126 +15,92 @@ public class Java_92342 {
 
         int [] results = test.solution(n, info);
 
-        System.out.println();
-        for (int result : results) {
-            System.out.print(result + " ");
-        }
+        // System.out.println();
+        // for (int result : results) {
+        //     System.out.print(result + " ");
+        // }
 
     }
 }
 
 class Solution_92342 {
-    static int N;
-    static int maxPoint = 0;
-    static int maxLength = 11;
-    ArrayList <Integer> data = new ArrayList<>();
-    int [] points = new int [11];
-
-    public int[] solution(int n, int[] info) {
-        int[] answer = null;
-
-        N = n;
-
-        int [] result = new int [11];
-        dupCombination(0, 0, result, info);
+    int [] rion;
+    int [] maxDiffArrow;
+    int maxDiff = 0;
+    public int[] solution(int n, int[] infos) {
+        int[] answer = {-1};
         
-        if (maxPoint == 0) {
-            answer = new int[1];
-            answer[0] = -1;
-        } else {
-            answer = new int[11];
-            for (int i = 0; i < 11; i++) {
-                answer[i] = points[i];
-            }
+        rion = new int [11]; // 0 ~ 10 과녁, 화살 갯수
+        maxDiffArrow = new int [11]; // 상태
+
+        // n발 선택
+        combination(0, 0, n, infos);
+
+        if (maxDiff != 0) {
+            answer = maxDiffArrow;
         }
         return answer;
     }
-    
-    private void dupCombination (int index, int cnt, int [] result, int [] info) {
-        if (cnt == N) {
-            int point = getDiffPoint(result, info);
 
-            if (point != -1) {
-                if (point >= maxPoint) {
-                    
-                    int chk = 1;
-                    if (maxPoint == point) {
-                        chk = chklowPoint(points, result);
+    public void combination(int index, int total_cnt, int n, int [] infos) {
+        if (total_cnt > n) { // 화살 갯수가 초과하면 종료
+            return ;
+        }
+        
+        if (index == 11) {
+            if (total_cnt == n) { // 화살 갯수
+                int apeachPoint = 0;
+                int rionPoint = 0;
+                for (int i = 0; i <= 10; i++) {
+                    if (rion[i] == 0 && infos[i] == 0)
+                        continue;
+
+                    if (rion[i] > infos[i]) {
+                        rionPoint += (10 - i);
+                    } else {
+                        // 모두 어치피 승리
+                        apeachPoint += (10 - i);
                     }
+                }
+                
+                if (rionPoint > apeachPoint) {
+                    int diff = rionPoint - apeachPoint;
                     
-                    maxPoint = point;
+                    if (diff > maxDiff) {
+                        maxDiff = diff;
+                        for (int i = 0; i <= 10; i++) {
+                            maxDiffArrow[i] = rion[i];
+                        }
+                    } else if (diff == maxDiff) {
+                        boolean flag = false;
+                        for (int i = 10; i >= 0; i--) {
+                            if (rion[i] == 0 && maxDiffArrow[i] == 0)
+                                continue;
 
-                    if (chk == 1) {
-                        for (int i = 0; i < 11; i++) {
-                            points[i] = result[i];
+                            if (rion[i] > maxDiffArrow[i]) {
+                                flag = true;
+                                break;
+                            } else if (rion[i] < maxDiffArrow[i]) {
+                                break;
+                            }
+                        }
+
+                        if (flag) {
+                            for (int i = 0; i <= 10; i++) {
+                                maxDiffArrow[i] = rion[i];
+                            }
                         }
                     }
                 }
             }
+
             return ;
         }
 
-        for (int i = index; i < 11; i++) {
-            result[i] += 1;
-            dupCombination(i, cnt + 1, result, info);
-            result[i] -= 1;
+        for (int cnt = 0; cnt <= n; cnt++) {
+            rion[index] = cnt;
+            combination(index + 1, total_cnt + cnt, n, infos);
+            rion[index] = -1;
         }
-    }
-
-    private int getDiffPoint(int [] lian, int [] apeach) {
-        int res = -1;
-        int lianPoint = 0;
-        int apeachPoint = 0;
-
-        for (int i = 0; i < 10; i++) {
-            int point = 10 - i;
-
-            if (lian[i] == 0 && apeach[i] == 0) {
-                continue;
-            }else if (lian[i] == 0 && apeach[i] != 0) {
-                apeachPoint += point;
-            } else if (lian[i] != 0 && apeach[i] == 0) {
-                lianPoint += point;
-            } else {
-                if (lian[i] > apeach[i]) {
-                    lianPoint += point;
-                } else {
-                    apeachPoint += point;
-                }
-            }
-        }
-
-        if (lianPoint > apeachPoint) {
-            res = lianPoint - apeachPoint;
-        }
-
-        return res;
-
-    }
-    private int chklowPoint(int [] before, int [] after) {
-        int res = 0;
-
-        for (int i = 10; i >=0; i--) {
-            if (before[i] == 0 && after[i] == 0) {
-                continue;
-            }
-
-            if (before[i] == 0 && after[i] != 0){
-                res = 1;
-                break;
-            } else if (before[i] != 0 && after[i] == 0) {
-                res = -1;
-                break;
-            } else {
-                if (before[i] > after[i]) {
-                    res = -1;
-                    break;
-                } else if (before[i] < after[i]) {
-                    res = 1;
-                    break;
-                }
-            }
-        }
-        return res;
     }
 }
