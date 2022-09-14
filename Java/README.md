@@ -22,6 +22,14 @@
 
 # 0-2. 카카오 기출
 ## 2022 BLIND
+## [92342: 양궁대회](https://school.programmers.co.kr/learn/courses/30/lessons/92342)
+- [코드 : 중복순열 + 백트래킹](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92342.java)
+## [92343: 양과늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343)
+- [코드 : 트리 순회 + dfs](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92343_1.java)
+## [92344: 파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
+- [코드 : 정확성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92344_1.java)
+- [코드 : 효율성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92344_2.java)
+
 ## 2021 BLIND
 ## [72410 : 신규 아이디 추천](https://school.programmers.co.kr/learn/courses/30/lessons/72410)
 - [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72410.java)
