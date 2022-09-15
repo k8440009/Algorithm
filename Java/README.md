@@ -310,9 +310,18 @@
 # 11. 백트래킹(Backtracking)
 ## [1181번: 부분수열의 합](https://www.acmicpc.net/problem/1182)
 ### 출처
--[Ries 마법의 슈퍼마리오-백트래킹(Backtracking)](https://m.blog.naver.com/kks227/220786417910)
+- [Ries 마법의 슈퍼마리오-백트래킹(Backtracking)](https://m.blog.naver.com/kks227/220786417910)
 # 12. 비트마스킹(Bit Masking)
 # 13. 구간합 배열(Prefix Sum)
+## [11659번 : 구간 합 구하기 4](https://www.acmicpc.net/problem/11659)
+- [코드 : 1차원](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11659.java)
+## [11660번 : 구간 합 구하기 5](https://www.acmicpc.net/problem/11660)
+- [코드 : 2차원](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11659.java)
+### 출처
+- [Ries 마법의 슈퍼마리오-구간합 배열(Prefix Sum)](https://m.blog.naver.com/kks227/220787178657)
+- [[Algorithm] 2차원 배열 부분합, 누적합 구하기](https://velog.io/@ohdowon064/Algorithm-2%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4-%EB%B6%80%EB%B6%84%ED%95%A9-%EB%88%84%EC%A0%81%ED%95%A9-%EA%B5%AC%ED%95%98%EA%B8%B0)
+- [[Programmers] 파괴되지 않은 건물 (Python 풀이) - 2022 KAKAO BLIND RECRUITMENT](https://kimjingo.tistory.com/155)
+
 # 14. 그래프, 트리(Tree)
 ## [11724: 연결요소의 개수](https://www.acmicpc.net/problem/11724)
 - [코드 - BFS](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_11724_1_1.java)
