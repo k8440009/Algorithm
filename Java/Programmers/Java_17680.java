@@ -41,37 +41,40 @@ class Solution_17680 {
         Queue <String> queue = new LinkedList<>();
         Queue <String> tmpQue = new LinkedList<>();
         for (String city : cities) {
-            
             city = city.toUpperCase();
 
-            if (hMap.containsKey(city)) { // hit
-                answer += cache_hit;
-                // String cur = tmpQue.poll();
-                while(!queue.isEmpty()) {
-                    String cur = queue.poll();
-                    if (!city.equals(cur)){
-                        tmpQue.add(cur);
-                    }
-                }
-                tmpQue.add(city);
-
-                queue.clear();
-                while(!tmpQue.isEmpty()) {
-                    String cur = tmpQue.poll();
-                    queue.add(cur);
-                }
-
-            } else { // miss
+            if (cacheSize == 0) {
                 answer += cache_miss;
-                if (queue.size() < cacheSize) {
-                    queue.add(city);
-                    hMap.put(city, city);
-                } else {
-                    String top = queue.poll();
-                    hMap.remove(top);
+            } else {
 
-                    queue.add(city);
-                    hMap.put(city, city);
+                if (hMap.containsKey(city)) { // hit
+                    answer += cache_hit;
+    
+                    while(!queue.isEmpty()) {
+                        String cur = queue.poll();
+                        if (!city.equals(cur)){
+                            tmpQue.add(cur);
+                        }
+                    }
+                    tmpQue.add(city);
+    
+                    while(!tmpQue.isEmpty()) {
+                        String cur = tmpQue.poll();
+                        queue.add(cur);
+                    }
+    
+                } else { // miss
+                    answer += cache_miss;
+                    if (queue.size() < cacheSize) {
+                        queue.add(city);
+                        hMap.put(city, city);
+                    } else {
+                        String top = queue.poll();
+                        hMap.remove(top);
+    
+                        queue.add(city);
+                        hMap.put(city, city);
+                    }
                 }
             }
         }
