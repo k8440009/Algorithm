@@ -54,8 +54,20 @@
 
 ## 2020 BLIND
 
-## 2019 BLIND
+## 2019 BLIND 1차
+## [1번 : 비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
+## [2번 : 다트게임](https://school.programmers.co.kr/learn/courses/30/lessons/17682)
+## [3번 : 캐시](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
+- [코드 : Queue + hash](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17680.java)
+## [4번 : 셔틀버스]()
+## [5번 : 뉴스 클러스터링]()
+## [6번 : 프렌즈4블록]()
+## [7번 : 추석 트래픽]()
+### 참고
+[문제해설](https://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/)
 
+## 2019 BLIND 2차
+## 2019 BLIND 3차
 
 
 # 03. 배열
