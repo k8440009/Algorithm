@@ -37,6 +37,8 @@ class Position {
 
 public class Java_17472_2 {
     /*
+    * 0. 매 과정 한개씩 print 찍음
+    *
     * 1. 다리 길이 계산하기
     * 0) 섬 채번
     * 1) 다리 시작점, 종료점 길이 체크
@@ -94,13 +96,8 @@ public class Java_17472_2 {
         Collections.sort(bridges);
         Arrays.fill(p, -1);
 
-        // printBoard();
-        // for (Bridge bridge : bridges) {
-        //     System.out.println("st=" + bridge.st + " en=" + bridge.en + " len=" + bridge.length);
-        // }
-
         int answer = 0;
-        int cnt = 0;
+        int cnt = 0; // 노드 갯수 체크
         for (Bridge bridge : bridges) {
             if (!is_diff_group(bridge.st, bridge.en)) {
                 continue;
@@ -112,37 +109,28 @@ public class Java_17472_2 {
                 break;
             }
         }
-        //printBoard();
-        cnt = 0;
+
+        cnt = 0; // 연결 안 된 점 체크
         for (int i = 1; i <= islandsCnt; i++) {
-           //System.out.print(p[i] + " ");
-            if (p[i] < 0) {
+            if (p[i] < 0) { // 부모점은 -2로 출력된다.
                 cnt += 1;
             }
         }
-        //System.out.println();
 
         if (cnt == 1) {
             System.out.println(answer);
         } else {
             System.out.println(-1);
         }
-
-        // for (int i = 1; i < bridges.size(); i++) {
-        //     System.out.println(i);
-        //     for (Bridge bridge : bridges.get(i)) {
-        //         System.out.println("r=" + bridge.r + " c=" + bridge.c + " length=" + bridge.length + " dir=" + bridge.dir + " node=" + bridge.node);
-        //     }
-        // }
     }
-
+    // 유니온 파인드 - find
     public static int find (int x) {
         if (p[x] < 0) {
             return x;
         }
         return p[x] = find(p[x]);
     }
-
+    // 유니온 파인드 - merge
     static boolean is_diff_group (int u, int v) {
         u = find(u);
         v = find(v);
@@ -163,7 +151,7 @@ public class Java_17472_2 {
 
         return true;
     }
-
+    // 다리 연결 길이
     static void getBridgeLength(Position position) {
         int index = board[position.r][position.c];
         for (int dir = 0; dir < 4; dir++) {
@@ -193,11 +181,10 @@ public class Java_17472_2 {
 
             if (flag && length > 1) {
                 bridges.add(new Bridge(index, node, length));
-                // bridges.get(index).add(new Bridge(position.r, position.c, length, dir, node));
             }
         }
     }
-
+    // 섬 채번
     static void bfs(int sr, int sc) {
         Queue <Position> queue = new LinkedList<>();
         queue.add(new Position(sr, sc));
@@ -205,7 +192,6 @@ public class Java_17472_2 {
         visited[sr][sc] = true;
 
         islands.get(islandsCnt).add(new Position(sr, sc));
-        // islands.add(ne)
 
         while(!queue.isEmpty()) {
             Position cur = queue.poll();
@@ -223,16 +209,6 @@ public class Java_17472_2 {
                 visited[nr][nc] = true;
                 islands.get(islandsCnt).add(new Position(nr, nc));
             }
-        }
-    }
-
-    static void printBoard() {
-        System.out.println();
-        for (int r = 0; r < N; r++) {
-            for (int c = 0; c < M; c++) {
-                System.out.print(board[r][c] + " ");
-            }
-            System.out.println();
         }
     }
 }
