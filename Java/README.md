@@ -20,6 +20,10 @@
 ## [14500 : 테트로미노](https://www.acmicpc.net/problem/14500)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14500.java)
 
+## [다리 만들기 2](https://www.acmicpc.net/problem/17472)
+- [코드 : 완전탐색](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14500_1.java)
+- [코드 : 크루스칼](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_14500_2.java)
+
 # 0-2. 카카오 기출
 ## 2022 BLIND
 ## [92342: 양궁대회](https://school.programmers.co.kr/learn/courses/30/lessons/92342)
@@ -28,6 +32,7 @@
 - [코드 : 트리 순회 + dfs](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92343_1.java)
 ## [92344: 파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
 - [코드 : 정확성 + 효율성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92344.java)
+- [참고](https://kimjingo.tistory.com/155)
 
 ## 2021 BLIND
 ## [72410 : 신규 아이디 추천](https://school.programmers.co.kr/learn/courses/30/lessons/72410)
@@ -47,61 +52,10 @@
 ## [72415 : 카드짝맞추기](https://school.programmers.co.kr/learn/courses/30/lessons/72415)
 - [코드 : 브루트포스](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72415.java)
 
+## 2020 BLIND
 
+## 2019 BLIND
 
-
-
-## 1) Level1
-## [17681 : 비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17681.java)
-## [17682 : 다트 게임](https://school.programmers.co.kr/learn/courses/30/lessons/17682)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17682.java)
-## [42889 : 실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_42889.java)
-- 정렬 : https://hianna.tistory.com/569
-## [64061 : 크레인 인형뽑기](https://school.programmers.co.kr/learn/courses/30/lessons/64061)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_64061.java)
-## [67256 : 키패드 누르기](https://school.programmers.co.kr/learn/courses/30/lessons/67256)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_67256.java)
-
-## [77484 : 로또의 최고 순위와 최저순위](https://school.programmers.co.kr/learn/courses/30/lessons/77484)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_77484.java)
-## [81301 : 숫자 문자열과 영단어](https://school.programmers.co.kr/learn/courses/30/lessons/81301)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_81301.java)
-## [92334 : 신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92334.java)
-
-## Level2
-## [92341 : 주차 요금 계산](https://school.programmers.co.kr/learn/courses/30/lessons/92341)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92341.java)
-## [60057 : 문자열 압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_60057.java)
-## [42888 : 오픈채팅방](https://school.programmers.co.kr/learn/courses/30/lessons/42888)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_42888.java)
-## [1829 : 카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1829.java)
-## [1835 : 단체사진 찍기](https://school.programmers.co.kr/learn/courses/30/lessons/1835)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_1835.java)
-## [60058 : 괄호 변환](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_60058.java)
-## [92335 : k진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92335.java)
-- https://cornarong.tistory.com/48
-- https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=javaking75&logNo=220289619566
-## [92342 :양궁대회](https://school.programmers.co.kr/learn/courses/30/lessons/92342)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92342.java)
-## [17687 : [3차] n진수 게임](https://school.programmers.co.kr/learn/courses/30/lessons/17687)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17687.java)
-## [92343 : 양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92343.java)
-## [92344 : 파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92344.java)
-## [92345 : 사라지는 발판](https://school.programmers.co.kr/learn/courses/30/lessons/92345)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92345.java)
-
-## Level3
-## [92345 : 사라지는 발판](https://school.programmers.co.kr/learn/courses/30/lessons/67258)
-- [코드](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_67258.java)
 
 
 # 03. 배열
@@ -169,7 +123,6 @@
 - [코드 : 크루스칼 알고리즘](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1197_1.java)
 - [코드 : 프림 알고리즘](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_1197_2.java)
 ## [17472 : 다리 만들기 2](https://www.acmicpc.net/problem/17472)
-- [코드 : 일반구현](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_17472_1.java)
 - [코드 : 크루스칼 알고리즘](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_17472_2.java)
 ### 참고
 - [[실전 알고리즘] 0x1B강 - 최소 신장 트리](https://blog.encrypted.gg/1024?category=773649)
