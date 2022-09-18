@@ -62,7 +62,7 @@
 ## [4번 : 셔틀버스](https://school.programmers.co.kr/learn/courses/30/lessons/17678)
 - [코드 : 시뮬레이션 + 문자열](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17678.java)
 ## [5번 : 뉴스 클러스터링](https://school.programmers.co.kr/learn/courses/30/lessons/17677)
-- [코드 : ]
+- [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_17677.java)
 ## [6번 : 프렌즈4블록]()
 ## [7번 : 추석 트래픽]()
 ### 참고
