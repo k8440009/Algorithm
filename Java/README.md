@@ -26,6 +26,10 @@
 
 # 0-2. 카카오 기출
 ## 2022 BLIND
+## [92334 : 신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
+- [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92334.java)
+## [92335 : k진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)
+- [코드 : 정수론](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92335.java)
 ## [92342: 양궁대회](https://school.programmers.co.kr/learn/courses/30/lessons/92342)
 - [코드 : 중복순열 + 백트래킹](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92342.java)
 ## [92343: 양과늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343)
@@ -52,7 +56,15 @@
 ## [72415 : 카드짝맞추기](https://school.programmers.co.kr/learn/courses/30/lessons/72415)
 - [코드 : 브루트포스](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72415.java)
 
-## 2020 BLIND
+## 2020 BLIND 1차
+## [1번 : 문자열압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057)
+- [](https://school.programmers.co.kr/learn/courses/30/lessons/60057)
+## [2번 : 괄호 변환](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
+## [3번 : 자물쇠와열쇠](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
+## [4번 : 가사검색](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
+## [5번 : 기둥과 보 설치](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
+## [6번 : 외벽 점검](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
+## [7번 : 블록 이동하기](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
 
 ## 2019 BLIND 1차
 ## [1번 : 비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
