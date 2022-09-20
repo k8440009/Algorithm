@@ -70,6 +70,19 @@
 ## [7번 : 블록 이동하기](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
 
 ## 2019 BLIND 1차
+## [1번 : 오픈채팅방](https://school.programmers.co.kr/learn/courses/30/lessons/42888)
+- [코드 : 문자열 + 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_42888.java)
+## [2번 : 실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889)
+- [코드 : 정렬 + 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_42889.java)
+## [3번 : 후보키](https://school.programmers.co.kr/learn/courses/30/lessons/42890)
+- [코드 : 순열조합, Set](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_42890.java)
+- [참고](https://velog.io/@yanghl98/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%ED%9B%84%EB%B3%B4%ED%82%A4-JAVA%EC%9E%90%EB%B0%94-2019-%EC%B9%B4%EC%B9%B4%EC%98%A4-%EA%B8%B0%EC%B6%9C)
+## [4번 : 무지의 먹방라이브](https://school.programmers.co.kr/learn/courses/30/lessons/42891)
+- [코드 : 정렬 + 그리디](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_42891.java)
+## [5번 : 길 찾기 게임](https://school.programmers.co.kr/learn/courses/30/lessons/42892)
+- [코드 : 이진트리](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_42892.java)
+
+## 2018 BLIND 1차
 ## [1번 : 비밀지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
 ## [2번 : 다트게임](https://school.programmers.co.kr/learn/courses/30/lessons/17682)
 ## [3번 : 캐시](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
