@@ -61,7 +61,7 @@
 - [코드 : 문자열](https://school.programmers.co.kr/learn/courses/30/lessons/60057)
 ## [2번 : 괄호 변환](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
 - [코드 : 문자열, 스택](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
-## [3번 : 자물쇠와열쇠](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
+## [3번 : 자물쇠와열쇠](https://school.programmers.co.kr/learn/courses/30/lessons/60059)
 ## [4번 : 가사검색](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
 ## [5번 : 기둥과 보 설치](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
 ## [6번 : 외벽 점검](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
@@ -83,6 +83,9 @@
 
 ## 2019 BLIND 2차
 ## 2019 BLIND 3차
+
+## 2022 InternShip
+[118666]
 
 
 # 03. 배열
