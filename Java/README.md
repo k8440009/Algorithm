@@ -87,8 +87,10 @@
 ## 2019 BLIND 3차
 
 ## 2022 InternShip
-[118666]
-
+## [1번 : 성격유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666)
+- [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118666.java)
+## [2번 : 두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667)
+- [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118667.java)
 
 # 03. 배열
 # 04. 연결리스트
