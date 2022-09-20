@@ -58,10 +58,12 @@
 
 ## 2020 BLIND 1차
 ## [1번 : 문자열압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057)
-- [코드 : 문자열](https://school.programmers.co.kr/learn/courses/30/lessons/60057)
+- [코드 : 문자열](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_60057.java)
 ## [2번 : 괄호 변환](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
-- [코드 : 문자열, 스택](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
+- [코드 : 문자열, 스택](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_60058.java)
 ## [3번 : 자물쇠와열쇠](https://school.programmers.co.kr/learn/courses/30/lessons/60059)
+- [코드 : 배열돌리기](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_60059.java)
+- [참고](https://code-lab1.tistory.com/152)
 ## [4번 : 가사검색](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
 ## [5번 : 기둥과 보 설치](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
 ## [6번 : 외벽 점검](https://school.programmers.co.kr/learn/courses/30/lessons/17680)

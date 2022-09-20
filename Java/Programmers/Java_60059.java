@@ -12,114 +12,92 @@ public class Java_60059 {
 class Solution_60059{
     static int N;
     static int M;
-    static boolean answer = false;
+    /**
+     * 1. 자물쇠길이 + 키 * 2 + 2
+     * 2. map에 lock 배열의 값을 위치에 맞게 입력
+     * 3. 키가 자물쇠에 맞는지 체크
+     * 4. 안 맞으면 rotate
+     * @param key
+     * @param lock
+     * @return
+     */
+    public boolean solution(int[][] key, int[][] lock) {
 
-    int [][] key;
-    int [][] lock;
-    public boolean solution(int[][] tmpKey, int[][] tmpLock) {
+        M = key.length;
+        N = lock.length;
+        int len = N + M * 2 + 2;
 
-        N = tmpKey.length;
-        M = tmpLock.length;
+        int [][] extended = new int [len][len];
 
-        key = new int [N][N];
-        lock = new int [M][M];
+        for (int r = M - 1; r < M + N - 1; r++) {
+            for (int c = M - 1; c < M + N - 1; c++) {
+                extended[r][c] = lock[r - (M - 1)][c - (M - 1)];
+            }
+        }
 
-        copyBoard(key, tmpKey);
-        copyBoard(lock, tmpLock);
-        /**
-         * 1. 자물쇠 홈을 끼울 지점을 선택
-         * 2. key의 홈 기준을 선택
-         * 
-         * 3. newLock에 복사
-         * 4. newLock에 열쇠를 끼워 넣는다.
-         */
-        for (int lr = 0; lr < N; lr++) {
-            for (int lc = 0; lc  < N; lc++) {
+        for (int i = 0; i < 4; i++) {
+            if (check(extended, key)) {
+                return true;
+            }
+            rotate(key);
+        }
+
+        return false;
+    }
+
+    static boolean check(int [][] extended, int [][] key) {
+        int maxLength = extended.length;
+        for (int r = 0; r < maxLength - M + 1; r++) {
+            for (int c = 0; c < maxLength - M + 1; c++) {
+
+                // map에 key를 더함
                 for (int kr = 0; kr < M; kr++) {
                     for (int kc = 0; kc < M; kc++) {
-                        dfs(lr, lc, kr, kc);
+                        extended[r + kr][c + kc] += key[kr][kc];
+                    }
+                }
+
+                // 자물쇠 부분 체크
+                boolean flag = true;
+                for (int kr = M - 1; kr < N + M - 1; kr++) {
+                    for (int kc = M - 1; kc < N + M - 1; kc++) {
+                        if (extended[kr][kc] != 1) {
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if (!flag) {
+                        break;
+                    }
+                }
+
+                if (flag)
+                    return true;
+
+                // 복구
+                for (int kr = 0; kr < M; kr++) {
+                    for (int kc = 0; kc < M; kc++) {
+                        extended[r + kr][c + kc] -= key[kr][kc];
                     }
                 }
             }
         }
-        return answer;
+        return false;
     }
 
-    void dfs(int lr, int lc, int kr, int kc) {
-        if (answer) {
-            return ;
-        }
+    static void rotate(int [][] key) {
+        int len = key.length;
+        int [][] tmp = new int [len][len];
 
-        int [][] newLock = new int [80][80];
-
-        for (int r = 0; r < M; r++) {
-            for (int c = 0; c < M; c++) {
-                newLock[30 + r][30 + c] = lock[r][c];
+        for (int r = 0; r  < len; r++) {
+            for (int c = 0; c < len; c++) {
+                tmp[r][c] = key[len - c - 1][r];
             }
         }
 
-        int [][] newkey = new int [20][20];
-        int [][] rotateKey = new int [20][20]; // 회전 용
-        copyBoard(newkey, key);
-        copyBoard(rotateKey, key);
-        int cntRot = 0;
-        for (int rot = 0; rot <= 3; rot++) {
-
-            while(cntRot < rot) {
-                // rotateKey(rotateKey, newkey);
-                // copyBoard(newkey, rotateKey);
-                cntRot += 1;
-            }
-
-            boolean flag = true;
-
-            // for (int row = lr;)
-            // for (int row = kr; row < M; row++) {
-            //     for (int col = kc; col < M; col++) {
-
-            //     }
-            // }
-
-            // for (int r = M - 1; r >= 0; r--) {
-            //     for (int c = M - 1; c >= 0; c--) {
-                    
-            //         int row = r + 0;
-            //         int column = c + 0;
-            //     }
-            // }
-            // for (int r = M-1; r >= 0; r--) {
-            //     for (int c = M-1; c >=0; c--) {
-            //         newLock[30 + r][30 + c] += key[r][c];
-            //         if (newLock[30 + r][30 + c] != 1) {
-            //             flag = false;
-            //             break;
-            //         }
-            //     }
-
-            //     if (!flag) {
-            //         break;
-            //     }
-            // }
-
-            if (flag) {
-                answer = true;
-                break;
-            }
-        }
-    }
-
-    void rotateKey(int [][] desc, int [][] src) {
-        for (int r = 0; r < N; r++) {
-            for (int c = 0; c < N; c++) {
-                desc[r][c] = src[N - c - 1][r];
-            }
-        }
-    }
-
-    void copyBoard(int [][] desc, int [][] src) {
-        for (int r = 0; r < desc.length; r++) {
-            for (int c = 0; c < desc.length; c++) {
-                desc[r][c] = src[r][c];
+        for (int r = 0; r < len; r++) {
+            for (int c = 0; c < len; c++) {
+                key[r][c] = tmp[r][c];
             }
         }
     }
