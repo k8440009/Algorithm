@@ -90,7 +90,8 @@
 ## [1번 : 성격유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666)
 - [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118666.java)
 ## [2번 : 두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667)
-- [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118667.java)
+- [코드 : 그리디](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118667.java)
+- [참고](https://nahwasa.com/entry/%EC%9E%90%EB%B0%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%91%90-%ED%81%90-%ED%95%A9-%EA%B0%99%EA%B2%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0-Lv2-Java)
 
 # 03. 배열
 # 04. 연결리스트

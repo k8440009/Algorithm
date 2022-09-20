@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Java_118667 {
     public static void main(String[] args) {
@@ -20,76 +21,62 @@ public class Java_118667 {
         // System.out.println(test.solution(queue31, queue32));
     }
 }
-
+/**
+ * 1. Sum1 == Sum2
+ * 2. sum이 홀수라면 -1 을 리턴
+ * 3. S1 == S2가 될 때 까지 que1에서 que2로 이동 반대도 마찬가지
+ * 4. S1 == S2인 경우 없으면 -1 리턴
+ * 
+ * 예제를 보고 그대로 구현하라는 내용이 있으면 그대로
+ * 아닌 경우에는 어떻게 해야할지 생각해보고 구현 필요
+ * 
+ * @since 2022-09-21
+ */
 class Solution_118667 {
-
-    int minCnt = Integer.MAX_VALUE;
     public int solution(int[] queue1, int[] queue2) {
-        int answer = -2;
+        long sum = 0;
         long sum1 = 0;
         long sum2 = 0;
 
-        ArrayList<Integer> arr1 = new ArrayList<>();
-        ArrayList<Integer> arr2 = new ArrayList<>();
+        Queue <Integer> que1 = new LinkedList<>();
+        Queue <Integer> que2 = new LinkedList<>(); 
 
         for (int num : queue1) {
-            arr1.add(num);
+            que1.add(num);
             sum1 += num;
         }
 
         for (int num : queue2) {
-            arr2.add(num);
+            que2.add(num);
             sum2 += num;
         }
-        // 1. 계산 가능 여부 파악
 
-        // 2. 큐 테스트
-        dfs(sum1, sum2, 0, arr1, arr2);
-        if (minCnt == Integer.MAX_VALUE) {
-            answer = -1;
+        sum = sum1 + sum2;
+        if (sum % 2 == 1) {
+            return -1;
         } else {
-            answer = minCnt;
-        }
-        return answer;
-    }
+            sum /= 2;
 
-    void dfs(long sum1, long sum2, int cnt, ArrayList<Integer> arr1,   ArrayList<Integer> arr2) {
-        if (cnt == Integer.MAX_VALUE || cnt >= minCnt) {
-            return ;
-        }
+            int p1 = 0;
+            int p2 = 0;
+            int limit = queue1.length * 2;
 
-        if (sum1 == sum2) {
-            if (minCnt < cnt) {
-                minCnt = cnt;
-            }
-            return;
-        } else {
-            ArrayList<Integer> nextArr1 = new ArrayList<>();
-            ArrayList<Integer> nextArr2 = new ArrayList<>();
+            while(p1 <= limit && p2 <= limit) {
+                if (sum1 == sum) return p1 + p2;
 
-            for (int num : arr1) {
-                nextArr1.add(num);
-            }
-
-            for (int num : arr2) {
-                nextArr2.add(num);
-            }
-
-            if (nextArr1.size() != 0) {
-                int top1 = nextArr1.get(0);
-                nextArr1.remove(0);
-                nextArr2.add(top1);
-                dfs(sum1 - top1, sum2 + top1, cnt + 1, nextArr1, nextArr2);
-                nextArr2.remove(nextArr2.size() - 1);
-                nextArr1.add(top1);
-            }
-
-            if (nextArr2.size() != 0) {
-                int top2 = nextArr2.get(0);
-                nextArr2.remove(0);
-                nextArr1.add(top2);
-                dfs(sum1 + top2, sum2 - top2, cnt  + 1, nextArr1, nextArr2);
+                if (sum1 > sum) {
+                    sum1 -= que1.peek();
+                    sum2 += que1.peek();
+                    que2.add(que1.poll());
+                    p1 += 1;
+                } else {
+                    sum2 -= que2.peek();
+                    sum1 += que2.peek();
+                    que1.add(que2.poll());
+                    p2 += 1;
+                }
             }
         }
+        return -1;
     }
 }
