@@ -38,6 +38,7 @@
 - [코드 : 정확성 + 효율성](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_92344.java)
 - [참고](https://kimjingo.tistory.com/155)
 
+
 ## 2021 BLIND
 ## [72410 : 신규 아이디 추천](https://school.programmers.co.kr/learn/courses/30/lessons/72410)
 - [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_72410.java)
@@ -99,12 +100,15 @@
 ## 2019 BLIND 2차
 ## 2019 BLIND 3차
 
-## 2022 InternShip
+## 2022 KaKao InternShip
 ## [1번 : 성격유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666)
 - [코드 : 해시](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118666.java)
 ## [2번 : 두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667)
 - [코드 : 그리디](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118667.java)
 - [참고](https://nahwasa.com/entry/%EC%9E%90%EB%B0%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%91%90-%ED%81%90-%ED%95%A9-%EA%B0%99%EA%B2%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0-Lv2-Java)
+## [3번 : 코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668)
+- [코드 : 효율성, DP](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118668_1.java)
+- [참고](https://taehoung0102.tistory.com/211)
 
 # 03. 배열
 # 04. 연결리스트
