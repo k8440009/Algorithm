@@ -109,6 +109,8 @@
 ## [3번 : 코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668)
 - [코드 : 효율성, DP](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118668_1.java)
 - [참고](https://taehoung0102.tistory.com/211)
+## [4번 : 등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669)
+- [코드 : 다익스트라](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118669.java)
 
 # 03. 배열
 # 04. 연결리스트
