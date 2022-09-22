@@ -111,6 +111,7 @@
 - [참고](https://taehoung0102.tistory.com/211)
 ## [4번 : 등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669)
 - [코드 : 다익스트라](https://github.com/k8440009/Algorithm/blob/master/Java/Programmers/Java_118669.java)
+- [참조](https://velog.io/@doforme/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9E%90%EB%B0%94-%EB%93%B1%EC%82%B0-%EC%BD%94%EC%8A%A4-%EC%A0%95%ED%95%98%EA%B8%B0)
 
 # 03. 배열
 # 04. 연결리스트

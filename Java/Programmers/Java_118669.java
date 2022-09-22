@@ -57,13 +57,14 @@ class Node_118669 implements Comparable <Node_118669> {
 class Solution_118669 {
     static int [] intensities;
     static ArrayList<ArrayList<Node_118669>> adj;
-    static Map <Integer, Integer> summitMap;
-    static Map <Integer, Integer> gateMap;
+    static Map <Integer, Boolean> summitMap;
+    static Map <Integer, Boolean> gateMap;
     public int[] solution(int n, int[][] paths, int[] gates, int[] summits) {
         adj = new ArrayList<>();
         summitMap = new HashMap<>();
         gateMap = new HashMap<>();
 
+        Arrays.sort(summits);
         intensities = new int [n + 1];
         for (int i = 0; i <= n; i++) {
             adj.add(new ArrayList<>());
@@ -71,14 +72,13 @@ class Solution_118669 {
         }
 
         for (int summit : summits) {
-            summitMap.put(summit, 1);
+            summitMap.put(summit, true);
         }
 
         for (int gate : gates) {
-            gateMap.put(gate, 1);
+            gateMap.put(gate, true);
         }
 
-        Arrays.sort(summits);
         for (int [] path : paths) {
             int i = path[0];
             int j = path[1];
@@ -96,16 +96,32 @@ class Solution_118669 {
 
         while(!priorityQueue.isEmpty()) {
             Node_118669 cur = priorityQueue.poll();
+            
+            System.out.println("cur.end=" + cur.end + " cur.weight=" + cur.weight);
 
-            if (intensities[cur.end] != cur.weight) {
+            // if (gateMap.containsKey(cur.end) || summitMap.containsKey(cur.end)) {
+            //     continue;
+            // }
+            if (summitMap.containsKey(cur.end)) {
+                continue;
+            }
+
+            if (intensities[cur.end] < cur.weight) {
                 continue;
             }
 
             for (Node_118669 nxt : adj.get(cur.end)) {
-                if (intensities[nxt.end] > intensities[cur.end] + nxt.weight) {
-                    intensities[nxt.end] = intensities[cur.end] + nxt.weight;
+                int intensity = -1;
+                if (nxt.weight == Integer.MAX_VALUE) {
+                    intensity = cur.weight;
+                } else {
+                    intensity = Math.max(nxt.weight, cur.weight);
                 }
-                priorityQueue.add(new Node_118669(intensities[nxt.end], nxt.end));
+
+                if (intensities[nxt.end] > intensity) {
+                    intensities[nxt.end] = intensity;
+                    priorityQueue.add(new Node_118669(intensity, nxt.end));
+                }
             }
         }
 
