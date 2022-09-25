@@ -1,4 +1,4 @@
-# 0-1. 삼성 기출
+# 0-1. 삼성 기출 (~2022_10)
 ## [13460 : 구슬 탈출 2](https://www.acmicpc.net/problem/13460)
 - [코드](https://github.com/k8440009/Algorithm/blob/master/Java/BOJ/Java_13460.java)
 ## [12100 : 2048 (Easy)](https://www.acmicpc.net/problem/12100)
