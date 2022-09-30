@@ -18,6 +18,7 @@ public class Java_20055 {
 	// static int [] arr;
 	// static ArrayList<Belt> arr = new ArrayList<>();
 	static Belt [] arr;
+	static boolean printFlag = false;
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
@@ -56,15 +57,25 @@ public class Java_20055 {
 			}
 			arr[0] = tmp;
 			// N 에 로봇이 있으면 삭제
-			arr[N].robo = false;
+			arr[N-1].robo = false;
+			/**
+			 * 0 1 2 ~ N-3 N-2 N-1
+			 * 
+			 * 2N -1 ~ N
+			 */
 			for (int i = N - 2; i >= 0; i--) {
-				if (arr[i].robo) {
-					if (arr[i+1].robo == false && arr[i].d > 0) {
+				if (!arr[i + 1].robo && arr[i].robo) {
+					if (arr[i + 1].d > 0) {
 						arr[i + 1].robo = true;
 						arr[i + 1].d -= 1;
 						arr[i].robo = false;
 					}
-				}				
+					
+					if (arr[N - 1].robo) {
+						arr[N-1].robo = false;
+					}
+				}
+				
 			}
 			// 3. 로봇 올림
 			if (arr[0].d != 0) {
@@ -90,10 +101,12 @@ public class Java_20055 {
 	}
 	
 	static void printBoard(Belt [] arr) {
+		if (!printFlag) 
+			return ;
+		
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i].d + " ");
 		}
 		System.out.println();
 	}
-
 }
