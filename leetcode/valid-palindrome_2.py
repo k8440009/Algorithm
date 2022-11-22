@@ -2,11 +2,13 @@
 """
 데크 사용 풀이
 """
-from collections import deque
+import collections
+from typing import Deque
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        deq = deque()
+        # 자료형 데크로 선언
+        deq : Deque = collections.deque
 
         for char in s:
             if char.isalnum():
