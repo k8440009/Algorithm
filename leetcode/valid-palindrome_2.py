@@ -5,20 +5,22 @@
 import collections
 from typing import Deque
 
+
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         # 자료형 데크로 선언
-        deq : Deque = collections.deque
+        strs: Deque = collections.deque()
 
         for char in s:
             if char.isalnum():
-                deq.append(char.lower())
+                strs.append(char.lower())
 
-        while len(deq) > 1:
-            if deq.popleft() != deq.pop():
+        while len(strs) > 1:
+            if strs.popleft() != strs.pop():
                 return False
 
         return True
+
 
 a = Solution()
 print(a.isPalindrome("A man, a plan, a canal: Panama"))
