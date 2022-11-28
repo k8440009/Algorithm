@@ -8,6 +8,8 @@
 
 paragraph : 단락
 case-insensitive : 대소문자 구분이 없다.
+
+https://leetcode.com/problems/most-common-word/submissions/
 """
 import re
 from typing import List
@@ -37,9 +39,8 @@ class Solution:
             else:
                 dic[word] = 1
         d1 = sorted(dic.items(), key=lambda x: x[1], reverse=True)
-        return d1[0][0]
+        return d1[0][0] # 딕셔너리를 items로 가져오면 [()](리스트 + 튜플형태이다)
 
-a = Solution()
 # 1
 # paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
 # banned = ["hit"]
@@ -47,4 +48,5 @@ a = Solution()
 # 2
 paragraph = "Bob!"
 banned= ["hit"]
+a = Solution()
 print(a.mostCommonWord(paragraph, banned))
