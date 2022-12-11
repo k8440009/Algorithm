@@ -21,7 +21,6 @@ class Solution:
             # 정렬하여 딕셔너리에 추가
             anagrams[''.join(sorted(word))].append(word)
         return list(anagrams.values())
-a = Solution();
 """
     1.
     strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
@@ -30,6 +29,7 @@ a = Solution();
 """
     
 """
+a = Solution();
 strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 print(a.groupAnagrams(strs))
 
