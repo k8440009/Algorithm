@@ -18,8 +18,13 @@ class Solution:
 
                 # 이전과의 차이만큼 물 높이 처리
                 distance = i - stack[-1] - 1
+                print("i={0}, stack[-1]={1}".format(i, stack[-1]))
+                print("distance={0}".format(distance))
                 waters = min(height[i], height[stack[-1]]) - height[top]
+                print("height[i]={0}, height[statck[-1]]={1}, height[top]={2}".format(height[i], height[stack[-1]], height[top]))
+                print("waters={0}".format(waters))
                 volume += distance * waters
+                print("volume={0}".format(volume))
 
             stack.append(i)
         return volume
