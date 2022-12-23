@@ -10,6 +10,7 @@
     2. for 문
     2_1) used 존재
     - start를 used[char] + 1로 갱신한다.
+    - 이미 존재 했다고 무작정 옮기면 안되고, 슬라이딩 윈도우 바깥에 있는 문자는 무시한다.
     2_2) used 미존재
     - 매번 max로 부분 문자열 길이를 확인하면서 더 큰 값인 경우 갱신
 
@@ -25,6 +26,9 @@ class Solution:
                 start = used[char] + 1
             else : # 최대 부분 문자열 길이 갱신
                 max_length = max(max_length, index - start + 1)
+            # print("index=", index)
+            # print(used)
+
             # 현재 문자의 위치 삽입
             used[char] = index
 
