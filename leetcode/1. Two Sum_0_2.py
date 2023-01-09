@@ -1,5 +1,5 @@
 """
-        1. 두수의 합
+    1. 두수의 합
     https://leetcode.com/problems/two-sum/
 """
 from typing import List
