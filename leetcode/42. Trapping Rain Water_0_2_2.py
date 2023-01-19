@@ -16,12 +16,12 @@ class Solution:
                 if not len(stack):
                     break
 
-                # 이전과의 차이만큼 물 높이 처리
                 distance = i - stack[-1] - 1
-                waters = min(height[i] - height[stack[-1]]) - height[top]
+                waters = min(height[i], height[stack[-1]]) - height[top]
                 volume += distance * waters
 
             stack.append(i)
+
         return volume
 
 a = Solution()
