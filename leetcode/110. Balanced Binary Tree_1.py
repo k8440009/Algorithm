@@ -1,5 +1,6 @@
 """
     균형 이진 트리
+    - 재귀 구조로 높이 차이 계산
     https://leetcode.com/problems/balanced-binary-tree/
 """
 
