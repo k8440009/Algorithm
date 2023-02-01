@@ -2,7 +2,7 @@
     삽입 정렬 리스트
     https://leetcode.com/problems/insertion-sort-list/
 
-    삽입 정렬
+    최적화
 """
 from typing import Optional
 
@@ -15,7 +15,7 @@ class ListNode:
 
 class Solution:
     def insertionSortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        cur = parent = ListNode(None)
+        cur = parent = ListNode(0)
 
         while head:
             while cur.next and cur.next.val < head.val:
@@ -23,6 +23,8 @@ class Solution:
 
             cur.next, head.next, head, = head, cur.next, head.next
 
-            cur = parent
+            # 필요한 경우에만 cur 포인토가 되돌아가도록 처리
+            if head and cur.val > head.val:
+                cur = parent
 
-        return cur.next
+        return parent.next
