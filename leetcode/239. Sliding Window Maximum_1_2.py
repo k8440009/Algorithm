@@ -4,6 +4,7 @@
 
     브루트 포스를 큐를 이용하여 시간 개선
     - 시간 초과
+    https://github.com/onlybooks/algorithm-interview/issues/66
 """
 import collections
 from typing import List
