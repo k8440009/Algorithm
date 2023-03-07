@@ -2,7 +2,7 @@
     팰린드롬 연결 리스트
     https://leetcode.com/problems/palindrome-linked-list/
 
-    1. 덱 변환
+    2. 러너 기법
 """
 import collections
 from typing import Optional, Deque
