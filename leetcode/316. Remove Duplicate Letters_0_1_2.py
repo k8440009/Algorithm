@@ -1,6 +1,6 @@
 """
     중복 문자 제거
-    재귀를 이용한 분리
+    스택
 """
 import collections
 
