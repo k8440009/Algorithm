@@ -43,20 +43,13 @@ class MyCircularQueue:
             return self.q[self.front]
 
     def Rear(self) -> int:
-        if self.q[self.rear - 1] is None:
+        if self.q[(self.maxlen + self.rear - 1) % self.maxlen] is None:
             return -1
         else:
-            return self.q[self.rear-1]
+            return self.q[(self.maxlen + self.rear - 1) % self.maxlen]
+
     def isEmpty(self) -> bool:
         return self.front == self.rear and self.q[self.front] is None
+
     def isFull(self) -> bool:
         return self.front == self.rear and self.q[self.front] is not None
-
-# Your MyCircularQueue object will be instantiated and called as such:
-# obj = MyCircularQueue(k)
-# param_1 = obj.enQueue(value)
-# param_2 = obj.deQueue()
-# param_3 = obj.Front()
-# param_4 = obj.Rear()
-# param_5 = obj.isEmpty()
-# param_6 = obj.isFull()
