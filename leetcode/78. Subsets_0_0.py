@@ -1,5 +1,7 @@
 """
     부분 집합
+    https://leetcode.com/problems/subsets/
+
     모든 부분 집합을 리턴하라
 """
 from typing import List
